@@ -1,4 +1,12 @@
-﻿.leftpanel
+﻿
+.cfooter
+{
+    background-color: #fff;
+    border-top: 1px dotted #000;
+    text-align: right;
+}
+
+.leftpanel
 {
     width: 200px;
     float: left;
@@ -249,7 +257,7 @@ h1, h2, h3, h4
 {
     background-color: #fff;
 }
-.upperwrop
+.upperwrap
 {
     height: 100%;
     width: 98%;

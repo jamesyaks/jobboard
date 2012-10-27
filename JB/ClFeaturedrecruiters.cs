@@ -22,7 +22,7 @@ namespace JB
 
             using (connreader)
             {
-                MySqlCommand command = new MySqlCommand("SELECT replace(article_data,'c:/testdir/','/articles/')as Article_data from recruiters,Articles where recruiters.sArticleID=Articles.sArticleID and recruiters.empid = " + recsids + " limit 1; ", connreader);
+                MySqlCommand command = new MySqlCommand("SELECT article_data as Article_data from recruiters,Articles where recruiters.sArticleID=Articles.sArticleID and recruiters.empid = " + recsids + " limit 1; ", connreader);
                 connreader.Open();
 
                 MySqlDataReader reader = command.ExecuteReader();
@@ -56,7 +56,7 @@ namespace JB
 
             mycon.ConnectionString = myconstring;
 
-            MySqlDataAdapter myda = new MySqlDataAdapter("SELECT sRecruiterName as Sponsored,replace(article_data,'c:/testdir/','/articles/')as Article_data,  jobs.sTitle as sTitle, jobs.sshortdescription as descr, jobs.idjobs from recruiters, Articles, jobtable, jobs where recruiters.sArticleID=Articles.sArticleID and jobtable.empid = recruiters.empid and jobs.idjobs = jobtable.idjobs and jobs.sjobenddate>=curdate() and jobtable.catid= 10000 order by rand() limit 1;", mycon);
+            MySqlDataAdapter myda = new MySqlDataAdapter("SELECT sRecruiterName as Sponsored, article_data as Article_data,  jobs.sTitle as sTitle, jobs.sshortdescription as descr, jobs.idjobs from recruiters, Articles, jobtable, jobs where recruiters.sArticleID=Articles.sArticleID and jobtable.empid = recruiters.empid and jobs.idjobs = jobtable.idjobs and jobs.sjobenddate>=curdate() and jobtable.catid= 10000 order by rand() limit 1;", mycon);
 
             mycon.Open();
 

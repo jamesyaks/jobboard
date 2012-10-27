@@ -77,16 +77,19 @@
   <ItemGroup>
     <Content Include="ActivateAccount.aspx" />
     <Content Include="Allrecruiters.aspx" />
-    <Content Include="articles\10030003Gmail.png" />
-    <Content Include="articles\10030003google.jpg" />
     <Content Include="articles\10030003ibm-logo.png" />
-    <Content Include="articles\10030012test.PNG" />
     <Content Include="articles\10030013header-logo.gif" />
     <Content Include="articles\10030015homepage_nf.jpg" />
     <Content Include="articles\10030020silver-apple-logo.png" />
-    <Content Include="articles\firefox-logo.jpg" />
+    <Content Include="articles\Apple_logo.png" />
+    <Content Include="articles\getasset.gif" />
+    <Content Include="articles\hbo_logo.jpg" />
+    <Content Include="articles\hp-logo.jpg" />
+    <Content Include="articles\ibm-logo.jpg" />
     <Content Include="articles\iron-man-movie-logo.jpg" />
     <Content Include="articles\logo.jpg" />
+    <Content Include="articles\sony_logo_section.jpg" />
+    <Content Include="articles\TNT_Logo2.jpg" />
     <Content Include="articles\YSLogo.jpg" />
     <Content Include="Blank.aspx" />
     <Content Include="Brandimages\brand_defaulthomelogo.png" />
@@ -98,18 +101,34 @@
     <Content Include="Captcha.aspx" />
     <Content Include="dll\AjaxControlToolkit.dll" />
     <Content Include="Global.asax" />
+    <Content Include="images\active.png" />
+    <Content Include="images\AddJob.png" />
+    <Content Include="images\amber.png" />
+    <Content Include="images\applications.png" />
+    <Content Include="images\Awaiting.png" />
+    <Content Include="images\breadcrumb1.gif" />
+    <Content Include="images\bullet_gray.gif" />
+    <Content Include="images\Calender.png" />
     <Content Include="images\can_keys.png" />
     <Content Include="images\close.gif" />
     <Content Include="images\close2.png" />
-    <Content Include="images\cn_notes.png" />
-    <Content Include="images\dt_block.png" />
+    <Content Include="images\closelabel.png" />
+    <Content Include="images\dashboard.png" />
+    <Content Include="images\debit.png" />
+    <Content Include="images\Delete.png" />
     <Content Include="images\dv_minus.gif" />
     <Content Include="images\dv_plus.gif" />
+    <Content Include="images\edijobs.png" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\filters.png" />
     <Content Include="images\ft_copyinfo.png" />
     <Content Include="images\ft_privacy.png" />
     <Content Include="images\ft_rss.png" />
     <Content Include="images\ft_terms.png" />
+    <Content Include="images\go-home.png" />
+    <Content Include="images\green.png" />
+    <Content Include="images\Jobs.png" />
+    <Content Include="images\KPI.png" />
     <Content Include="images\loaders.gif" />
     <Content Include="images\lt_add.png" />
     <Content Include="images\lt_blog.png" />
@@ -120,14 +139,25 @@
     <Content Include="images\lt_rss.png" />
     <Content Include="images\lt_trending.png" />
     <Content Include="images\lt_users.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\mobilesite.png" />
+    <Content Include="images\money.png" />
+    <Content Include="images\multisite.png" />
     <Content Include="images\nm_one.png" />
     <Content Include="images\nm_two.png" />
-    <Content Include="images\PostAdd.png" />
     <Content Include="images\processing_loader.gif" />
+    <Content Include="images\progresspan.gif" />
+    <Content Include="images\promotion.png" />
+    <Content Include="images\pwdchange.png" />
     <Content Include="images\px_lined.gif" />
-    <Content Include="images\top_close.png" />
-    <Content Include="images\top_search.png" />
-    <Content Include="images\tp_browse.gif" />
+    <Content Include="images\Recbasic.png" />
+    <Content Include="images\RecLogout.png" />
+    <Content Include="images\Recmarket.png" />
+    <Content Include="images\RecPic.png" />
+    <Content Include="images\Recplugin.png" />
+    <Content Include="images\Recusers.png" />
+    <Content Include="images\red.png" />
+    <Content Include="images\U.jpg" />
     <Content Include="Jbprivacy.aspx" />
     <Content Include="Jbsubscribe.aspx" />
     <Content Include="Jbterms.aspx" />
@@ -140,17 +170,6 @@
     <Content Include="EmailTemplates\ApplicationConfirmation.htm" />
     <Content Include="EmailTemplates\pwdreset.htm" />
     <Content Include="EmailTemplates\Usersignup.htm" />
-    <Content Include="images\bullet_gray.gif" />
-    <Content Include="images\dashboard.png" />
-    <Content Include="images\edijobs.png" />
-    <Content Include="images\favicon.ico" />
-    <Content Include="images\go-home.png" />
-    <Content Include="images\gridload.gif" />
-    <Content Include="images\headerworkers.png" />
-    <Content Include="images\old_london.jpg" />
-    <Content Include="images\progresspan.gif" />
-    <Content Include="images\pwdchange.png" />
-    <Content Include="images\salarycalc.png" />
     <Content Include="Jobseekers\Changeuserpwd.aspx" />
     <Content Include="Jobseekers\Candidateapplication.aspx" />
     <Content Include="Jobseekers\Jobseekerhome.aspx" />
@@ -166,10 +185,8 @@
     <Content Include="Recruiters\Rechome.aspx" />
     <Content Include="Recruiters\Recsimpleconfirm.aspx" />
     <Content Include="Recruiters\Recapplication.aspx" />
-    <Content Include="images\closelabel.png" />
     <Content Include="Scripts\facebox\facebox.css" />
     <Content Include="Scripts\facebox\facebox.js" />
-    <Content Include="images\loading.gif" />
     <Content Include="styles\cs3.css" />
     <Content Include="styles\cs4.css" />
     <Content Include="Web.config">
@@ -493,7 +510,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="images\breadcrumb1.gif" />
     <Content Include="Job.Master" />
     <Content Include="styles\csjobmaster.css" />
     <Content Include="Jobseekers\Login.aspx" />
@@ -501,11 +517,6 @@
     <Content Include="Recruiters\Recruiterform.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\getasset.gif" />
-    <Content Include="images\Recbasic.png" />
-    <Content Include="images\RecLogout.png" />
-    <Content Include="images\RecPic.png" />
-    <Content Include="images\Recusers.png" />
     <Content Include="styles\csrecruiter.css" />
     <Content Include="Recruiters\Recruiters.Master" />
   </ItemGroup>
@@ -516,9 +527,6 @@
     <Content Include="Logins.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\AddJob.png" />
-    <Content Include="images\Jobs.png" />
-    <Content Include="images\Login_Close.png" />
     <Content Include="Jobseekers\Candidates.Master" />
     <Content Include="Recruiters\Editjobs.aspx" />
     <Content Include="Recruiters\JobForm.aspx" />
@@ -526,15 +534,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="styles\autocomplete.css" />
-    <Content Include="images\Apple_logo.png" />
-    <Content Include="images\Calender.png" />
-    <Content Include="images\hbo_logo.jpg" />
-    <Content Include="images\hp-logo.jpg" />
-    <Content Include="images\ibm-logo.jpg" />
-    <Content Include="images\Recmarket.png" />
-    <Content Include="images\sony_logo_section.jpg" />
-    <Content Include="images\TNT_Logo2.jpg" />
-    <Content Include="images\U.jpg" />
     <Content Include="Jobdetails.aspx" />
     <Content Include="Jobseekers\Applications.aspx" />
     <Content Include="Jobseekers\Directapplication.aspx" />
@@ -542,26 +541,6 @@
     <Content Include="searchjob.ashx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\active.png" />
-    <Content Include="images\amber.png" />
-    <Content Include="images\applications.png" />
-    <Content Include="images\Awaiting.png" />
-    <Content Include="images\credits.png" />
-    <Content Include="images\debit.png" />
-    <Content Include="images\Delete.png" />
-    <Content Include="images\green.png" />
-    <Content Include="images\KPI.png" />
-    <Content Include="images\mail.png" />
-    <Content Include="images\mobilesite.png" />
-    <Content Include="images\money.png" />
-    <Content Include="images\multisite.png" />
-    <Content Include="images\promotion.png" />
-    <Content Include="images\Recplugin.png" />
-    <Content Include="images\red.png" />
-    <Content Include="images\Sent.png" />
-    <Content Include="images\skins.png" />
-    <Content Include="images\Videoplugin.png" />
-    <Content Include="images\XML.png" />
     <Content Include="Jobseekers\Userapplication.aspx" />
     <Content Include="Logoff.aspx" />
   </ItemGroup>
@@ -570,6 +549,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Browsers\Customrender.browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resumes\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

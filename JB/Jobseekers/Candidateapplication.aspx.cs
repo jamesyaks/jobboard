@@ -38,8 +38,7 @@ namespace JB.JobSeekers
                 return strCookieValue;
             }
         }
-
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             //set default inputs
@@ -63,12 +62,11 @@ namespace JB.JobSeekers
             {
                 Response.Redirect("login.aspx");
             }
-            ////////////////////////////////////
 
-            Label15.Text = "hi, " + Session["pusername"] + " please choose/update your cv/resume here";
+            Label15.Text = "<br/> hi, " + Session["pusername"] + " please choose/update your cv/resume here <br/ ><br/ >";
         }
 
-        public void adddata(string ext)
+        public void adddata(string __fname)
         {
             //get candidate first name, last name etc from db.
             ClCandidates cclid = new ClCandidates();
@@ -78,9 +76,10 @@ namespace JB.JobSeekers
             {
                 //add max count
                 ClCodeconverter cc = new ClCodeconverter();
-                int fnames = cc.getmaxfile(pathsetter);
+                int __pcount = cc.getmaxfile(pathsetter);
 
-                FileUpload1.PostedFile.SaveAs(pathsetter + fnames + ext);
+                //upload to server
+                FileUpload1.SaveAs(Server.MapPath(pathsetter) + __pcount + __fname);
 
                 ClApps app = new ClApps();
 
@@ -88,116 +87,92 @@ namespace JB.JobSeekers
                 int mxdocid = app.getmaxdocid();
                 int mxappid = app.getmaxappid();
 
-                //set culture to british 
-                //modify here in future if this needs to be set to us formats
-
                 CultureInfo cinf = new CultureInfo("en-GB");
-                //DateTime dobsdate = Convert.ToDateTime(temphldoldcan[3]);
+                string dobdate1 = temphldoldcan[3];
 
-                string dobdate1 = temphldoldcan[3]; //dobsdate.ToString("MM/dd/yyyy");
-
-                //fill in app.
+                //fill in app. automatically
                 app.AddApplicationcan(Convert.ToInt32(temphldoldcan[4]), temphldoldcan[0], temphldoldcan[1], dobdate1, TextBox2.Text, mxdocid, Session["pusername"].ToString());
                 app.AddApplicationMapping(Convert.ToInt16(Request.QueryString["JobID"]), mxappid);
-                app.Adddocuments(fnames + ext, pathsetter + fnames + ext);
-
+                app.Adddocuments(__pcount + __fname, pathsetter + __pcount + __fname);
             }
 
-            //ask the candidate to fill in his/her details
             else
             {
-                Response.Redirect("~/Jobseeker/Jobseekerhome.aspx");
+                //error candidate id not found.
+            }
+
+        }
+
+        private string Getextension(string __filname)
+        {
+            if (__filname.Contains(".doc"))
+            {
+                return ".doc";
+            }
+
+            else if (__filname.Contains(".docx"))
+            {
+                return ".docx";
+            }
+
+            else if (__filname.Contains(".pdf"))
+            {
+                return ".pdf";
+            }
+
+            else
+            {
+                return "none";
             }
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            var __maxuploadsz = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["maxfilesize"].ToString()); 
+
             ClEmailprocessor emp = new ClEmailprocessor();
 
             string embody = emp.emaildirapps(1, "").ToString();
+            string fname = FileUpload1.FileName;
+            var __ext = string.Empty;
+            __ext = Getextension(fname);
 
-            string fname = FileUpload1.PostedFile.FileName.ToString();
-
-            string ext = string.Empty;
-
-            if (fname.Contains("doc"))
+            if (FileUpload1.HasFile)
             {
-
-                ext = ".doc";
-                adddata(ext);
-
-
-                try
+                if (__ext != "none")
                 {
-                    emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", embody, 2);
-                    //emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", "Your application has been submitted sucessfully we will contact you in due course");
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 1);
+                    if (FileUpload1.FileContent.Length < __maxuploadsz)
+                    {
+                        adddata(fname);
+                        try
+                        {
+                            emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", embody, 2);
+                            emp.sendappemaildbupdate(Session["pusername"].ToString(), 1);
+                        }
+                        catch { }
+
+                        //for production move this to try/catch block
+                        Session["reasons"] = "Thank you for applying, we wish you best of luck with your application!!!";
+                        Response.Redirect("~/confirm.aspx");
+                    }
+
+                    else
+                    {
+                        //error too large size permitted is approx 2mb
+                    }
                 }
-                catch
+                else
                 {
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 0);
+                    //error not valid extension
                 }
-
-                Session["reasons"] = "Thank you for applying, we wish you best of luck with your application!!!";
-                Response.Redirect("~/confirm.aspx");
-            }
-
-            else if (fname.Contains("docx"))
-            {
-                ext = ".docx";
-                adddata(ext);
-
-
-                try
-                {
-                    emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", embody, 2);
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 1);
-                }
-                catch
-                {
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 0);
-                }
-
-
-
-                Session["reasons"] = "Thank you for applying, we wish you best of luck with your application!!!";
-                Response.Redirect("~/confirm.aspx");
-
-            }
-
-            else if (fname.Contains("pdf"))
-            {
-                ext = ".pdf";
-                adddata(ext);
-
-
-                try
-                {
-                    emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", embody, 2);
-                    //emp.sendmailproc(Session["pusername"].ToString(), "Application Confirmation: Recruiter Name/Job Name", "Your application has been submitted sucessfully we will contact you in due course");
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 1);
-                }
-                catch
-                {
-                    emp.sendappemaildbupdate(Session["pusername"].ToString(), 0);
-                }
-
-
-
-                Session["reasons"] = "Thank you for applying, we wish you best of luck with your application!!!";
-                Response.Redirect("~/confirm.aspx");
             }
 
             else
             {
-                Label19.Text = "Error Uploading file!!!";
+                //no file error
             }
 
-
-
         }
-
-
 
         protected void Button3_Click(object sender, EventArgs e)
         {

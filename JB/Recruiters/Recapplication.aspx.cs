@@ -71,25 +71,8 @@ namespace JB.Recruiters
             
         }
 
-        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            switch (e.Row.RowType)
-            {
-                case DataControlRowType.DataRow:
-                    e.Row.Attributes.Add("onmouseover", "this.style.backgroundColor='#DEE1E7'");
-                    e.Row.Attributes.Add("onmouseout", "this.style.backgroundColor='White'");
-                    break;
-                default:
-                    break;
-            }
-
-        }
-
-       
-
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-        
+        {        
             //get employer id
             CLMainpagepopulator mpg = new CLMainpagepopulator();
             int emid = mpg.RecName(Session["pusername"].ToString());
@@ -98,6 +81,19 @@ namespace JB.Recruiters
             GridView1.DataSource = apps.getApplication(emid);
             GridView1.PageIndex = e.NewPageIndex;
             GridView1.DataBind();
+
+        }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            switch (e.Row.RowType)
+            {
+                case DataControlRowType.DataRow:
+                    e.Row.Attributes.Add("class", "gridrowdb");
+                    break;
+                default:
+                    break;
+            }
 
         }
 

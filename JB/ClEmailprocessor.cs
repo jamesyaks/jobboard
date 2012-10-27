@@ -195,14 +195,20 @@ namespace JB
             //checkcode
             try
             {
+                var mailfrom = System.Configuration.ConfigurationManager.AppSettings["emailfrom"].ToString(); 
+                var mailserver = System.Configuration.ConfigurationManager.AppSettings["emailserver"].ToString();
+                var username = System.Configuration.ConfigurationManager.AppSettings["eusername"].ToString();
+                var password = System.Configuration.ConfigurationManager.AppSettings["epassword"].ToString();
+                var port = Convert.ToInt16(System.Configuration.ConfigurationManager.AppSettings["eport"].ToString());
+
                 System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage();
-                message.To.Add("info@ahrcloud.com");
+                message.To.Add(toaddr);
                 message.Subject = tosubject;
-                message.From = new System.Net.Mail.MailAddress("no-reply@ahrcloud.com");
+                message.From = new System.Net.Mail.MailAddress(mailfrom);
                 message.IsBodyHtml = true;
                 message.Body = tobody;
-                System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("mail.ahrcloud.com", 25);
-                smtp.Credentials = new System.Net.NetworkCredential("info", "abacus");
+                System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient(mailserver, port);
+                smtp.Credentials = new System.Net.NetworkCredential(username, password);
                 smtp.Send(message);
             }
             catch { }

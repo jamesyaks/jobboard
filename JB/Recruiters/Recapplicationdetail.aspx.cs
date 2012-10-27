@@ -37,7 +37,6 @@ namespace JB.Recruiters
 
         }
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
             //read and validate login
@@ -56,14 +55,13 @@ namespace JB.Recruiters
             else
             {
                 Response.Redirect("login.aspx");
-            }
-        
+            }        
             
             if(Request.QueryString["Applyid"]!= null){
             ClApps claps = new ClApps();
             string[] showd = claps.getapplicationdetails(Convert.ToInt16(Request.QueryString["Applyid"]));
             Label2.Text = showd[0];
-            HyperLink1.NavigateUrl = showd[1];
+            HyperLink1.NavigateUrl = Server.MapPath(showd[1]);
 
             }
         }

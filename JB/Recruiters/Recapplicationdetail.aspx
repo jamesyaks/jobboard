@@ -12,7 +12,7 @@
     <div>
         <asp:Label ID="Label1" runat="server" Text="User profile" CssClass="ftblack"></asp:Label>
         <br />
-        <hr class="TextboxSt" />
+        <hr />
         <asp:Label ID="Label2" runat="server" CssClass="ftblack" Text="Label"></asp:Label>
         <br />
         <br />

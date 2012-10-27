@@ -262,7 +262,7 @@ namespace JB
 
             using (connreader)
             {
-                MySqlCommand command = new MySqlCommand("SELECT replace(article_data,'c:/testdir/','/articles/')asarticle_data from recruiters,Articles where recruiters.sArticleID=Articles.sArticleID and recruiters.EmpID ='" + empid + "' limit 1;", connreader);
+                MySqlCommand command = new MySqlCommand("SELECT article_data as article_data from recruiters,Articles where recruiters.sArticleID=Articles.sArticleID and recruiters.EmpID ='" + empid + "' limit 1;", connreader);
                 connreader.Open();
 
                 MySqlDataReader reader = command.ExecuteReader();

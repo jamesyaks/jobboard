@@ -203,24 +203,18 @@ namespace JB
         //this get current application from it's id
         public DataSet getApplication(int applicationname)
         {
-            DataSet Ds = new DataSet();
-            
+            DataSet Ds = new DataSet();            
             string myconstring = Clconnect.makeconn();
-
             MySqlConnection mycon = new MySqlConnection();
-
             mycon.ConnectionString = myconstring;
 
             MySqlDataAdapter myda = new MySqlDataAdapter("select idapplications, aFirstname, aLastname, stitle, dtentered, aprofilesummary, completeurl from getapp where empid="+ applicationname +";", mycon);
             
             mycon.Open();
-
             myda.Fill(Ds, "getapp");
-
             mycon.Close();
 
             return Ds;
-
         }
 
         //get get application details for jobseeker

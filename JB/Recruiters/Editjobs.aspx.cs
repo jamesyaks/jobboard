@@ -153,13 +153,11 @@ namespace JB.Recruiters
             switch (e.Row.RowType)
             {
                 case DataControlRowType.DataRow:
-                    e.Row.Attributes.Add("onmouseover", "this.style.backgroundColor='#DEE1E7'");
-                    e.Row.Attributes.Add("onmouseout", "this.style.backgroundColor='White'");
+                    e.Row.Attributes.Add("class", "gridrowdb");
                     break;
                 default:
                     break;
             }
-
         }
 
         

@@ -102,7 +102,7 @@ namespace JB
 
             mycon.ConnectionString = myconstring;
 
-            MySqlDataAdapter myda = new MySqlDataAdapter("select replace(article_data, 'c:/testdir/', '/articles/')as article_data, sCompleteDesc, sWebsite, sEmailAddress from getallrec where empid = "+ empid +" limit 1;", mycon);
+            MySqlDataAdapter myda = new MySqlDataAdapter("select article_data as article_data, sCompleteDesc, sWebsite, sEmailAddress from getallrec where empid = "+ empid +" limit 1;", mycon);
 
             mycon.Open();
 
