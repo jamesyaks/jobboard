@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Recruiters.Master.cs"
+    Inherits="JB.Recruiters.Rec" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <title>Recruiters</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
+    <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
+    <link href="/styles/csrecruiter.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" class="upperwrop" runat="server">
+    <div id="cleftpanel">
+        <ul class="flist">
+            <li>
+                <asp:Image ID="Image11" runat="server" ImageUrl="~/images/go-home.png" />
+                <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                    OnClick="LinkButton44_Click" Width="100px">Site Home</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image13" runat="server" ImageUrl="~/images/dashboard.png" />
+                <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                    OnClick="LinkButton4_Click" Width="100px">Dashboard</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/recbasic.png" />
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="recmasterwhite" OnClick="LinkButton5_Click"
+                    CausesValidation="False" Width="100px">Basic Information</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image12" runat="server" ImageUrl="~/images/applications.png" />
+                <asp:LinkButton ID="LinkButton8" runat="server" CssClass="recmasterwhite" OnClick="LinkButton8_Click"
+                    Width="100px" CausesValidation="False">My Applications</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image5" runat="server" ImageUrl="~/images/Jobs.png" />
+                <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                    OnClick="LinkButton6_Click" Width="100px">Edit Jobs</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image10" runat="server" ImageUrl="~/images/pwdchange.png" />
+                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="recmasterwhite" OnClick="LinkButton3_Click"
+                    CausesValidation="False" Width="100px">Change password</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image6" runat="server" ImageUrl="~/images/AddJob.png" />
+                <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                    OnClick="LinkButton7_Click" Width="100px">Post a job</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image4" runat="server" ImageUrl="~/images/RecLogout.png" />
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="recmasterwhite" NavigateUrl="~/Logoff.aspx"
+                    Width="100px">Logout</asp:HyperLink>
+            </li>
+        </ul>
+    </div>
+    <div id="crightpanel">
+        <div style="left: 100px; top: 100px; width: 100%; height: 100%; overflow: auto;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="cleardata">
+    </div>
+    <footer>
+        <!-- bottom -->
+        <div id="cbottompanel">
+            <div style="text-align: right" class="setcpaneldotted">
+                <asp:Label ID="Label1" runat="server" CssClass="ftblack"></asp:Label>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>

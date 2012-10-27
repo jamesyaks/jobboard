@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+  <url>
+    <loc>http://182.186.199.232/</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/Default.aspx</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=30</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=1</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=2</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=3</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=4</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=5</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=6</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=7</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=8</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=9</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/JobDetails.aspx?JobID=10</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/jbprivacy.aspx</loc>
+  </url>
+  <url>
+    <loc>http://182.186.199.232/jbterms.aspx</loc>
+  </url>
+</urlset>

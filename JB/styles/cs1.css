@@ -1,0 +1,35 @@
+﻿.divheightsrch
+{
+    height: 4px;
+}
+.dvtabstop
+{
+    background-color: #000;
+    margin-left: 4px;
+    padding-left: 4px;
+    width: 100px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.divchkbxpop
+{
+    left: 100px;
+    height: 100px;
+    width: 200px;
+    overflow: auto;
+    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-size: .75em;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+#dvleftpanels4
+{
+    margin-left: 20px;
+}
+#dvleftpanels1, #dvleftpanels2, #dvleftpanels3
+{
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+}

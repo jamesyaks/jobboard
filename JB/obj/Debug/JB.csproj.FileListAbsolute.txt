@@ -1,0 +1,9 @@
+C:\stable0.2\JB\obj\Debug\ResolveAssemblyReference.cache
+C:\stable0.2\JB\bin\JB.dll
+C:\stable0.2\JB\bin\JB.pdb
+C:\stable0.2\JB\bin\AjaxControlToolkit.dll
+C:\stable0.2\JB\bin\MySql.Data.dll
+C:\stable0.2\JB\bin\MySql.Data.Entity.dll
+C:\stable0.2\JB\bin\MySql.Web.dll
+C:\stable0.2\JB\obj\Debug\JB.dll
+C:\stable0.2\JB\obj\Debug\JB.pdb

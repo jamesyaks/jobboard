@@ -1,0 +1,10 @@
+﻿<browsers>
+    <browser refID="Default">
+      <controlAdapters>
+        <!--<adapter controlType="System.Web.UI.WebControls.Label"
+                 adapterType="JB.Adapters.LabelAdapter" />-->          
+        <adapter controlType="System.Web.UI.WebControls.GridView"
+                 adapterType="JB.Adapters.GridViewAdapter" />
+      </controlAdapters>
+    </browser>
+</browsers>

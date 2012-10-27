@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="JB">
+</Property><Property Name="Solution File" Value="C:\Users\moeens\Desktop\JB\JB.sln">
+</Property><Property Name="User Options File" Value="C:\Users\moeens\Desktop\JB\JB.suo">
+</Property><Property Name="Date" Value="14 April 2011">
+</Property><Property Name="Time" Value="12:18">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="JB.sln" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB.sln">
+</Event><Event ErrorLevel="0" Project="" Source="JB.suo" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB.suo">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JB.csproj" Description="Project file successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JB.csproj">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JB.csproj.user" Description="Project user file successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JB.csproj.user">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Apples.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Apples.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Articles.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Articles.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Codeconverter.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Codeconverter.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveJobs.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveJobs.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveJobs.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveJobs.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveRecruiters.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveRecruiters.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveRecruiters.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveRecruiters.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedRecruiters.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedRecruiters.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedRecruiters.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedRecruiters.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMS.Master.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMS.Master.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMS.Master.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMS.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsAdmin.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsAdmin.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsAdmin.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsAdmin.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMSClass.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMSClass.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Cmshome.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Cmshome.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Cmshome.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Cmshome.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsRecruiter.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsRecruiter.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsRecruiter.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsRecruiter.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMSUSER.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMSUSER.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMSUSER.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMSUSER.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedJobs.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedJobs.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedJobs.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedJobs.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Default.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Default.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Default.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Default.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\EmpJobAdd.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\EmpJobAdd.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\FeaturedRecruiters.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\FeaturedRecruiters.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JOB.Master.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JOB.Master.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JOB.Master.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JOB.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Jobdetails.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Jobdetails.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Jobdetails.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Jobdetails.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Applications.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Applications.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Applications.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Applications.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Candidates.Master.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Candidates.Master.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Candidates.Master.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Candidates.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\DirectApplication.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\DirectApplication.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\DirectApplication.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\DirectApplication.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Login.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Login.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Login.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Login.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\UserApplication.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\UserApplication.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\UserApplication.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\UserApplication.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logins.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logins.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logins.Master.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logins.Master.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logins.Master.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logins.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logoff.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logoff.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logoff.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logoff.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Mainpagepopulator.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Mainpagepopulator.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\PwdHash.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\PwdHash.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\RecruiterCl.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\RecruiterCl.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\CurrentJobs.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\CurrentJobs.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\CurrentJobs.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\CurrentJobs.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Login.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Login.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Login.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Login.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Rec.Master.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Rec.Master.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Rec.Master.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Rec.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\AddJob.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\AddJob.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\AddJob.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\AddJob.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecruiterForm.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecruiterForm.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecruiterForm.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecruiterForm.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecUsers.aspx.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecUsers.aspx.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecUsers.aspx.designer.cs" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecUsers.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Web.config" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Web.config">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Default.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Default.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\breadcrumb1.gif" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\breadcrumb1.gif">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JOB.Master" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JOB.Master">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\jobmaster.css" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\jobmaster.css">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Login.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Login.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Login.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Login.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecruiterForm.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecruiterForm.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\getasset.gif" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\getasset.gif">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Recbasic.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Recbasic.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\RecLogout.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\RecLogout.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\RecPic.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\RecPic.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Recusers.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Recusers.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Rec.css" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Rec.css">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\Rec.Master" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\Rec.Master">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\JSeeker.css" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\JSeeker.css">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logins.Master" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logins.Master">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\AddJob.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\AddJob.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Jobs.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Jobs.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Login_Close.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Login_Close.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Candidates.Master" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Candidates.Master">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\CurrentJobs.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\CurrentJobs.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\AddJob.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\AddJob.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\scripts\jquery-1.3.2.min.js" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\scripts\jquery-1.3.2.min.js">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\scripts\jquery-1.4.1.min.js" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\scripts\jquery-1.4.1.min.js">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\scripts\jquery.autocomplete.js" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\scripts\jquery.autocomplete.js">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\css\jquery.autocomplete.css" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\css\jquery.autocomplete.css">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Dragger.js" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Dragger.js">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Apple_logo.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Apple_logo.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Calender.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Calender.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\hbo_logo.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\hbo_logo.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\hp-logo.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\hp-logo.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\ibm-logo.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\ibm-logo.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Recmarket.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Recmarket.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\sony_logo_section.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\sony_logo_section.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\TNT_Logo2.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\TNT_Logo2.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\U.jpg" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\U.jpg">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Jobdetails.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Jobdetails.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\Applications.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\Applications.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\DirectApplication.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\DirectApplication.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Recruiters\RecUsers.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Recruiters\RecUsers.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Search_Job.ashx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Search_Job.ashx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveJobs.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveJobs.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ActiveRecruiters.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ActiveRecruiters.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedRecruiters.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedRecruiters.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMS.css" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMS.css">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMS.Master" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMS.Master">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsAdmin.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsAdmin.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Cmshome.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Cmshome.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CmsRecruiter.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CmsRecruiter.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\CMSUSER.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\CMSUSER.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\ArchivedJobs.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\ArchivedJobs.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Cms\Default.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Cms\Default.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\active.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\active.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\amber.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\amber.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\applications.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\applications.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Awaiting.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Awaiting.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\credits.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\credits.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\debit.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\debit.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Delete.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Delete.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\green.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\green.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\KPI.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\KPI.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\mail.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\mail.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\mobilesite.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\mobilesite.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\money.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\money.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\multisite.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\multisite.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\promotion.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\promotion.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Recplugin.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Recplugin.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\red.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\red.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Sent.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Sent.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\skins.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\skins.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\Videoplugin.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\Videoplugin.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\images\XML.png" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\images\XML.png">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JobSeekers\UserApplication.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\JobSeekers\UserApplication.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\Logoff.aspx" Description="File successfully backed up as C:\Users\moeens\Desktop\JB\Backup\JB\Logoff.aspx">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JB.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="JB" Source="JB\JB.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="JB.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="JB.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JB" Source="JB\JB.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

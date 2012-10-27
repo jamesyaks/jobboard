@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Job.Master.cs" Inherits="JB.JOB" %>
+
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <!--add favicon-->
+    <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
+    <title>Ahrcloud | Jobboard free version</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
+    <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/styles/csjobmaster.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- 
+    summary
+    This code is liscenced by ahrcloud.com
+    under free creative common liscence, but 
+    attribution must be made to the author
+    site at www.ahrcloud.com or info@ahrcloud.com
+    
+    -->
+    <form id="form1" class="topwrap" runat="server">
+    <!-- top bar -->
+    <header>
+        <div id="topwrapper">
+            <!--hitems-->
+            <a href="/Default.aspx" class="jobdfttop">► Home</a>
+            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CssClass="jobdfttop" OnClick="LinkButton1_Click">► Recruiters</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CssClass="jobdfttop"
+                OnClick="LinkButton2_Click">► JobSeekers</asp:LinkButton>
+        </div>
+    </header>
+    <div align="center">
+        <div class="banner">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Brandimages/brand_defaulthometag.png" />
+        </div>
+        <div class="cleardata">
+        </div>
+        <div class="tpbar">
+        </div>
+        <!--contents-->
+        <div class="pgwidthset">
+            <div align="left" style="width: 1000px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div class="cleardata">
+    </div>
+    <!-- copy right-->
+    <footer>
+        <div class="jbfooter">
+            <hr />
+            <div class="ftlabel">
+                <img src="/images/ft_privacy.png" alt="privacy" />
+                <a href="/jbprivacy.aspx" class="fthlinkblack">Privacy</a>
+            </div>
+            <div class="ftlabel">
+                <img src="/images/ft_terms.png" alt="terms" />
+                <a href="/jbterms.aspx" class="fthlinkblack">Terms</a>
+            </div>
+            <div class="ftlabel">
+                <img src="/images/ft_copyinfo.png" runat="server" alt="copyright" />
+                <asp:Label ID="Label1" runat="server" CssClass="ftblack" Text="Copyright yourbrand 2011"></asp:Label>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>
