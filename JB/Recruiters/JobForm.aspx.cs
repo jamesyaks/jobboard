@@ -37,6 +37,31 @@ namespace JB.Recruiters
             }
         }
 
+        protected void Page_Init(object sender, EventArgs e)
+        {
+            CLMainpagepopulator mp = new CLMainpagepopulator();
+
+            //get locations
+            CheckBoxList2.DataSource = mp.getLocations();
+            CheckBoxList2.DataTextField = "sTerm";
+            CheckBoxList2.DataValueField = "Termid";
+            CheckBoxList2.DataBind();
+
+
+            //get industry
+            CheckBoxList1.DataSource = mp.getIndustries();
+            CheckBoxList1.DataTextField = "sTerm";
+            CheckBoxList1.DataValueField = "Termid";
+            CheckBoxList1.DataBind();
+
+
+            //get salary
+            CheckBoxList6.DataSource = mp.getsalaries();
+            CheckBoxList6.DataTextField = "sTerm";
+            CheckBoxList6.DataValueField = "Termid";
+            CheckBoxList6.DataBind();
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -63,36 +88,26 @@ namespace JB.Recruiters
             }
 
             CLMainpagepopulator mp = new CLMainpagepopulator();
+            ClJobs _jobc = new ClJobs();
 
             if (!IsPostBack)
             {
-
-                //get locations
-                CheckBoxList2.DataSource = mp.getLocations();
-                CheckBoxList2.DataTextField = "sTerm";
-                CheckBoxList2.DataValueField = "Termid";
-                CheckBoxList2.DataBind();
-
-
-                //get industry
-                CheckBoxList1.DataSource = mp.getIndustries();
-                CheckBoxList1.DataTextField = "sTerm";
-                CheckBoxList1.DataValueField = "Termid";
-                CheckBoxList1.DataBind();
-
-
-                //get salary
-                CheckBoxList6.DataSource = mp.getsalaries();
-                CheckBoxList6.DataTextField = "sTerm";
-                CheckBoxList6.DataValueField = "Termid";
-                CheckBoxList6.DataBind();
-
                 //
                 int editjobid = 0;
                 if (Request.QueryString["jobid"] != null)
                 {
                     editjobid = Convert.ToInt16(Request.QueryString["JobID"]);
                 }
+
+                //get recid
+                int recid = mp.RecName(Session["pusername"].ToString());
+
+                //check if this job belongs to current recruiter
+                if (_jobc.checkrecruiter(editjobid) != recid)
+                {
+                    Response.Redirect("rechome.aspx");
+                }
+
                 //fill in form.
                 string[] arrfil = mp.filljobform(editjobid);
 

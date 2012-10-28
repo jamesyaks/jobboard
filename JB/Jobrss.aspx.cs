@@ -20,7 +20,6 @@ namespace JB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             //please donot forget to add the httppath in web.config to setup feed for your website.
 
             // Clear any previous output from the buffer

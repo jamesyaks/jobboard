@@ -16,67 +16,55 @@ namespace JB
     /// </summary>
     public partial class Default : System.Web.UI.Page
     {
-
         protected void Page_Init(object sender, EventArgs e)
         {
-            CLMainpagepopulator mp = new CLMainpagepopulator();
+            CLMainpagepopulator _mp = new CLMainpagepopulator();
 
             //get salaries
-            CheckBoxList6.DataSource = mp.getSalary();
+            CheckBoxList6.DataSource = _mp.getSalary();
             CheckBoxList6.DataTextField = "sTerm";
             CheckBoxList6.DataValueField = "Termid";
             CheckBoxList6.DataBind();
 
-
             //get locations
-            CheckBoxList2.DataSource = mp.getLocations();
+            CheckBoxList2.DataSource =   _mp.getLocations();
             CheckBoxList2.DataTextField = "sTerm";
             CheckBoxList2.DataValueField = "Termid";
             CheckBoxList2.DataBind();
 
             //get industry
-            CheckBoxList1.DataSource = mp.getIndustries();
+            CheckBoxList1.DataSource = _mp.getIndustries();
             CheckBoxList1.DataTextField = "sTerm";
             CheckBoxList1.DataValueField = "Termid";
             CheckBoxList1.DataBind();
-
-            //main job binding
-            CLMainpagepopulator mpgp = new CLMainpagepopulator();
-            GridView1.DataSource = mpgp.getJobssingle();
-            GridView1.DataBind();
-
-
-            //featured Recruiters
-            ClFeaturedrecruiters frec = new ClFeaturedrecruiters();
-            GridView2.DataSource = frec.GetFRecs();
-            GridView2.DataBind();
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //main job binding
+            CLMainpagepopulator _mp = new CLMainpagepopulator();
+            GridView1.DataSource = _mp.getJobssingle();
+            GridView1.DataBind();
+            
+            //featured Recruiters
+            ClFeaturedrecruiters _frec = new ClFeaturedrecruiters();
+            GridView2.DataSource = _frec.GetFRecs();
+            GridView2.DataBind();
+            
             //set default inputs
-            TextBox2.Focus();
-            //Page.Form.DefaultButton = ImageButton2.UniqueID;
-
-            CLMainpagepopulator cmpag = new CLMainpagepopulator();
-
-            //constructor
-            CLMainpagepopulator mp = new CLMainpagepopulator();
+            TextBox2.Focus();            
 
             //get count of all jobs
-            Label13.Text = mp.getcountjobs() + " Jobs Advertized from " + mp.getcountrecswadvert() + " Recruiters";
-
+            Label13.Text = _mp.getcountjobs() + " Jobs Advertized from " + _mp.getcountrecswadvert() + " Recruiters";
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-
             if (Label13.Text.Contains("your search returned") == true)
             {
                 //only text box
                 CLSearchfilters sflt2 = new CLSearchfilters();
-
-                GridView1.DataSource = sflt2.applytitlefilter(TextBox2.Text, shortbuildfunc().ToString());
+                GridView1.DataSource = sflt2.applytitlefilter(TextBox2.Text, shortbuildfunc());
                 GridView1.PageIndex = e.NewPageIndex;
                 GridView1.DataBind();
             }
@@ -89,22 +77,20 @@ namespace JB
                 GridView1.DataBind();
             }
         }
-
-
-        //heart of search
-        public StringBuilder shortbuildfunc()
+                
+        private string shortbuildfunc()
         {
             StringBuilder shortbuild = new StringBuilder();
-
             bool ix = false;
+
+            shortbuild.Append(" and termid IN(");
 
             //insert salaries
             foreach (ListItem listsal in CheckBoxList6.Items)
             {
-
                 if (listsal.Selected == true)
                 {
-                    shortbuild.Append(" and termid =" + listsal.Value);
+                    shortbuild.Append(listsal.Value+",");
                     ix = true;
                 }
             }
@@ -114,9 +100,7 @@ namespace JB
             {
                 if (listite1.Selected == true)
                 {
-                    //search
-
-                    shortbuild.Append(" and termid =" + listite1.Value);
+                    shortbuild.Append(listite1.Value+",");
                     ix = true;
                 }
             }
@@ -124,25 +108,19 @@ namespace JB
             //industry
             foreach (ListItem listit2 in CheckBoxList1.Items)
             {
-
                 if (listit2.Selected == true)
-                {
-                    //search
-                    shortbuild.Append(" and termid=" + listit2.Value);
+                {  
+                    shortbuild.Append(listit2.Value+",");
                     ix = true;
                 }
             }
-
-
-
+            
             //insert contract
             foreach (ListItem listit3 in CheckBoxList3.Items)
             {
-
                 if (listit3.Selected == true)
                 {
-                    //search
-                    shortbuild.Append(" and termid=" + listit3.Value);
+                    shortbuild.Append(listit3.Value+",");
                     ix = true;
                 }
             }
@@ -150,11 +128,9 @@ namespace JB
             //add hours
             foreach (ListItem listit4 in CheckBoxList4.Items)
             {
-
                 if (listit4.Selected == true)
                 {
-                    //search
-                    shortbuild.Append(" and termid=" + listit4.Value);
+                    shortbuild.Append(listit4.Value + ",");
                     ix = true;
                 }
             }
@@ -162,31 +138,22 @@ namespace JB
             //add employer type
             foreach (ListItem listit5 in CheckBoxList5.Items)
             {
-
                 if (listit5.Selected == true)
-                {
-                    //search
-                    shortbuild.Append(" and termid=" + listit5.Value);
+                {                    
+                    shortbuild.Append(listit5.Value + ",");
                     ix = true;
                 }
             }
 
-            //shortbuild.Append(")");
+            var __searchstr = string.Empty;
 
             if (ix == true)
             {
-                shortbuild.Append(" and termid != 10000");
+                __searchstr = shortbuild.ToString().TrimEnd(',');
+                __searchstr = __searchstr + ")";
             }
 
-            else
-            {
-
-            }
-
-            
-
-            return shortbuild;
-
+            return __searchstr;
         }
 
         private void search_code()
@@ -195,7 +162,7 @@ namespace JB
             {
                 //only text box
                 CLSearchfilters sflt = new CLSearchfilters();
-                string criterion = shortbuildfunc().ToString();
+                string criterion = shortbuildfunc();
                 string titlian = TextBox2.Text;
 
                 GridView1.DataSource = sflt.applytitlefilter(titlian, criterion);
@@ -203,7 +170,6 @@ namespace JB
 
                 Label13.Text = "your search returned " + sflt.getsearchcounts(titlian, criterion) + " results";
             }
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -243,18 +209,9 @@ namespace JB
             Response.Redirect("Default.aspx");
         }
 
-
         protected void LinkButton5_Click(object sender, EventArgs e)
         {
             Response.Redirect("default.aspx?ival=");
-        }
-
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-            if (TextBox2.Text.Length > 0)
-            {
-                search_code();
-            }
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)

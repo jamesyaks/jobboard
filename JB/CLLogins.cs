@@ -503,18 +503,12 @@ namespace JB
             MySqlConnection connreader = new MySqlConnection();
              
             connreader.ConnectionString =  Clconnect.makeconn();
-
-            //get hashcode
-            //
             CLPwdhash passhash = new CLPwdhash();
 
             int plhash = 0;
 
-
             using (connreader)
             {
-
-
                 MySqlCommand command = new MySqlCommand("SELECT uusertype from users where uusername = '"+ uusername +"'and uusertype="+ uusertypes +" ; ", connreader);
                 connreader.Open();
 
@@ -534,11 +528,7 @@ namespace JB
                 reader.Close();
             }
 
-
             return plhash;
-      
-
         }
-
     }
 }
