@@ -15,21 +15,21 @@
         <br />
         <asp:Label ID="Label12" runat="server" CssClass="Stylea2" Text="FirstName"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox3"
             CssClass="Stylea1" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label13" runat="server" CssClass="Stylea2" Text="LastName"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox4"
             CssClass="Stylea1" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label14" runat="server" CssClass="Stylea2" Text="Date of Birth"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:CalendarExtender ID="TextBox5_CalendarExtender" runat="server" Enabled="True"
             TargetControlID="TextBox5" PopupButtonID="Image8" Format="dd/M/yyyy">
         </asp:CalendarExtender>
@@ -39,14 +39,14 @@
         <br />
         <asp:Label ID="Label20" runat="server" CssClass="Stylea2" Text="Email"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6"
             CssClass="Stylea2" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label16" runat="server" CssClass="Stylea2" Text="Profile Summary"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt" Height="100px" TextMode="MultiLine"
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" Height="100px" TextMode="MultiLine"
             Width="300px" Wrap="true"></asp:TextBox>
         <br />
         <br />

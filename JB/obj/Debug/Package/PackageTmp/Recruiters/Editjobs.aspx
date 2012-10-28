@@ -9,10 +9,10 @@
         <asp:Label ID="Label5" runat="server" CssClass="ftwhitebd" Text="Job Edits"></asp:Label>
     </div>
     <div class="setrightbg">
-        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/red.png" />
-        <asp:LinkButton ID="LinkButton4" runat="server" CssClass="StyleGray" OnClick="LinkButton4_Click">Active</asp:LinkButton>
-        <asp:Image ID="Image12" runat="server" ImageUrl="~/images/green.png" />
-        <asp:LinkButton ID="LinkButton5" runat="server" CssClass="StyleBlack" OnClick="LinkButton5_Click">Archived</asp:LinkButton>
+        <asp:Image ID="Image11" CssClass="img_lt_red" runat="server" ImageUrl="/images/sprite.gif" />
+        <asp:LinkButton ID="LinkButton4" runat="server" CssClass="ftgray" OnClick="LinkButton4_Click">Active</asp:LinkButton>
+        <asp:Image ID="Image12" runat="server" CssClass="img_lt_green" ImageUrl="/images/sprite.gif" />
+        <asp:LinkButton ID="LinkButton5" runat="server" CssClass="ftgray" OnClick="LinkButton5_Click">Archived</asp:LinkButton>
         <!-- hookup ajax-->
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>

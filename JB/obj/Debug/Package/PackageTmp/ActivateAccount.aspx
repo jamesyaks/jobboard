@@ -14,15 +14,17 @@
     -->
     <div class="box2">
         <div class="activateactopbanner">
-            <asp:Label ID="Label21" runat="server" CssClass="Stylea1" Text="Account Status Updating..."></asp:Label>
+            <asp:Label ID="Label21" runat="server" CssClass="ftwhite" 
+                Text="Account Status Updating..."></asp:Label>
         </div>
         <br />
         <div class="leftdiv">
         </div>
         <div class="pdleft4">
             <asp:Label ID="Label1" runat="server" Text="Your account has been activated and you will be redirected automatically, if not please click "
-                CssClass="Stylea8"></asp:Label>
-            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="Stylea101" NavigateUrl="~/Default.aspx"> here...</asp:HyperLink>
+                CssClass="ftgray"></asp:Label>
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="fontred" 
+                NavigateUrl="~/Default.aspx"> here...</asp:HyperLink>
         </div>
         <br />
         <br />

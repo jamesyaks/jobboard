@@ -12,14 +12,14 @@
         <br />
         <asp:Label ID="Label16" runat="server" CssClass="ftgraybd" Text="Profile Summary"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt" Height="100px" TextMode="MultiLine"
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" Height="100px" TextMode="MultiLine"
              Wrap="true"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2"
             CssClass="Stylea1" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label17" runat="server" CssClass="ftgraybd" Text="Upload CV"></asp:Label>
         <br />
-        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="TextboxSt" />
+        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="TextBoxStyle" />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="FileUpload1"
             CssClass="Stylea1" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />

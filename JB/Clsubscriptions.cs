@@ -11,11 +11,9 @@ namespace JB
         //add email subscriptions
         public void Addsubscriptions(string emailaddr, int catid, int termid)
         {
-            
             using (MySqlConnection con = new MySqlConnection())
             {
-                 
-                con.ConnectionString =  Clconnect.makeconn();
+                con.ConnectionString = Clconnect.makeconn();
                 con.Open();
 
                 using (MySqlCommand com = con.CreateCommand())
@@ -32,9 +30,6 @@ namespace JB
 
                 con.Close();
             }
-
-
         }
-
     }
 }

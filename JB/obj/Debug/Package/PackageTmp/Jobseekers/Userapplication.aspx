@@ -14,54 +14,54 @@
     <div class="setrightbg">
         <asp:Label ID="Label10" runat="server" CssClass="ftgraybd" Text="First Name"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label11" runat="server" CssClass="ftgraybd" Text="Last Name"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label12" runat="server" CssClass="ftgraybd" Text="Address1"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label13" runat="server" CssClass="ftgraybd" Text="Address2"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <asp:Label ID="Label14" runat="server" CssClass="ftgraybd" Text="Address3"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <asp:Label ID="Label15" runat="server" CssClass="ftgraybd" Text="Town"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox7" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox7" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <asp:Label ID="Label16" runat="server" CssClass="ftgraybd" Text="County"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox8" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox8" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <asp:Label ID="Label24" runat="server" CssClass="ftgraybd" Text="Country"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox16" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox16" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox16"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label17" runat="server" CssClass="ftgraybd" Text="PostCode"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox9" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox9" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox9"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label25" runat="server" CssClass="ftgraybd" Text="Date of Birth"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox17" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox17" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:CalendarExtender ID="TextBox17_CalendarExtender" runat="server" Enabled="True"
             TargetControlID="TextBox17" PopupButtonID="Image8" Format="dd/M/yyyy">
         </asp:CalendarExtender>
@@ -71,7 +71,7 @@
         <br />
         <asp:Label ID="Label20" runat="server" CssClass="ftgraybd" Text="Email"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox11" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox11" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:Label ID="Label21" runat="server" CssClass="ftgray" Text="**This will be your user name"></asp:Label>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox11"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
@@ -81,16 +81,16 @@
         <br />
         <asp:Label ID="Label22" runat="server" CssClass="ftgraybd" Text="Home Phone"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox14" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox14" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <asp:Label ID="Label23" runat="server" CssClass="ftgraybd" Text="Work Phone"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox15" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox15" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="Label18" runat="server" CssClass="ftgraybd" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox12" runat="server" CssClass="TextboxSt" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TextBox12" runat="server" CssClass="TextBoxStyle" TextMode="Password"></asp:TextBox>
         <asp:PasswordStrength ID="TextBox12_PasswordStrength" runat="server" Enabled="True"
             TargetControlID="TextBox12" DisplayPosition="RightSide" StrengthIndicatorType="Text"
             PreferredPasswordLength="10" PrefixText="Strength:" TextCssClass="Stylepwd" MinimumNumericCharacters="0"
@@ -101,7 +101,7 @@
         <br />
         <asp:Label ID="Label28" runat="server" CssClass="ftgraybd" Text="Confirm Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox18" runat="server" CssClass="TextboxSt" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TextBox18" runat="server" CssClass="TextBoxStyle" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox18"
             CssClass="Stylepwd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
@@ -110,13 +110,13 @@
         <br />
         <asp:Label ID="Label19" runat="server" CssClass="ftgraybd" Text="Password Hint"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox13" runat="server" CssClass="TextboxSt"></asp:TextBox>
+        <asp:TextBox ID="TextBox13" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox13"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <asp:Panel ID="Panel1" runat="server">
             <asp:Label ID="Label30" runat="server" CssClass="ftgraybd" Text="Confirm you are human"></asp:Label>
             <br />
-            <asp:TextBox ID="capts" runat="server" CssClass="TextboxSt"></asp:TextBox>
+            <asp:TextBox ID="capts" runat="server" CssClass="TextBoxStyle"></asp:TextBox>
             <img alt="" src="
                                 <%
           

@@ -13,13 +13,13 @@
         <br />
         <div id="applicationsbreak">
             <div>
-                <img alt="" src="../images/nm_one.png" /> <asp:Label ID="Label11" runat="server"
+                <img alt="one" class="img_lt_one" src="/images/sprite.gif" /> <asp:Label ID="Label11" runat="server"
                     CssClass="simplefontblack" Text="Register to receive jobs by email!" Width="200px"></asp:Label>
                 <asp:Button ID="Button2" runat="server" CssClass="button" Text="Register   " OnClick="Button2_Click" />
             </div>
             <br />
             <div>
-                <img alt="" src="../images/nm_two.png" /> <asp:Label ID="Label12" runat="server"
+                <img alt="two" class="img_lt_two" src="/images/sprite.gif" /> <asp:Label ID="Label12" runat="server"
                     CssClass="simplefontblack" Text="Continue without registration" Width="200px"></asp:Label>
                 <asp:Button ID="Button3" runat="server" CssClass="button" Text="Just Apply" OnClick="Button3_Click" />
             </div>

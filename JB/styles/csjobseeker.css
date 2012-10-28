@@ -1,4 +1,44 @@
-﻿body
+﻿/*sprites*/
+
+.cn_home, .cn_dashboard, .cn_app, .cn_basic, .cn_password, .cn_logout
+{
+    width: 14px;
+    height: 14px;
+    background-image: url('/images/jobseekericon.png');
+    background-repeat: no-repeat;
+}
+
+.cn_home
+{
+    background-position: 0px 0px;
+}
+
+.cn_dashboard
+{
+    background-position: 0px -22px;
+}
+
+.cn_app
+{
+    background-position: 0px -44px;
+}
+
+.cn_basic
+{
+    background-position: 0px -64px;
+}
+
+.cn_password
+{
+    background-position: 0px -88px;
+}
+
+.cn_logout
+{
+    background-position: -1px -106px;
+}
+
+body
 {
     background-color: #000;
 }
@@ -68,7 +108,7 @@
     border-top-width: 1px;
     border-top-style: dotted;
 }
-.TextboxStover
+.TextBoxStyleover
 {
     border-collapse: collapse;
     background-color: silver;
@@ -91,7 +131,7 @@
 .backgrdstyle
 {
     height: 30px;
-    background-color: #CC0000;    
+    background-color: #CC0000;
     padding: 2px 0px 0px 6px;
 }
 .ftblack
@@ -113,7 +153,7 @@
     border-top-width: 2px;
     border-collapse: collapse;
 }
-.TextboxSt
+.TextBoxStyle
 {
     border-collapse: collapse;
     font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;

@@ -9,14 +9,14 @@
         <br />
         <asp:Label ID="Label10" runat="server" CssClass="ftblack" Text="Username"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt">adam@ahrcloud.com</asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle">adam@ahrcloud.com</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"
             CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label11" runat="server" CssClass="ftblack" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" CssClass="TextboxSt">test</asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" CssClass="TextBoxStyle">test</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3"
             CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />

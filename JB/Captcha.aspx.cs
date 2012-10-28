@@ -25,7 +25,7 @@ namespace JB
 
             Color FontColor = Color.WhiteSmoke;
             Color BackColor = Color.FromName("#000000");
-            String FontName = "Times New Roman";
+            String FontName = "Courier";
             int FontSize = 10;
             int Height = 16;
             int Width = 110;
@@ -56,7 +56,7 @@ namespace JB
             Response.ContentType = "image/jpeg";
             bitmap.Save(Response.OutputStream, ImageFormat.Jpeg);
 
-
+            GC.Collect();            
         }
     }
 }

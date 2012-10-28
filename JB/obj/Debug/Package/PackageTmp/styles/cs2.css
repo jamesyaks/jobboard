@@ -1,4 +1,73 @@
-﻿
+﻿/*sprites*/
+
+.img_lt_blog, .img_lt_contact, .img_lt_users, .img_lt_mail, .img_lt_rss, .img_lt_terms, .img_lt_privacy, .img_lt_copyright, .img_lt_one, .img_lt_two, .img_lt_red, .img_lt_green
+{
+    width: 12px;
+    height: 12px;
+    background-image: url('/images/icons.png');
+    background-repeat: no-repeat;
+}
+
+.img_lt_rss
+{
+    background-position: 0px -52px;
+}
+
+.img_lt_blog
+{
+    background-position: 0px 0px;
+}
+
+.img_lt_contact
+{
+    background-position: 0px -36px;
+}
+
+.img_lt_users
+{
+    background-position: 0px -66px;
+}
+
+.img_lt_mail
+{
+    background-position: 0px -10px;
+}
+
+.img_lt_copyright
+{
+    background-position: 0px -82px;
+}
+
+.img_lt_terms
+{
+    background-position: 0px -25px;
+}
+
+.img_lt_privacy
+{
+    background-position: 0px -96px;
+}
+
+.img_lt_one
+{
+    background-position: 0px -122px;
+}
+
+.img_lt_two
+{
+    background-position: 0px -108px;
+}
+
+.img_lt_red
+{
+    background-position: 0px -159px;
+}
+
+.img_lt_green
+{
+    background-position: 0px -149px;
+}
+
 .cfooter
 {
     background-color: #fff;
@@ -25,7 +94,7 @@
     float: left;
 }
 
-.TextboxSt
+.TextBoxStyle
 {
     border-collapse: collapse;
     font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
@@ -41,7 +110,7 @@
     max-width: 200px;
 }
 
-.TextboxSt:hover
+.TextBoxStyle:hover
 {
     border-color: #000;
     background-color: #DEE1E7;
@@ -313,8 +382,7 @@ h1, h2, h3, h4
 }
 body
 {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0;
 }
 .banner
 {
@@ -328,8 +396,8 @@ body
 }
 .pgwidthset
 {
-    float: left;
-    width: 100%;
+    width: 1000px;
+    margin: 0px auto;
 }
 .leftsbanner
 {
@@ -359,19 +427,14 @@ body
 }
 .jbfooter
 {
-    padding-bottom: 2px;
-    vertical-align: middle;
-    width: 1000px;
-    margin: 0 auto;
-}
-.dvbrker12
-{
-    height: 1px;
+    padding: 2px 0px 2px 0px;
+    width: 100%;
+    margin: 0px auto;
+    border-top: 6px solid #ccc;
 }
 .topwrap
 {
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
 }
 #topwrapper
 {
@@ -594,16 +657,11 @@ body
     color: #fff;
     background-color: #a5a5a5;
 }
-.tpboundbrdrmover
-{
-    background: #cdc5bf;
-    border-bottom: 1px dotted #000;
-    width: 210px;
-}
+
 .tpboundbrdr
 {
     border-bottom: 1px dotted #000;
-    width: 210px;
+    width: 100%;
 }
 
 #internalclm

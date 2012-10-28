@@ -21,8 +21,7 @@
     This code is liscenced by ahrcloud.com
     under free creative common liscence, but 
     attribution must be made to the author
-    site at www.ahrcloud.com or info@ahrcloud.com
-    
+    site at www.ahrcloud.com or info@ahrcloud.com    
     -->
     <form id="form1" class="topwrap" runat="server">
     <!-- top bar -->
@@ -30,47 +29,43 @@
         <div id="topwrapper">
             <!--hitems-->
             <a href="/Default.aspx" class="jobdfttop">► Home</a>
-            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CssClass="jobdfttop" OnClick="LinkButton1_Click">► Recruiters</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CssClass="jobdfttop"
+                OnClick="LinkButton1_Click">► Recruiters</asp:LinkButton>
             <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CssClass="jobdfttop"
                 OnClick="LinkButton2_Click">► JobSeekers</asp:LinkButton>
         </div>
     </header>
-    <div align="center">
-        <div class="banner">
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/Brandimages/brand_defaulthometag.png" />
-        </div>
-        <div class="cleardata">
-        </div>
-        <div class="tpbar">
-        </div>
-        <!--contents-->
-        <div class="pgwidthset">
-            <div align="left" style="width: 1000px;">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-        </div>
+    <div class="banner">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Brandimages/brand_defaulthometag.png" />
     </div>
     <div class="cleardata">
     </div>
-    <!-- copy right-->
+    <div class="tpbar">
+    </div>
+    <!--contents-->
+    <div class="pgwidthset">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+         <div class="cleardata">
+    </div>
     <footer>
         <div class="jbfooter">
-            <hr />
             <div class="ftlabel">
-                <img src="/images/ft_privacy.png" alt="privacy" />
+                <img class="img_lt_privacy" src="/images/sprite.gif" alt="privacy" />
                 <a href="/jbprivacy.aspx" class="fthlinkblack">Privacy</a>
             </div>
             <div class="ftlabel">
-                <img src="/images/ft_terms.png" alt="terms" />
+                <img class="img_lt_terms" src="/images/sprite.gif" alt="terms" />
                 <a href="/jbterms.aspx" class="fthlinkblack">Terms</a>
             </div>
             <div class="ftlabel">
-                <img src="/images/ft_copyinfo.png" runat="server" alt="copyright" />
+                <img id="Img1" class="img_lt_copyright" src="/images/sprite.gif" runat="server" alt="copyright" />
                 <asp:Label ID="Label1" runat="server" CssClass="ftblack" Text="Copyright yourbrand 2011"></asp:Label>
             </div>
         </div>
     </footer>
+    </div>
+   
     </form>
 </body>
 </html>

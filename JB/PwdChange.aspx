@@ -23,7 +23,7 @@
         <asp:Label ID="Label1" runat="server" Text="New password" CssClass="StyleRa1"></asp:Label>
     </div>
     <div class="pwleft">
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextboxSt" TextMode="Password"
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextBoxStyle" TextMode="Password"
             Width="200px" autofocus="autofocus"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
             CssClass="Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
@@ -41,7 +41,7 @@
         <asp:Label ID="Label2" runat="server" Text="Confirm password" CssClass="StyleRa1"></asp:Label>
     </div>
     <div class="pwleft">
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt" TextMode="Password"
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" TextMode="Password"
             Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2"
             CssClass="Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>

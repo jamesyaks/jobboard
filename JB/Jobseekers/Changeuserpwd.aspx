@@ -12,14 +12,14 @@
     <div class="setrightbg">
         <asp:Label ID="Label1" runat="server" CssClass="ftgraybd" Text="Old password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextboxSt" Width="150px" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextBoxStyle" Width="150px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label2" runat="server" CssClass="ftgraybd" Text="New password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt" Width="150px" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" Width="150px" TextMode="Password"></asp:TextBox>
         <asp:PasswordStrength ID="TextBox2_PasswordStrength" runat="server" Enabled="True"
             TargetControlID="TextBox2" DisplayPosition="RightSide" StrengthIndicatorType="Text"
             PreferredPasswordLength="10" PrefixText="Strength:" TextCssClass="Stylepwd" MinimumNumericCharacters="0"
@@ -31,7 +31,7 @@
         <br />
         <asp:Label ID="Label3" runat="server" CssClass="ftgraybd" Text="Confirm password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextboxSt" Width="150px" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextBoxStyle" Width="150px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />

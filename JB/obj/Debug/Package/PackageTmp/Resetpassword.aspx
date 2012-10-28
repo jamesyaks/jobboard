@@ -20,7 +20,7 @@
         <br />
         <asp:Label ID="Label1" runat="server" Text="Email Address" CssClass="StyleRa1"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
             CssClass="Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
         

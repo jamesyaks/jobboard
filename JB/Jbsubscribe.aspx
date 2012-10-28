@@ -131,7 +131,7 @@
             </div>
             <br />
             <div id="dvleftpanels4">
-                <asp:TextBox ID="Emailsubs" CssClass="TextboxSt" runat="server" Width="200px" autofocus="autofocus"></asp:TextBox>
+                <asp:TextBox ID="Emailsubs" CssClass="TextBoxStyle" runat="server" Width="200px" autofocus="autofocus"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Emailsubs"
                     CssClass="simplefontblack" ErrorMessage="X"></asp:RequiredFieldValidator>
                 <asp:Button ID="Button1" runat="server" Text="Subscribe" CssClass="button" OnClick="Button1_Click" />

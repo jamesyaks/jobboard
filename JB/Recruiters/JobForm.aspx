@@ -13,25 +13,25 @@
     <div class="setrightbg">
         <asp:Label ID="Label1" runat="server" CssClass="ftgraybd" Text="JobTitle"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="X"
             ControlToValidate="TextBox1" CssClass="ftgraybd"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label2" runat="server" CssClass="ftgraybd" Text="Short Description"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextboxSt" Height="50px" TextMode="MultiLine"
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" Height="50px" TextMode="MultiLine"
             Wrap="True" Width="400px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="X"
             ControlToValidate="TextBox2" CssClass="ftgraybd"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label13" runat="server" CssClass="ftgraybd" Text="Details"></asp:Label>
         <br />
-        <asp:TextBox ID="Editor1" runat="server" CssClass="TextboxSt" Height="50px" TextMode="MultiLine"
+        <asp:TextBox ID="Editor1" runat="server" CssClass="TextBoxStyle" Height="50px" TextMode="MultiLine"
             Wrap="True" Width="400px"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" CssClass="ftgraybd" Text="Posting Start Date"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:CalendarExtender ID="TextBox3_CalendarExtender" runat="server" Format="dd/M/yyyy"
             Enabled="True" TargetControlID="TextBox3" PopupButtonID="Image8">
         </asp:CalendarExtender>
@@ -42,7 +42,7 @@
         <br />
         <asp:Label ID="Label4" runat="server" CssClass="ftgraybd" Text="Posting End Date"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:CalendarExtender ID="TextBox4_CalendarExtender" runat="server" Enabled="True"
             TargetControlID="TextBox4" PopupButtonID="Image9" Format="dd/M/yyyy">
         </asp:CalendarExtender>
@@ -104,13 +104,13 @@
         <br />
         <asp:Label ID="Label11" runat="server" CssClass="ftgraybd" Text="Salary Text"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="TextBox5"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label12" runat="server" CssClass="ftgraybd" Text="Job Ref #"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextboxSt" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="TextBox6" runat="server" CssClass="TextBoxStyle" Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="TextBox6"
             CssClass="ftgraybd" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />

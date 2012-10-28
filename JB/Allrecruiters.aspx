@@ -56,7 +56,7 @@
                                     <asp:Label ID="Label2" runat="server" CssClass="Stylea2" Text='<%# Bind("totaljobs") %>'></asp:Label>
                                     <asp:Label ID="Label13" runat="server" CssClass="Stylea2" Text="jobs"></asp:Label>
                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("Empid", "Recdetails.aspx?Empid={0}") %>'
-                                        rel="facebox" Text="more..." CssClass="Stylea8"></asp:HyperLink>
+                                        rel="facebox" Text="more..." CssClass="fontred"></asp:HyperLink>
                                     <br />
                                     <br />
                                 </div>

@@ -12,7 +12,7 @@
     <div class="setrightbg">
         <!-- zoom level adjustment -->
         <div id="zoomslevel">
-            <asp:DropDownList ID="zoomer" CssClass="TextboxSt" runat="server" AutoPostBack="true">
+            <asp:DropDownList ID="zoomer" CssClass="TextBoxStyle" runat="server" AutoPostBack="true">
                 <asp:ListItem Selected="True" Value="200">Zoom Level: 200</asp:ListItem>
                 <asp:ListItem Value="300">Zoom Level: 300</asp:ListItem>
                 <asp:ListItem Value="400">Zoom Level: 400</asp:ListItem>

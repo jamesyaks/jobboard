@@ -13,7 +13,6 @@ namespace JB.Adapters
         {
             //paging is not optimzed for jobs more than 1000, please extend 
             //this code to handle more paging your self.
-         
             GridView gridView = Control as GridView;
 
             if (gridView.AllowPaging && gridView.PageCount > 1)

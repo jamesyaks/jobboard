@@ -96,68 +96,17 @@
     <Content Include="Brandimages\brand_defaulthometag.png" />
     <Content Include="Brandimages\brand_login.png" />
     <Content Include="Confirm.aspx" />
-    <Content Include="Confirmation.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Captcha.aspx" />
     <Content Include="dll\AjaxControlToolkit.dll" />
     <Content Include="Global.asax" />
-    <Content Include="images\active.png" />
-    <Content Include="images\AddJob.png" />
-    <Content Include="images\amber.png" />
-    <Content Include="images\applications.png" />
-    <Content Include="images\Awaiting.png" />
-    <Content Include="images\breadcrumb1.gif" />
-    <Content Include="images\bullet_gray.gif" />
-    <Content Include="images\Calender.png" />
-    <Content Include="images\can_keys.png" />
-    <Content Include="images\close.gif" />
-    <Content Include="images\close2.png" />
-    <Content Include="images\closelabel.png" />
-    <Content Include="images\dashboard.png" />
-    <Content Include="images\debit.png" />
-    <Content Include="images\Delete.png" />
-    <Content Include="images\dv_minus.gif" />
-    <Content Include="images\dv_plus.gif" />
-    <Content Include="images\edijobs.png" />
+    <Content Include="images\checked.png" />
     <Content Include="images\favicon.ico" />
-    <Content Include="images\filters.png" />
-    <Content Include="images\ft_copyinfo.png" />
-    <Content Include="images\ft_privacy.png" />
-    <Content Include="images\ft_rss.png" />
-    <Content Include="images\ft_terms.png" />
-    <Content Include="images\go-home.png" />
-    <Content Include="images\green.png" />
-    <Content Include="images\Jobs.png" />
-    <Content Include="images\KPI.png" />
-    <Content Include="images\loaders.gif" />
-    <Content Include="images\lt_add.png" />
-    <Content Include="images\lt_blog.png" />
-    <Content Include="images\lt_calc.png" />
-    <Content Include="images\lt_contact.png" />
-    <Content Include="images\lt_maill.png" />
-    <Content Include="images\lt_remove.png" />
-    <Content Include="images\lt_rss.png" />
-    <Content Include="images\lt_trending.png" />
-    <Content Include="images\lt_users.png" />
-    <Content Include="images\mail.png" />
-    <Content Include="images\mobilesite.png" />
-    <Content Include="images\money.png" />
-    <Content Include="images\multisite.png" />
-    <Content Include="images\nm_one.png" />
-    <Content Include="images\nm_two.png" />
-    <Content Include="images\processing_loader.gif" />
-    <Content Include="images\progresspan.gif" />
-    <Content Include="images\promotion.png" />
-    <Content Include="images\pwdchange.png" />
-    <Content Include="images\px_lined.gif" />
-    <Content Include="images\Recbasic.png" />
-    <Content Include="images\RecLogout.png" />
-    <Content Include="images\Recmarket.png" />
-    <Content Include="images\RecPic.png" />
-    <Content Include="images\Recplugin.png" />
-    <Content Include="images\Recusers.png" />
-    <Content Include="images\red.png" />
-    <Content Include="images\U.jpg" />
+    <Content Include="images\icons.png" />
+    <Content Include="images\jobseekericon.png" />
+    <Content Include="images\preloader.gif" />
+    <Content Include="images\recruitericons.png" />
+    <Content Include="images\sprite.gif" />
     <Content Include="Jbprivacy.aspx" />
     <Content Include="Jbsubscribe.aspx" />
     <Content Include="Jbterms.aspx" />
@@ -168,8 +117,8 @@
     <Content Include="styles\cs1.css" />
     <Content Include="styles\cs2.css" />
     <Content Include="EmailTemplates\ApplicationConfirmation.htm" />
-    <Content Include="EmailTemplates\pwdreset.htm" />
-    <Content Include="EmailTemplates\Usersignup.htm" />
+    <Content Include="EmailTemplates\PasswordReset.htm" />
+    <Content Include="EmailTemplates\UserSignup.htm" />
     <Content Include="Jobseekers\Changeuserpwd.aspx" />
     <Content Include="Jobseekers\Candidateapplication.aspx" />
     <Content Include="Jobseekers\Jobseekerhome.aspx" />
@@ -183,7 +132,6 @@
     <Content Include="Recruiters\Recapplicationdetail.aspx" />
     <Content Include="Recruiters\Changerecpwd.aspx" />
     <Content Include="Recruiters\Rechome.aspx" />
-    <Content Include="Recruiters\Recsimpleconfirm.aspx" />
     <Content Include="Recruiters\Recapplication.aspx" />
     <Content Include="Scripts\facebox\facebox.css" />
     <Content Include="Scripts\facebox\facebox.js" />
@@ -211,6 +159,7 @@
     <Compile Include="Allrecruiters.aspx.designer.cs">
       <DependentUpon>Allrecruiters.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClCache.cs" />
     <Compile Include="CLCaptchacls.cs" />
     <Compile Include="ClApps.cs" />
     <Compile Include="ClArticles.cs" />
@@ -236,13 +185,6 @@
     </Compile>
     <Compile Include="Confirm.aspx.designer.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Confirmation.aspx.cs">
-      <DependentUpon>Confirmation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Confirmation.aspx.designer.cs">
-      <DependentUpon>Confirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -409,13 +351,6 @@
     </Compile>
     <Compile Include="Recruiters\Rechome.aspx.designer.cs">
       <DependentUpon>Rechome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Recruiters\Recsimpleconfirm.aspx.cs">
-      <DependentUpon>Recsimpleconfirm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Recruiters\Recsimpleconfirm.aspx.designer.cs">
-      <DependentUpon>Recsimpleconfirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="CLLogins.cs" />
     <Compile Include="Logins.Master.cs">

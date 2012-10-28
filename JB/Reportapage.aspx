@@ -26,7 +26,7 @@
         <asp:Label ID="Label2" runat="server" CssClass="simplefontblack" Text="if none of the above please fill in the text box below."></asp:Label>
         <br />
         <br />
-        <asp:TextBox ID="spamreasons" runat="server" CssClass="TextboxSt" autofocus="autofocus"></asp:TextBox><br />
+        <asp:TextBox ID="spamreasons" runat="server" CssClass="TextBoxStyle" autofocus="autofocus"></asp:TextBox><br />
         <br />
         <asp:Button ID="Button1" runat="server" CssClass="button" Text="Report" OnClick="Button1_Click" />
         <asp:Button ID="Button2" runat="server" CssClass="button" Text="Cancel" OnClick="Button2_Click" />

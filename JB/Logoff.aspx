@@ -22,7 +22,7 @@
     
     -->
     <form id="form1" runat="server">
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/active.png" />
+    <asp:Image ID="Image1" runat="server" ImageUrl="/images/checked.png" />
     <asp:Label ID="Label1" runat="server" Text="Please click " CssClass="Stylea2"></asp:Label>
     <asp:LinkButton ID="LinkButton2" runat="server" CssClass="Stylea101" OnClick="LinkButton2_Click">here</asp:LinkButton>
     <asp:Label ID="Label2" runat="server" Text=" if not redirected automatically" CssClass="Stylea2"></asp:Label>

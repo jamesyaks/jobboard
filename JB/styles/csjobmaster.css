@@ -136,10 +136,9 @@
 }
 #dpabar
 {
-    width: 940px;
-    height: 8px;
-    background-image: url(/images/px_lined.gif);
-    background-repeat: repeat;
+    width: 950px;
+    height: 8px;    
+    background-color: #ccc;
     margin: 0 auto;
 }
 #reportpg

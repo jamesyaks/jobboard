@@ -6,14 +6,13 @@
 <head runat="server">
     <title></title>
 </head>
-<body style="font-family: Webdings">
-<!-- 
+<body>
+    <!-- 
     summary
     This code is liscenced by ahrcloud.com
     under free creative common liscence, but 
     attribution must be made to the author
-    site at www.ahrcloud.com or info@ahrcloud.com
-    
+    site at www.ahrcloud.com or info@ahrcloud.com    
     -->
     <form id="form1" runat="server">
     <div>

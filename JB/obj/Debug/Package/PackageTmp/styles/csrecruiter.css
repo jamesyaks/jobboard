@@ -1,4 +1,53 @@
-﻿
+﻿/*sprites*/
+
+.rc_home, .rc_dashboard, .rc_app, .rc_basic, .rc_password, .rc_logout, .rc_edit, .rc_post
+{
+    width: 16px;
+    height: 16px;
+    background-image: url('/images/recruitericons.png');
+    background-repeat: no-repeat;
+}
+
+.rc_home
+{
+    background-position: 0px 2px;
+}
+
+.rc_edit
+{
+    background-position: 0px -62px;
+}
+
+.rc_post
+{
+    background-position: 0px -128px;
+}
+
+.rc_dashboard
+{
+    background-position: 0px -20px;
+}
+
+.rc_app
+{
+    background-position: 0px -84px;
+}
+
+.rc_basic
+{
+    background-position: 0px -44px;
+}
+
+.rc_password
+{
+    background-position: 0px -108px;
+}
+
+.rc_logout
+{
+    background-position: -1px -144px;
+}
+
 body
 {
     background-color: #000;
