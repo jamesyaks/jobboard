@@ -1,224 +1,185 @@
 ﻿/*sprites*/
 
-.rc_home, .rc_dashboard, .rc_app, .rc_basic, .rc_password, .rc_logout, .rc_edit, .rc_post
-{
-    width: 16px;
-    height: 16px;
+.rc_home, .rc_dashboard, .rc_app, .rc_basic, .rc_password, .rc_logout, .rc_edit, .rc_post {
     background-image: url('/images/recruitericons.png');
     background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
 }
 
-.rc_home
-{
-    background-position: 0px 2px;
-}
+.rc_home { background-position: 0px 2px; }
 
-.rc_edit
-{
-    background-position: 0px -62px;
-}
+.rc_edit { background-position: 0px -62px; }
 
-.rc_post
-{
-    background-position: 0px -128px;
-}
+.rc_post { background-position: 0px -128px; }
 
-.rc_dashboard
-{
-    background-position: 0px -20px;
-}
+.rc_dashboard { background-position: 0px -20px; }
 
-.rc_app
-{
-    background-position: 0px -84px;
-}
+.rc_app { background-position: 0px -84px; }
 
-.rc_basic
-{
-    background-position: 0px -44px;
-}
+.rc_basic { background-position: 0px -44px; }
 
-.rc_password
-{
-    background-position: 0px -108px;
-}
+.rc_password { background-position: 0px -108px; }
 
-.rc_logout
-{
-    background-position: -1px -144px;
-}
+.rc_logout { background-position: -1px -144px; }
 
-body
-{
-    background-color: #000;
-}
-.style2302
-{
-    width: 100%;
-}
-.Stylea101:hover
-{
-    text-decoration: underline;
-}
-.style2
-{
-    border-collapse: collapse;
+body { background-color: #000; }
+
+.style2302 { width: 100%; }
+
+.Stylea101:hover { text-decoration: underline; }
+
+.style2 {
     background-color: #fff;
+    border-collapse: collapse;
     width: 100%;
 }
-.divchartone
-{
+
+.divchartone {
     float: left;
-    padding-top: 10px;
     padding-left: 10px;
+    padding-top: 10px;
     text-align: left;
 }
-#zoomslevel
-{
+
+#zoomslevel {
     float: right;
     text-align: right;
 }
-.Stylea101
-{
+
+.Stylea101 {
     color: #c00;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     text-decoration: none;
 }
-#loginleft
-{
+
+#loginleft {
+    background-color: #ccc;
     border: 1px solid #ccc;
     float: left;
-    background-color: #ccc;
     margin: 10px;
     padding: 10px;
 }
-#loginright
-{
+
+#loginright {
     border-left: 1px solid #ccc;
-    min-height: 400px;
     float: right;
-    width: 400px;
     margin: 10px;
+    min-height: 400px;
     padding: 10px;
+    width: 400px;
 }
-.Stylea2
-{
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
+
+.Stylea2 {
     border-collapse: collapse;
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
 }
-.dottedlines
-{
-    border-bottom-width: 1px;
-    border-bottom-style: dotted;
+
+.dottedlines {
     border-bottom-color: gray;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
 }
-.Stylea8
-{
+
+.Stylea8 {
+    border-collapse: collapse;
     color: #1c5786;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
-    border-collapse: collapse;
 }
-.StyleBlack
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
+
+.StyleBlack {
     border-collapse: collapse;
     color: #000;
-}
-.StyleBlackbold
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
+}
+
+.StyleBlackbold {
     border-collapse: collapse;
     color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
     font-weight: 700;
 }
-.StyleGray
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
+
+.StyleGray {
     border-collapse: collapse;
-    margin-right: 5px;
     color: gray;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
+    margin-right: 5px;
 }
-.addcustline
-{
+
+.addcustline {
+    border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 1px;
     color: gray;
-    border-collapse: collapse;
-}
-.setcpaneldotted
-{
-    border-top-width: 1px;
-    border-top-style: dotted;
 }
 
-.Stylepwd
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
-    border-collapse: collapse;
-    margin-right: 5px;
-    color: gray;
+.setcpaneldotted {
+    border-top-style: dotted;
+    border-top-width: 1px;
+}
+
+.Stylepwd {
     background-color: transparent;
-}
-.ftblack
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
     border-collapse: collapse;
+    color: gray;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
     margin-right: 5px;
 }
-.ftblackbold
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
+
+.ftblack {
     border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
     margin-right: 5px;
+}
+
+.ftblackbold {
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
     font-weight: 700;
-}
-.ftblackWhite
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
-    border-collapse: collapse;
     margin-right: 5px;
-    color: #fff;
 }
-.recmasterwhite
-{
-    color: #ccc;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+
+.ftblackWhite {
+    border-collapse: collapse;
+    color: #fff;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
+    margin-right: 5px;
+}
+
+.recmasterwhite {
+    color: #ccc;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
+    height: 14px;
     text-decoration: none;
 }
-.recmasterwhite:hover
-{
-    color: #fff;
-}
-.StyleR2
-{
+
+.recmasterwhite:hover { color: #fff; }
+
+.StyleR2 {
+    border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 2px;
-    border-collapse: collapse;
 }
 
-.BoxBorder
-{
+.BoxBorder {
     border-color: #000;
     border-style: dotted;
     border-width: 1px;
 }
-.stylemintabl, .style4
-{
-    width: 100px;
-}
-.style3
-{
-    height: 19px;
-}
+
+.stylemintabl, .style4 { width: 100px; }
+
+.style3 { height: 19px; }

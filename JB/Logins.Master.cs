@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB
 {
@@ -13,11 +9,10 @@ namespace JB
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Logins1 : System.Web.UI.MasterPage
+    public partial class Logins1 : MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

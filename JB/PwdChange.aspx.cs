@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB
 {
@@ -13,11 +9,10 @@ namespace JB
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class PasswordResetForm : System.Web.UI.Page
+    public partial class PasswordResetForm : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -30,30 +25,27 @@ namespace JB
             //set up passwords
             //but check first if the login really exists
 
-            int usertype = Convert.ToInt16( Request.QueryString["utype"]);
-           
+            int usertype = Convert.ToInt16(Request.QueryString["utype"]);
+
 
             if (Request.QueryString["keyid"] != null)
             {
                 string keyid = Request.QueryString["keyid"];
 
-                CLLogins clapslog = new CLLogins();
-                if(keyid == clapslog.getkeyuser(keyid, usertype))
+                var clapslog = new DlLogins();
+                if (keyid == clapslog.Getkeyuser(keyid, usertype))
                 {
                     //change password user
-                    if(usertype == 2)
+                    if (usertype == 2)
                     {
-                        clapslog.chgpwdjswkey(keyid, TextBox1.Text);
+                        clapslog.Chgpwdjswkey(keyid, TextBox1.Text);
                     }
 
                     //change admin password
-                    if(usertype ==1)
+                    if (usertype == 1)
                     {
-                        clapslog.chgpwdrecwkey(keyid, TextBox1.Text);
+                        clapslog.Chgpwdrecwkey(keyid, TextBox1.Text);
                     }
-
-                    else{}
-
                 }
             }
         }

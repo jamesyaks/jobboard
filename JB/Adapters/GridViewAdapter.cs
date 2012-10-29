@@ -1,44 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
+using System.Web.UI.Adapters;
 using System.Web.UI.WebControls;
 
 namespace JB.Adapters
 {
-    public class GridViewAdapter : System.Web.UI.Adapters.ControlAdapter
+    public class GridViewAdapter : ControlAdapter
     {
         private void Pager(HtmlTextWriter writer, PagerPosition pos)
         {
             //paging is not optimzed for jobs more than 1000, please extend 
             //this code to handle more paging your self.
-            GridView gridView = Control as GridView;
+            var gridView = Control as GridView;
 
-            if (gridView.AllowPaging && gridView.PageCount > 1)
+            if (gridView != null && (gridView.AllowPaging && gridView.PageCount > 1))
             {
                 Table innerTable = null;
 
                 //will gets pager on top
-                if (pos == PagerPosition.Top)
+                switch (pos)
                 {
-                    innerTable = gridView.TopPagerRow.Cells[0].Controls[0] as Table;
-                }
-
-                //will set pager on bottom
-                else
-                {
-                    innerTable = gridView.BottomPagerRow.Cells[0].Controls[0] as Table;
+                    case PagerPosition.Top:
+                        innerTable = gridView.TopPagerRow.Cells[0].Controls[0] as Table;
+                        break;
+                    default:
+                        innerTable = gridView.BottomPagerRow.Cells[0].Controls[0] as Table;
+                        break;
                 }
 
                 //we are not using top & Bottom for now.
                 if (innerTable != null)
                 {
-                    string className = string.Empty;
-                    if (gridView.PagerStyle != null)
-                    {
-                        className += gridView.PagerStyle.CssClass;
-                    }
+                    var className = string.Empty;
+                    
+                    className += gridView.PagerStyle.CssClass;
+                    
 
                     writer.WriteLine();
                     writer.WriteBeginTag("div");
@@ -47,30 +44,26 @@ namespace JB.Adapters
                     writer.Indent++;
 
                     TableRow row = innerTable.Rows[0];
-                    foreach (TableCell cell in row.Cells)
+                    foreach (Control ctrl in from TableCell cell in row.Cells from Control ctrl in cell.Controls select ctrl)
                     {
-                        foreach (Control ctrl in cell.Controls)
-                        {
-                            writer.WriteLine();
-                            ctrl.RenderControl(writer);
-                        }
+                        writer.WriteLine();
+                        ctrl.RenderControl(writer);
                     }
 
                     writer.Indent--;
                     writer.WriteLine();
                     writer.WriteEndTag("div");
-
                 }
             }
         }
 
         protected override void Render(HtmlTextWriter writer)
         {
-            GridView Gv = Control as GridView;
+            var gv = Control as GridView;
 
-            if (Gv.Rows.Count > 0)
+            if (gv != null && gv.Rows.Count > 0)
             {
-                foreach (GridViewRow grv in Gv.Rows)
+                foreach (GridViewRow grv in gv.Rows)
                 {
                     writer.Indent++;
                     writer.WriteBeginTag("div");
@@ -87,12 +80,9 @@ namespace JB.Adapters
                         writer.AddAttribute("class", grv.CssClass);
                     }
 
-                    foreach (TableCell tcell in grv.Cells)
+                    foreach (Control ctrl in from TableCell tcell in grv.Cells from Control ctrl in tcell.Controls select ctrl)
                     {
-                        foreach (Control ctrl in tcell.Controls)
-                        {
-                            ctrl.RenderControl(writer);
-                        }
+                        ctrl.RenderControl(writer);
                     }
 
                     writer.WriteEndTag("div");

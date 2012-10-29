@@ -1,36 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.IO;
 using System.Linq;
-using System.Web;
-using System.IO;
 
 namespace JB
 {
     public class ClCodeconverter
     {
-        
         //this is to get highest directory index
-        public int getmaxfile(string pathset)
+        public int Getmaxfile(string pathset)
         {
             try
             {
                 //get max count file
-                DirectoryInfo di = new DirectoryInfo(pathset);
-                int counter = 0;
+                var di = new DirectoryInfo(pathset);
 
                 FileInfo[] rgFiles = di.GetFiles("*.*");
-                foreach (FileInfo fi in rgFiles)
-                {
-                    counter = counter + 1;
-                }
 
 
-                return counter;
+                return rgFiles.Count();
             }
-            catch { return 0; }
+            catch
+            {
+                return 0;
+            }
         }
 
         //
-        
     }
 }

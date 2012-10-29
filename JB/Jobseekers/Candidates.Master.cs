@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB.JobSeekers
 {
@@ -13,9 +11,9 @@ namespace JB.JobSeekers
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Candidates : System.Web.UI.MasterPage
+    public partial class Candidates : MasterPage
     {
-        string cpath = System.Configuration.ConfigurationManager.AppSettings["httpspaths"].ToString();
+        private readonly string cpath = ConfigurationManager.AppSettings["httpspaths"];
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -29,11 +27,11 @@ namespace JB.JobSeekers
             //set the welcoming label for the candidates
             if (Session["pwelcomename"] != null)
             {
-                Label1.Text = "Welcome " + Session["pwelcomename"].ToString() + " | Job board ver. 1.0.1";
+                Label1.Text = "Welcome " + Session["pwelcomename"] + " | Job board ver. 1.0.1";
             }
 
             //rest of processing goes here
-            if (Request.QueryString["CRF"].ToString() == "1")
+            if (Request.QueryString["CRF"] == "1")
             {
                 Image3.Visible = false;
                 Image4.Visible = false;
@@ -42,15 +40,12 @@ namespace JB.JobSeekers
                 Image7.Visible = false;
 
 
-
                 HyperLink5.Visible = false;
 
                 LinkButton2.Visible = false;
                 LinkButton3.Visible = false;
                 LinkButton44.Visible = false;
                 LinkButton5.Visible = false;
-
-
             }
 
             else
@@ -62,16 +57,12 @@ namespace JB.JobSeekers
                 Image7.Visible = true;
 
 
-
                 HyperLink5.Visible = true;
 
                 LinkButton2.Visible = true;
                 LinkButton3.Visible = true;
                 LinkButton44.Visible = true;
                 LinkButton5.Visible = true;
-
-
-
             }
         }
 

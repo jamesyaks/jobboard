@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,31 +10,23 @@ namespace JB
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Allrecruiters : System.Web.UI.Page
+    public partial class Allrecruiters : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             //constructor
-            CLRecruiterCl rcl = new CLRecruiterCl();
-            
-            GridView1.DataSource = rcl.getallrecwithjobs();
-            GridView1.DataBind();
+            var rcl = new DlRecruiter();
 
-           
+            GridView1.DataSource = rcl.Getallrecwithjobs();
+            GridView1.DataBind();
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            CLRecruiterCl rcl2 = new CLRecruiterCl();
-            GridView1.DataSource = rcl2.getallrecwithjobs();
+            var rcl2 = new DlRecruiter();
+            GridView1.DataSource = rcl2.Getallrecwithjobs();
             GridView1.PageIndex = e.NewPageIndex;
-            GridView1.DataBind();              
-
+            GridView1.DataBind();
         }
-
-     
-
-
-      
     }
 }

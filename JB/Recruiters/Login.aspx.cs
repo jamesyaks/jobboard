@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
+using System.Globalization;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB.Recruiters
 {
@@ -13,11 +12,11 @@ namespace JB.Recruiters
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : Page
     {
-        string cpath = System.Configuration.ConfigurationManager.AppSettings["httpspaths"].ToString();
-        string npath = System.Configuration.ConfigurationManager.AppSettings["httppaths"].ToString();
-     
+        private readonly string cpath = ConfigurationManager.AppSettings["httpspaths"];
+        private readonly string npath = ConfigurationManager.AppSettings["httppaths"];
+
         //set unset cookies here
         //for all logins
 
@@ -25,7 +24,7 @@ namespace JB.Recruiters
         public void setjobcookie(string cookiehash)
         {
             //Create a new cookie, passing the name into the constructor
-            HttpCookie cookie = new HttpCookie("ahrcloud.com");
+            var cookie = new HttpCookie("ahrcloud.com");
 
             //Set the cookies value
             cookie.Value = cookiehash;
@@ -46,52 +45,46 @@ namespace JB.Recruiters
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            CLLogins lg = new CLLogins();
-            Random rand = new Random();
-            CLPwdhash chash = new CLPwdhash();
+            var lg = new DlLogins();
+            var rand = new Random();
+            var chash = new ClPwdhash();
 
             if (TextBox3.Text != string.Empty && TextBox2.Text != string.Empty)
             {
-
-                if (lg.getuser(TextBox2.Text,TextBox3.Text) == TextBox2.Text)
+                if (lg.Getuser(TextBox2.Text, TextBox3.Text) == TextBox2.Text)
                 {
                     Session["pusername"] = TextBox2.Text;
 
                     //the below method is overloaded
-                    Session["pwelcomename"] = lg.userwelcomename(TextBox2.Text, 1, 0);
-        
-                    string addhash2 = chash.getMd5Hash(rand.Next(1000, 10000).ToString());
+                    Session["pwelcomename"] = lg.Userwelcomename(TextBox2.Text, 1, 0);
+
+                    string addhash2 = chash.GetMd5Hash(rand.Next(1000, 10000).ToString(CultureInfo.InvariantCulture));
                     Session["cuserval"] = addhash2;
                     setjobcookie(addhash2);
 
-                    Response.Redirect(cpath+"/Recruiters/Rechome.aspx?Fg=1");                    
-                }
-
-                else
-                {
-                    //Response.Redirect("RecruiterForm.aspx");
+                    Response.Redirect(cpath + "/Recruiters/Rechome.aspx?Fg=1");
                 }
             }
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect(npath+"/Default.aspx");
+            Response.Redirect(npath + "/Default.aspx");
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            Response.Redirect(npath+"/Resetpassword.aspx");
+            Response.Redirect(npath + "/Resetpassword.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect(cpath+"/Recruiters/RecruiterForm.aspx?Fg=2");
+            Response.Redirect(cpath + "/Recruiters/RecruiterForm.aspx?Fg=2");
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect(npath+"/Default.aspx");
+            Response.Redirect(npath + "/Default.aspx");
         }
     }
 }

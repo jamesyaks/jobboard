@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Globalization;
 using System.Linq;
-using System.Web;
 using MySql.Data.MySqlClient;
-using System.Globalization;
 
 namespace JB
 {
@@ -11,9 +8,9 @@ namespace JB
     {
         public string[,] Getrss()
         {
-            var connreader = new MySqlConnection { ConnectionString = Clconnect.makeconn() };
+            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
 
-            var ct = new string[4, 10];
+            var ct = new string[4,10];
             ct.AsParallel();
 
             using (connreader)

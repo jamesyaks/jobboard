@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Recruiters/Recruiters.Master" AutoEventWireup="true"
-    CodeBehind="Recusers.aspx.cs" Inherits="JB.Recruiters.RecUsers" %>
+         CodeBehind="Recusers.aspx.cs" Inherits="JB.Recruiters.RecUsers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -9,7 +9,7 @@
     </div>
     <div class="divsimpleboxlight">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True"
-            CssClass="ftblack" DataKeyNames="idUsers" OnRowEditing="GridView1_RowEditing">
+                      CssClass="ftblack" DataKeyNames="idUsers" OnRowEditing="GridView1_RowEditing">
             <Columns>
                 <asp:BoundField DataField="uUserName" HeaderText="UserName" />
                 <asp:BoundField DataField="uFirstName" HeaderText="FirstName" />

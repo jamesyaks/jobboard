@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB
 {
@@ -14,15 +10,15 @@ namespace JB
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
     /// 
-    public partial class Recdetails : System.Web.UI.Page
+    public partial class Recdetails : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["Empid"] != null)
             {
                 //bind dataset here
-                CLRecruiterCl rcls = new CLRecruiterCl();
-                GridView1.DataSource = rcls.getcurrrecwithempid(Request.QueryString["Empid"]);
+                var rcls = new DlRecruiter();
+                GridView1.DataSource = rcls.Getcurrrecwithempid(Request.QueryString["Empid"]);
                 GridView1.DataBind();
             }
         }

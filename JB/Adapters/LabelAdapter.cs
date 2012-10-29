@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
+using System.Web.UI.Adapters;
 using System.Web.UI.WebControls;
 
 namespace JB.Adapters
 {
-    public class LabelAdapter : System.Web.UI.Adapters.ControlAdapter
+    public class LabelAdapter : ControlAdapter
     {
         //this is to experiment with true HTML5 markup.
         protected override void Render(HtmlTextWriter writer)
         {
-            Label l = Control as Label;
+            var l = Control as Label;
             writer.WriteLine();
             writer.WriteBeginTag("label");
-            if (!String.IsNullOrEmpty(l.CssClass))
+            if (l != null && !String.IsNullOrEmpty(l.CssClass))
             {
                 writer.WriteAttribute("class", l.CssClass);
             }

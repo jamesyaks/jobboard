@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB
 {
@@ -13,7 +9,7 @@ namespace JB
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class confirm : System.Web.UI.Page
+    public partial class confirm : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,32 +19,30 @@ namespace JB
             {
                 textreason.Text = Session["reasons"].ToString();
             }
-            catch { }
+            catch (Exception)
+            {
+            }
 
             int statuses = Convert.ToInt16(Request.QueryString["status"]);
 
-            if (statuses == 0)
+            switch (statuses)
             {
-                textreason.Text = "Application sucessfully submitted. Please check your emails to stay up to date.";
-            }
-
-            else if (statuses == 1 || statuses == 2)
-            {
-                textreason.Text = "Thank you for registering with us. Please check your email on how to activate your account.";
-            }
-
-            else if (statuses == 3)
-            {
-                textreason.Text = "Thank you for subscribing to our newsletter";
-            }
-
-            else if (statuses == 4)
-            {
-                textreason.Text = "Thank you for subscribing to jobs by email";
-            }
-
-            else
-            {
+                case 0:
+                    textreason.Text = "Application sucessfully submitted. Please check your emails to stay up to date.";
+                    break;
+                case 2:
+                case 1:
+                    textreason.Text =
+                        "Thank you for registering with us. Please check your email on how to activate your account.";
+                    break;
+                case 3:
+                    textreason.Text = "Thank you for subscribing to our newsletter";
+                    break;
+                case 4:
+                    textreason.Text = "Thank you for subscribing to jobs by email";
+                    break;
+                default:
+                    break;
             }
         }
     }

@@ -1,19 +1,19 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/JOB.Master" AutoEventWireup="true"
-    CodeBehind="Jobdetails.aspx.cs" Inherits="JB.Jobdetails" %>
+         CodeBehind="Jobdetails.aspx.cs" Inherits="JB.Jobdetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/csjobmaster.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <!-- 
-    summary
-    This code is liscenced by ahrcloud.com
-    under free creative common liscence, but 
-    attribution must be made to the author
-    site at www.ahrcloud.com or info@ahrcloud.com
+    <!-- 
+        summary
+        This code is liscenced by ahrcloud.com
+        under free creative common liscence, but 
+        attribution must be made to the author
+        site at www.ahrcloud.com or info@ahrcloud.com
     
-    -->
-       <!-- top bar -->
+        -->
+    <!-- top bar -->
     <div class="divback">
         <asp:Label ID="Label11" runat="server" CssClass="Stylea1"></asp:Label>
     </div>
@@ -129,9 +129,9 @@
                        
                     </div>
                     <div class="styledborder">
-                    <article>
-                        <asp:Label ID="Label18" runat="server" CssClass="Stylea2"></asp:Label>
-                   </article>
+                        <article>
+                            <asp:Label ID="Label18" runat="server" CssClass="Stylea2"></asp:Label>
+                        </article>
                     </div>
                 </div>
                 <div class="cleardatamore">

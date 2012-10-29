@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.IO;
+using System.Configuration;
 using System.Globalization;
+using System.Web.UI;
 
 namespace JB.JobSeekers
 {
@@ -15,9 +11,9 @@ namespace JB.JobSeekers
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class DirectApplication : System.Web.UI.Page
+    public partial class DirectApplication : Page
     {
-        static string pathsetter = System.Configuration.ConfigurationManager.AppSettings["cvpath"].ToString();
+        private static readonly string pathsetter = ConfigurationManager.AppSettings["cvpath"];
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,27 +22,27 @@ namespace JB.JobSeekers
             Page.Form.DefaultButton = Button2.UniqueID;
         }
 
-        private void adddata(string ext, string __filename)
+        private void Adddata(string __filename)
         {
             //set culture to british 
             //modify here in future if this needs to be set to us formats
             //edited by adam 
 
-            CultureInfo cinf = new CultureInfo("en-GB");
+            var cinf = new CultureInfo("en-GB");
             DateTime dobsdate = Convert.ToDateTime(TextBox5.Text, cinf);
 
             string dobdate1 = dobsdate.ToString("MM/dd/yyyy");
 
             //add max count
-            ClCodeconverter cc = new ClCodeconverter();
-            int __pcount = cc.getmaxfile(Server.MapPath(pathsetter));
+            var cc = new ClCodeconverter();
+            int __pcount = cc.Getmaxfile(Server.MapPath(pathsetter));
             FileUpload1.SaveAs(Server.MapPath(pathsetter) + __pcount + __filename);
 
-            ClApps app = new ClApps();
+            var app = new DlApps();
 
             //apps add
-            int mxdocid = app.getmaxdocid();
-            int mxappid = app.getmaxappid();
+            int mxdocid = app.Getmaxdocid();
+            int mxappid = app.Getmaxappid();
 
             app.AddApplication(TextBox3.Text, TextBox4.Text, dobdate1, TextBox2.Text, mxdocid, TextBox6.Text);
             app.AddApplicationMapping(Convert.ToInt16(Request.QueryString["JobID"]), mxappid);
@@ -79,12 +75,12 @@ namespace JB.JobSeekers
         protected void Button2_Click(object sender, EventArgs e)
         {
             //get max size from web.config
-            var __maxuploadsz = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["maxfilesize"].ToString()); 
+            int __maxuploadsz = Convert.ToInt32(ConfigurationManager.AppSettings["maxfilesize"]);
 
-            ClEmailprocessor emp = new ClEmailprocessor();
-            var embody = emp.emaildirapps(1, TextBox3.Text + " " + TextBox4.Text).ToString();
-            var fname = FileUpload1.FileName.ToString();
-            var ext = string.Empty;
+            var emp = new DlEmailprocessor();
+            string embody = emp.Emaildirapps(1, TextBox3.Text + " " + TextBox4.Text).ToString();
+            string fname = FileUpload1.FileName;
+            string ext = string.Empty;
             ext = Getextension(fname);
 
             if (FileUpload1.HasFile)
@@ -93,20 +89,21 @@ namespace JB.JobSeekers
                 {
                     if (FileUpload1.FileContent.Length < __maxuploadsz)
                     {
-                        string subjects = emp.subjectdirectappconfirm(Convert.ToInt16(Request.QueryString["JobID"])).ToString();
+                        string subjects =
+                            emp.Dbemailgenerator(Convert.ToInt16(Request.QueryString["JobID"])).ToString();
 
-                        adddata(ext, fname);
+                        Adddata( fname);
 
                         //you can remove try catch blocks they were in place in case you
                         //dont have email server running smoothly
 
                         try
                         {
-                            emp.sendmailproc(TextBox6.Text, "Application Confirmation: " + subjects, embody, 1);
-                            emp.sendappemaildbupdate(TextBox6.Text, 0);
+                            emp.Clemail.Sendmailproc(TextBox6.Text, "Application Confirmation: " + subjects, embody, 1);
+                            emp.Sendappemaildbupdate(TextBox6.Text, 0);
                         }
 
-                        catch
+                        catch (Exception)
                         {
                             //error in email 
                         }
@@ -120,7 +117,6 @@ namespace JB.JobSeekers
                     {
                         //error file size
                     }
-                  
                 }
 
                 else

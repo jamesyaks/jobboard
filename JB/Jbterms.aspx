@@ -1,17 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Job.Master" AutoEventWireup="true"
-    CodeBehind="Jbterms.aspx.cs" Inherits="JB.jbterms" %>
+         CodeBehind="Jbterms.aspx.cs" Inherits="JB.jbterms" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <!-- 
-    summary
-    This code is liscenced by ahrcloud.com
-    under free creative common liscence, but 
-    attribution must be made to the author
-    site at www.ahrcloud.com or info@ahrcloud.com
+    <!-- 
+        summary
+        This code is liscenced by ahrcloud.com
+        under free creative common liscence, but 
+        attribution must be made to the author
+        site at www.ahrcloud.com or info@ahrcloud.com
     
-    -->
+        -->
     <div class="divback">
         <div class="simplefontwhite">
             Terms of Use</div>

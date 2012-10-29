@@ -1,34 +1,29 @@
-﻿.divheightsrch
-{
-    height: 4px;
-}
-.dvtabstop
-{
+﻿.divheightsrch { height: 4px; }
+
+.dvtabstop {
     background-color: #000;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
     margin-left: 4px;
     padding-left: 4px;
     width: 100px;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
 }
-.divchkbxpop
-{
-    left: 100px;
-    height: 100px;
-    width: 200px;
-    overflow: auto;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: .75em;
-    border-collapse: collapse;
+
+.divchkbxpop {
     border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: .75em;
+    height: 100px;
+    left: 100px;
+    overflow: auto;
+    width: 200px;
 }
-#dvleftpanels4
-{
-    margin-left: 20px;
-}
-#dvleftpanels1, #dvleftpanels2, #dvleftpanels3
-{
+
+#dvleftpanels4 { margin-left: 20px; }
+
+#dvleftpanels1, #dvleftpanels2, #dvleftpanels3 {
     float: left;
     margin-left: 20px;
     width: 200px;

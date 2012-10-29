@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB
 {
@@ -13,8 +9,8 @@ namespace JB
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Logoff : System.Web.UI.Page
-    {        
+    public partial class Logoff : Page
+    {
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Abandon();
@@ -22,7 +18,7 @@ namespace JB
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect( "/default.aspx");
+            Response.Redirect("/default.aspx");
         }
     }
 }

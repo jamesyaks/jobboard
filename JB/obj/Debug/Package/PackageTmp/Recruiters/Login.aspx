@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Logins.Master" AutoEventWireup="true"
-    CodeBehind="Login.aspx.cs" Inherits="JB.Recruiters.Login" %>
+         CodeBehind="Login.aspx.cs" Inherits="JB.Recruiters.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -11,26 +11,26 @@
         <br />
         <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle">adam@ahrcloud.com</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"
-            CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
+                                    CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Label ID="Label11" runat="server" CssClass="ftblack" Text="Password"></asp:Label>
         <br />
         <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" CssClass="TextBoxStyle">test</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3"
-            CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
+                                    CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <asp:LinkButton ID="LinkButton1" runat="server" CssClass="Stylea101" OnClick="LinkButton1_Click"
-            CausesValidation="False">Forgot Password</asp:LinkButton>
+                        CausesValidation="False">Forgot Password</asp:LinkButton>
         <asp:Label ID="Label12" runat="server" Text="or" CssClass="ftblack"></asp:Label>
         <asp:LinkButton ID="LinkButton2" runat="server" CssClass="Stylea101" OnClick="LinkButton2_Click"
-            CausesValidation="False">Register Now!</asp:LinkButton>
+                        CausesValidation="False">Register Now!</asp:LinkButton>
         <br />
         <br />
         <div class="alignright">
             <asp:Button ID="Button2" runat="server" Text="Login" OnClick="Button2_Click" CssClass="button" />
             <asp:Button ID="Button3" runat="server" Text="Cancel" OnClick="Button3_Click" CssClass="button"
-                CausesValidation="False" />
+                        CausesValidation="False" />
         </div>
     </div>
     <div id="loginright">

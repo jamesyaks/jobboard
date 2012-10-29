@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace JB.JobSeekers
 {
@@ -13,28 +10,8 @@ namespace JB.JobSeekers
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class Changeuserpwd : System.Web.UI.Page
-    {
-        //read cookie
-        public string readjobcookie()
-        {
-            //Grab the cookie
-            HttpCookie cookie = Request.Cookies["ahrcloud.com"];
-
-            //Check to make sure the cookie exists
-            if (null == cookie)
-            {
-                return null;
-            }
-
-            else
-            {
-                //Write the cookie value
-                String strCookieValue = cookie.Value.ToString();
-                return strCookieValue;
-            }
-        }
-
+    public partial class Changeuserpwd : Clcookiehandler
+    {   
         protected void Page_Load(object sender, EventArgs e)
         {
             //set default inputs
@@ -44,9 +21,8 @@ namespace JB.JobSeekers
             //read and validate login
             if (Session["cuserval"] != null)
             {
-                if (Session["cuserval"].ToString() == readjobcookie())
+                if (Session["cuserval"].ToString() == Readjobcookie())
                 {
-
                 }
                 else
                 {
@@ -59,23 +35,22 @@ namespace JB.JobSeekers
                 Response.Redirect("login.aspx");
             }
             ////////////////////////////////////
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            CLLogins cllg = new CLLogins();
+            var cllg = new DlLogins();
 
             //check passwords is ok first
-            if (cllg.getjobuser(Session["pusername"].ToString(), TextBox1.Text) != null )
+            if (cllg.Getjobuser(Session["pusername"].ToString(), TextBox1.Text) != null)
             {
-                if(TextBox2.Text == TextBox3.Text)
+                if (TextBox2.Text == TextBox3.Text)
                 {
                     //change pwd
-                    cllg.chgpwdjs(Session["pusername"].ToString(), TextBox2.Text);
+                    cllg.Chgpwdjs(Session["pusername"].ToString(), TextBox2.Text);
                     Label4.Text = "Password Changed, please use this from now onwards";
                 }
-                
+
                 else
                 {
                     Label4.Text = "New Password donot match";

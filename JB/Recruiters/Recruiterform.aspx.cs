@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
+using System.Globalization;
+using System.IO;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.IO;
 
 namespace JB.Recruiters
 {
@@ -14,29 +13,10 @@ namespace JB.Recruiters
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
-    public partial class RecruiterForm : System.Web.UI.Page
+    public partial class RecruiterForm : Clcookiehandler
     {
-        int Fg=0;
-        //read cookie
-        public string readjobcookie()
-        {
-            //Grab the cookie
-            HttpCookie cookie = Request.Cookies["ahrcloud.com"];
-
-            //Check to make sure the cookie exists
-            if (null == cookie)
-            {
-                return null;
-            }
-
-            else
-            {
-                //Write the cookie value
-                String strCookieValue = cookie.Value.ToString();
-                return strCookieValue;
-            }
-        }
-
+        private int _fg;
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             //set default inputs
@@ -45,16 +25,16 @@ namespace JB.Recruiters
 
             if (!IsPostBack)
             {
-
                 if (Session["pusername"] != null)
                 {
-                    int Fg = Convert.ToInt16(Request.QueryString["Fg"]);
+                    int fg;
+                    fg = Convert.ToInt16(Request.QueryString["Fg"]);
 
-                    CLMainpagepopulator mpage = new CLMainpagepopulator();
+                    var mpage = new DlMainpagepopulator();
 
                     int recsid = mpage.RecName(Session["pusername"].ToString());
 
-                    if (Fg == 1)
+                    if (fg == 1)
                     {
                         //disable required fields
                         RequiredFieldValidator9.Enabled = false;
@@ -63,9 +43,8 @@ namespace JB.Recruiters
                         //read and validate login
                         if (Session["cuserval"] != null)
                         {
-                            if (Session["cuserval"].ToString() == readjobcookie())
+                            if (Session["cuserval"].ToString() == Readjobcookie())
                             {
-
                             }
                             else
                             {
@@ -79,7 +58,7 @@ namespace JB.Recruiters
                         }
                         ////////////////////////////////////
 
-                        
+
                         string[] arr = mpage.RecDetails(Session["pusername"].ToString());
 
                         TextBox2.Text = arr[0];
@@ -111,127 +90,115 @@ namespace JB.Recruiters
                         TextBox13.Enabled = false;
                         TextBox17.Enabled = false;
                         Button3.Visible = false;
-                        
-                    }
-
-                    else
-                    {
-
                     }
 
                     // featured recurites
-                    ClFeaturedrecruiters frs = new ClFeaturedrecruiters();
+                    var frs = new DlFeaturedrecruiters();
 
                     //get recruters image 
                     Image8.Visible = true;
-                    Image8.ImageUrl = frs.getrecformimage(recsid);
-
+                    Image8.ImageUrl = frs.Getrecformimage(recsid);
                 }
 
                 else
                 {
                     Image8.Visible = false;
-                    
                 }
-
             }
-
-            
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-           
             if (capts.Text == Session["capts"].ToString())
             {
-
                 //check if the current user exists in the database
-                CLLogins lgeins = new CLLogins();
+                var lgeins = new DlLogins();
 
-                Fg = Convert.ToInt16(Request.QueryString["Fg"]);
+                _fg = Convert.ToInt16(Request.QueryString["Fg"]);
 
-                if (Fg == 1)
+                if (_fg == 1)
                 {
                     //update
                     //update user rec information
-                    CLRecruiterCl yohrecl = new CLRecruiterCl();
+                    var yohrecl = new DlRecruiter();
 
-                    yohrecl.runrecuserupdate(TextBox2.Text, TextBox3.Text, Session["pusername"].ToString());
+                    yohrecl.Runrecuserupdate(TextBox2.Text, TextBox3.Text, Session["pusername"].ToString());
 
                     //update logo
                     if (FileUpload1.PostedFile.FileName.Length > 1)
                     {
                         //get current article id for the logo.
-                        int tmpartid = yohrecl.getarticleids(Session["pusername"].ToString());
+                        int tmpartid = yohrecl.Getarticleids(Session["pusername"].ToString());
 
                         //save to hlogo
-                        string hlogo = System.Configuration.ConfigurationManager.AppSettings["filepth"].ToString() + tmpartid + FileUpload1.PostedFile.FileName.ToString();
+                        string hlogo = ConfigurationManager.AppSettings["filepth"] + tmpartid +
+                                       FileUpload1.PostedFile.FileName;
 
                         //update articles
                         FileUpload1.PostedFile.SaveAs(hlogo);
 
                         //update articles in db
-                        yohrecl.runreclogoupdate(hlogo, "Recruiter Logo", Session["pusername"].ToString());
-                    }
-
-                    else
-                    {
-                        //do nothing
+                        yohrecl.Runreclogoupdate(hlogo, "Recruiter Logo", Session["pusername"].ToString());
                     }
 
                     //update recruiters own information
-                    yohrecl.runrectableupdate(TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text, TextBox15.Text, TextBox16.Text, TextBox14.Text, Session["pusername"].ToString());
-
+                    yohrecl.Runrectableupdate(TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text,
+                                              TextBox9.Text, TextBox10.Text, TextBox15.Text, TextBox16.Text,
+                                              TextBox14.Text, Session["pusername"].ToString());
                 }
 
                 else
                 {
-
-                    if (lgeins.checkrecusern(TextBox11.Text) != TextBox11.Text)
+                    if (lgeins.Checkrecusern(TextBox11.Text) != TextBox11.Text)
                     {
-
-
                         //insert
-                        CLMainpagepopulator mps = new CLMainpagepopulator();
-                        CLPwdhash pwds = new CLPwdhash();
-                        ClArticles arc = new ClArticles();
+                        var mps = new DlMainpagepopulator();
+                        var pwds = new ClPwdhash();
+                        var arc = new DlArticles();
 
                         int getmaxrec = mps.RecHasRows() + 1;
                         int getmaxrecarticles = getmaxrec + 10000000;
                         int getmaxrecuserid = getmaxrec + 20000000;
 
-                        Random rnd23 = new Random();
-                        string shahsp = pwds.getMd5Hash(rnd23.Next(10000, 100000).ToString()).ToString();
+                        var rnd23 = new Random();
+                        string shahsp = pwds.GetMd5Hash(rnd23.Next(10000, 100000).ToString(CultureInfo.InvariantCulture));
 
                         //set email body
-                        ClEmailprocessor emaps = new ClEmailprocessor();
+                        var emaps = new DlEmailprocessor();
 
-                        string ebod1 = emaps.emailactivateusr("https://ahrcloud.com/ActivateAccount.aspx?activationid=" + shahsp + "&usertype=1&username=" + TextBox11.Text, TextBox11.Text).ToString();
+                        string ebod1 =
+                            emaps.Emailactivateusr(
+                                "https://ahrcloud.com/ActivateAccount.aspx?activationid=" + shahsp +
+                                "&usertype=1&username=" + TextBox11.Text, TextBox11.Text).ToString();
 
                         //recruiters
-                        mps.insertrecruiters(getmaxrec, TextBox10.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, "GB", TextBox9.Text, TextBox11.Text, TextBox15.Text, TextBox16.Text, TextBox14.Text, DateTime.Now.ToString("yyyy:MM:dd hh:mm:ss"), 1, getmaxrecarticles);
+                        mps.Insertrecruiters(getmaxrec, TextBox10.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text,
+                                             TextBox7.Text, TextBox8.Text, "GB", TextBox9.Text, TextBox11.Text,
+                                             TextBox15.Text, TextBox16.Text, TextBox14.Text,
+                                             DateTime.Now.ToString("yyyy:MM:dd hh:mm:ss"), 1, getmaxrecarticles);
 
                         //users and pwds
-                        string md5h = pwds.getMd5Hash(TextBox12.Text);
-                        mps.insertusers(TextBox11.Text, TextBox2.Text, 1, TextBox3.Text, md5h, 1, getmaxrecuserid, "hint", -1, shahsp);
+                        string md5h = pwds.GetMd5Hash(TextBox12.Text);
+                        mps.Insertusers(TextBox11.Text, TextBox2.Text, 1, TextBox3.Text, md5h, 1, getmaxrecuserid,
+                                        "hint", -1, shahsp);
 
                         //employee logo
-                        string holdlogo = Path.GetFileName(FileUpload1.PostedFile.FileName.ToString());
-                        arc.AddArticle(getmaxrecarticles, holdlogo, System.Configuration.ConfigurationManager.AppSettings["filepth"].ToString() + getmaxrecarticles + holdlogo);
+                        string holdlogo = Path.GetFileName(FileUpload1.PostedFile.FileName);
+                        arc.AddArticle(getmaxrecarticles, holdlogo,
+                                       ConfigurationManager.AppSettings["filepth"] + getmaxrecarticles + holdlogo);
 
                         //real upload                    
-                        FileUpload1.PostedFile.SaveAs(System.Configuration.ConfigurationManager.AppSettings["filepth"].ToString() + getmaxrecarticles + holdlogo);
+                        FileUpload1.PostedFile.SaveAs(ConfigurationManager.AppSettings["filepth"] + getmaxrecarticles +
+                                                      holdlogo);
 
                         //user recruiter assignments
-                        mps.insertrecusermapping(getmaxrecuserid, getmaxrec);
+                        mps.Insertrecusermapping(getmaxrecuserid, getmaxrec);
 
                         //finally send out the email
-                        emaps.sendmailproc(TextBox11.Text, "AHRCLOUD: Account Activation!", ebod1, 4);
+                        emaps.Clemail.Sendmailproc(TextBox11.Text, "AHRCLOUD: Account Activation!", ebod1, 4);
 
                         //logg it as the entry for email
-                        emaps.sendappemaildbupdate(TextBox11.Text, 1);
-
+                        emaps.Sendappemaildbupdate(TextBox11.Text, 1);
                     }
 
                     else
@@ -239,7 +206,6 @@ namespace JB.Recruiters
                         //user already exists
                         Label24.Visible = true;
                     }
-
                 }
             }
 
@@ -253,7 +219,5 @@ namespace JB.Recruiters
         {
             Response.Redirect("~/Default.aspx");
         }
-
-
     }
 }

@@ -1,99 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\inetpub\linkedbern" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Recruiters/Recruiters.Master" publishTime="10/28/2012 10:37:53" />
-    <file relUrl="Default.aspx" publishTime="10/28/2012 11:55:11" />
+    <file relUrl="Recruiters/Recruiters.Master" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Default.aspx" publishTime="10/28/2012 15:08:07" />
     <file relUrl="images/jobseekericon.png" publishTime="10/28/2012 10:21:35" />
-    <file relUrl="Recruiters/Recusers.aspx" publishTime="10/27/2012 04:58:11" />
-    <file relUrl="Contact.aspx" publishTime="10/24/2012 01:54:11" />
-    <file relUrl="EmailTemplates/Usersignup.htm" publishTime="10/28/2012 03:35:12" />
+    <file relUrl="Recruiters/Recusers.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Contact.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="EmailTemplates/Usersignup.htm" publishTime="10/28/2012 14:52:01" />
     <file relUrl="images/sprite.gif" publishTime="10/28/2012 04:14:24" />
-    <file relUrl="Jobseekers/Changeuserpwd.aspx" publishTime="10/28/2012 11:01:12" />
+    <file relUrl="Jobseekers/Changeuserpwd.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="Brandimages/brand_defaulthometag.png" publishTime="10/23/2012 23:15:56" />
-    <file relUrl="Jobseekers/Myapplications.aspx" publishTime="10/27/2012 04:58:13" />
-    <file relUrl="images/icons.png" publishTime="10/28/2012 09:46:03" />
-    <file relUrl="Jobseekers/Candidates.Master" publishTime="10/28/2012 09:37:12" />
+    <file relUrl="Jobseekers/Myapplications.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="styles/cs3.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="articles/silver-apple-logo.png" publishTime="03/30/2011 12:03:42" />
+    <file relUrl="Jobseekers/Candidates.Master" publishTime="10/28/2012 15:11:55" />
     <file relUrl="articles/10030013header-logo.gif" publishTime="05/04/2011 10:45:10" />
-    <file relUrl="Jobseekers/Userapplication.aspx" publishTime="10/28/2012 11:01:10" />
+    <file relUrl="Jobseekers/Userapplication.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobrss.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="articles/iron-man-movie-logo.jpg" publishTime="05/04/2011 09:46:02" />
-    <file relUrl="Recruiters/Recapplication.aspx" publishTime="10/27/2012 09:27:09" />
+    <file relUrl="Recruiters/Recapplication.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="images/checked.png" publishTime="10/28/2012 06:48:57" />
-    <file relUrl="ActivateAccount.aspx" publishTime="10/28/2012 03:25:53" />
-    <file relUrl="Job.Master" publishTime="10/28/2012 12:00:49" />
+    <file relUrl="ActivateAccount.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Job.Master" publishTime="10/28/2012 14:52:01" />
     <file relUrl="images/recruitericons.png" publishTime="10/28/2012 10:25:04" />
-    <file relUrl="EmailTemplates/PasswordReset.htm" publishTime="10/28/2012 03:35:03" />
-    <file relUrl="Logoff.aspx" publishTime="10/28/2012 07:04:59" />
-    <file relUrl="Jobdetails.aspx" publishTime="10/27/2012 05:01:32" />
-    <file relUrl="articles/Apple_logo.png" publishTime="03/30/2011 12:03:42" />
-    <file relUrl="searchjob.ashx" publishTime="10/28/2012 06:20:36" />
+    <file relUrl="articles/hp-logo.jpg" publishTime="03/30/2011 12:05:30" />
+    <file relUrl="Logoff.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobdetails.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="bin/AjaxControlToolkit.dll" publishTime="02/26/2012 00:10:34" />
-    <file relUrl="dll/AjaxControlToolkit.dll" publishTime="02/26/2012 00:10:34" />
     <file relUrl="Brandimages/brand_login.png" publishTime="09/09/2011 17:26:10" />
-    <file relUrl="jbterms.aspx" publishTime="10/25/2012 08:25:18" />
-    <file relUrl="styles/csrecruiter.css" publishTime="10/28/2012 11:38:08" />
-    <file relUrl="Allrecruiters.aspx" publishTime="10/28/2012 03:26:28" />
-    <file relUrl="Recdetails.aspx" publishTime="10/25/2012 06:45:10" />
-    <file relUrl="EmailTemplates/ApplicationConfirmation.htm" publishTime="10/28/2012 03:34:32" />
-    <file relUrl="styles/csjobseeker.css" publishTime="10/28/2012 11:38:03" />
-    <file relUrl="bin/MySql.Web.dll" publishTime="10/11/2012 03:06:11" />
-    <file relUrl="App_Browsers/Customrender.browser" publishTime="10/26/2012 03:30:05" />
-    <file relUrl="styles/autocomplete.css" publishTime="10/24/2012 01:08:27" />
-    <file relUrl="Jobseekers/Candidateapplication.aspx" publishTime="10/28/2012 11:01:12" />
-    <file relUrl="confirm.aspx" publishTime="10/25/2012 08:25:30" />
-    <file relUrl="searchrec.ashx" publishTime="10/28/2012 06:20:32" />
-    <file relUrl="styles/cs1.css" publishTime="10/26/2012 05:05:52" />
-    <file relUrl="Jobseekers/Applications.aspx" publishTime="10/28/2012 05:56:13" />
-    <file relUrl="Global.asax" publishTime="09/06/2011 08:37:52" />
-    <file relUrl="Resetpassword.aspx" publishTime="10/28/2012 11:01:05" />
-    <file relUrl="Recruiters/Recapplicationdetail.aspx" publishTime="10/27/2012 09:14:10" />
+    <file relUrl="styles/csrecruiter.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Allrecruiters.aspx" publishTime="10/28/2012 15:04:05" />
+    <file relUrl="EmailTemplates/ApplicationConfirmation.htm" publishTime="10/28/2012 15:09:45" />
+    <file relUrl="styles/csjobseeker.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="App_Browsers/Customrender.browser" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobseekers/Candidateapplication.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="confirm.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="styles/cs1.css" publishTime="10/28/2012 16:35:59" />
+    <file relUrl="images/icons.png" publishTime="10/28/2012 09:46:03" />
+    <file relUrl="Global.asax" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Resetpassword.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Recruiters/Recapplicationdetail.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="images/favicon.ico" publishTime="05/07/2011 21:06:06" />
     <file relUrl="articles/TNT_Logo2.jpg" publishTime="03/30/2011 12:05:12" />
-    <file relUrl="Scripts/facebox/facebox.css" publishTime="10/24/2012 01:27:43" />
-    <file relUrl="Jobseekers/Supportdoc/Interviewtips.htm" publishTime="10/28/2012 03:33:47" />
-    <file relUrl="sitemap.xml" publishTime="10/25/2012 19:36:15" />
+    <file relUrl="Scripts/facebox/facebox.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobseekers/Supportdoc/Interviewtips.htm" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="sitemap.xml" publishTime="10/28/2012 16:34:04" />
     <file relUrl="images/preloader.gif" publishTime="10/27/2012 04:39:30" />
     <file relUrl="Brandimages/brand_defaulthomelogo.png" publishTime="09/10/2011 09:53:04" />
     <file relUrl="articles/sony_logo_section.jpg" publishTime="03/30/2011 12:08:12" />
     <file relUrl="articles/ibm-logo.jpg" publishTime="03/30/2011 12:03:54" />
     <file relUrl="articles/10030015homepage_nf.jpg" publishTime="05/11/2011 10:49:44" />
-    <file relUrl="Logins.Master" publishTime="10/28/2012 11:06:23" />
-    <file relUrl="styles/cs3.css" publishTime="10/26/2012 05:04:44" />
-    <file relUrl="Jobseekers/Supportdoc/Cvprepration.htm" publishTime="10/28/2012 03:33:39" />
+    <file relUrl="Logins.Master" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="jbterms.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobseekers/Supportdoc/Cvprepration.htm" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Recdetails.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="articles/YSLogo.jpg" publishTime="09/06/2011 19:27:30" />
-    <file relUrl="jbsubscribe.aspx" publishTime="10/28/2012 11:01:12" />
-    <file relUrl="jbprivacy.aspx" publishTime="10/25/2012 08:25:25" />
-    <file relUrl="webblog.aspx" publishTime="10/26/2012 12:49:06" />
-    <file relUrl="Recruiters/JobForm.aspx" publishTime="10/28/2012 11:01:09" />
+    <file relUrl="jbprivacy.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Jobseekers/Applications.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="webblog.aspx" publishTime="10/28/2012 15:19:17" />
+    <file relUrl="Recruiters/JobForm.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="articles/getasset.gif" publishTime="03/21/2011 14:24:20" />
-    <file relUrl="PwdChange.aspx" publishTime="10/28/2012 11:01:10" />
-    <file relUrl="Captcha.aspx" publishTime="10/28/2012 03:28:33" />
+    <file relUrl="PwdChange.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Captcha.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="articles/logo.jpg" publishTime="09/06/2011 19:26:46" />
-    <file relUrl="Scripts/facebox/facebox.js" publishTime="11/18/2010 10:59:40" />
-    <file relUrl="bin/JB.pdb" publishTime="10/28/2012 11:52:51" />
+    <file relUrl="Jobseekers/Directapplication.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Scripts/facebox/facebox.js" publishTime="10/28/2012 15:17:44" />
+    <file relUrl="bin/JB.pdb" publishTime="10/28/2012 17:02:57" />
     <file relUrl="articles/10030003ibm-logo.png" publishTime="05/23/2011 07:24:54" />
-    <file relUrl="styles/cs2.css" publishTime="10/28/2012 11:57:25" />
+    <file relUrl="styles/cs2.css" publishTime="10/28/2012 15:20:44" />
     <file relUrl="articles/10030020silver-apple-logo.png" publishTime="09/06/2011 19:12:50" />
-    <file relUrl="Jobseekers/Login.aspx" publishTime="10/28/2012 11:01:11" />
-    <file relUrl="styles/csjobmaster.css" publishTime="10/28/2012 11:11:30" />
-    <file relUrl="Scripts/facebox/lib/jquery.js" publishTime="11/18/2010 10:59:40" />
+    <file relUrl="Jobseekers/Login.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="styles/csjobmaster.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Scripts/facebox/lib/jquery.js" publishTime="10/28/2012 14:52:01" />
     <file relUrl="bin/MySql.Data.dll" publishTime="10/11/2012 03:06:11" />
-    <file relUrl="Jobseekers/Jobseekerhome.aspx" publishTime="10/26/2012 05:33:43" />
-    <file relUrl="Jobrss.aspx" publishTime="10/26/2012 13:00:50" />
+    <file relUrl="Jobseekers/Jobseekerhome.aspx" publishTime="10/28/2012 15:15:31" />
+    <file relUrl="jbsubscribe.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="Scripts/facebox/jquery.min.js" publishTime="04/26/2011 04:40:24" />
-    <file relUrl="Recruiters/Editjobs.aspx" publishTime="10/28/2012 11:24:22" />
-    <file relUrl="styles/cs4.css" publishTime="10/26/2012 05:06:02" />
-    <file relUrl="bin/JB.dll" publishTime="10/28/2012 11:52:51" />
-    <file relUrl="Scripts/jquery.autocomplete.js" publishTime="02/01/2010 14:09:34" />
-    <file relUrl="Jobseekers/Directapplication.aspx" publishTime="10/28/2012 11:01:11" />
-    <file relUrl="reportapage.aspx" publishTime="10/28/2012 11:01:06" />
-    <file relUrl="Recruiters/Recruiterform.aspx" publishTime="10/28/2012 11:01:06" />
+    <file relUrl="Recruiters/Editjobs.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="styles/cs4.css" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="bin/JB.dll" publishTime="10/28/2012 17:02:57" />
+    <file relUrl="Scripts/jquery.autocomplete.js" publishTime="10/28/2012 15:19:18" />
+    <file relUrl="EmailTemplates/PasswordReset.htm" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="reportapage.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Recruiters/Recruiterform.aspx" publishTime="10/28/2012 14:52:01" />
     <file relUrl="articles/hbo_logo.jpg" publishTime="03/30/2011 12:04:38" />
-    <file relUrl="articles/hp-logo.jpg" publishTime="03/30/2011 12:05:30" />
-    <file relUrl="Recruiters/Changerecpwd.aspx" publishTime="10/28/2012 11:01:09" />
-    <file relUrl="Blank.aspx" publishTime="10/24/2012 01:54:37" />
-    <file relUrl="bin/MySql.Data.Entity.dll" publishTime="10/11/2012 03:06:11" />
-    <file relUrl="Recruiters/Rechome.aspx" publishTime="10/28/2012 11:01:08" />
-    <file relUrl="Recruiters/Login.aspx" publishTime="10/28/2012 11:01:08" />
-    <file relUrl="Web.config" publishTime="10/28/2012 06:30:51" />
+    <file relUrl="Recruiters/Changerecpwd.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Blank.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Recruiters/Rechome.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Recruiters/Login.aspx" publishTime="10/28/2012 14:52:01" />
+    <file relUrl="Web.config" publishTime="10/28/2012 14:52:01" />
   </publishProfile>
 </publishData>

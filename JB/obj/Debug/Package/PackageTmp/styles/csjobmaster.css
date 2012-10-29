@@ -1,380 +1,360 @@
-﻿.recdetlsStyle1
-{
-    width: 300px;
+﻿.recdetlsStyle1 {
     border-collapse: collapse;
+    width: 300px;
 }
-.recdtlspixln
-{
-    height: 4px;
+
+.recdtlspixln {
     border-bottom-color: #000;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    height: 4px;
     width: 100%;
 }
-#recheightfix
-{
-    margin-top: 10px;
-    left: 100px;
-    height: 400px;
-    overflow: auto;
+
+#recheightfix {
     border-collapse: collapse;
+    height: 400px;
+    left: 100px;
+    margin-top: 10px;
+    overflow: auto;
 }
-.simplyleftw100
-{
+
+.simplyleftw100 {
     float: left;
     width: 100px;
 }
-.divbreak
-{
-    left: 0;
-}
-.setrightdiva
-{
+
+.divbreak { left: 0; }
+
+.setrightdiva {
     float: left;
-    width: 20px;
     height: 20px;
+    width: 20px;
 }
-.setl
-{
+
+.setl {
     height: 20px;
     width: auto;
 }
-.setleftdiv
-{
+
+.setleftdiv {
     float: left;
-    width: 100px;
     padding-left: 4px;
     vertical-align: middle;
+    width: 100px;
 }
-.setleftdivw1
-{
+
+.setleftdivw1 {
     float: left;
     width: 50px;
 }
-.box2
-{
-    height: 450px;
+
+.box2 {
     border-color: gray;
     border-style: solid;
     border-width: 1px;
+    height: 450px;
 }
-.jdetstylelf
-{
-    float: left;
+
+.jdetstylelf {
     background-color: #f0f0f0;
+    float: left;
     width: 100px;
 }
-.jdetstylerf
-{
-    left: 100px;
+
+.jdetstylerf {
     background-color: #f0f0f0;
+    left: 100px;
     width: 100%;
 }
-.jdetstyle7
-{
+
+.jdetstyle7 {
+    background-color: #fff;
     padding-left: 40px;
-    background-color: #fff;
 }
-.jdetstyle7a
-{
-    padding-left: 20px;
+
+.jdetstyle7a {
     background-color: #fff;
+    padding-left: 20px;
     padding-right: 20px;
 }
-.jdetstyle8
-{
-    height: 19px;
-}
-.jobdetailbr
-{
-    height: 4px;
-}
-.jdettopnav
-{
+
+.jdetstyle8 { height: 19px; }
+
+.jobdetailbr { height: 4px; }
+
+.jdettopnav {
+    background-color: gray;
     height: 16px;
     padding-left: 4px;
     vertical-align: middle;
-    background-color: gray;
 }
-.lpad1
-{
+
+.lpad1 {
+    padding-bottom: 20px;
     padding-left: 40px;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
-.Stylear1
-{
+
+.Stylear1 {
+    border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
-}
-.styledbordertp1
-{
-    float: left;
-    width: 100px;
-    padding-left: 40px;
-    background-color: #fff;
-}
-.styledbordertp
-{
-    float: left;
-    width: 100px;
-    background-color: #fff;
-}
-.styledborder
-{
-    float: left;
-    width: 500px;
-    background-color: #fff;
-}
-.cleardatamore
-{
-    float: left;
-    width: 100%;
-    height: 10px;
-}
-#dpabar
-{
-    width: 950px;
-    height: 8px;    
-    background-color: #ccc;
-    margin: 0 auto;
-}
-#reportpg
-{
-    float: right;
-    height: 100px;
-    width: 200px;
-    margin-top: 20px;
-    border-left: 1px dotted gray;
-    padding: 4px 40px 0;
-}
-#jobdetaillt
-{
-    width: 700px;
-    float: left;
-}
-.confstyle7
-{
-    width: 100%;
-    border-collapse: collapse;
-}
-.pdleft4
-{
-    padding-left: 4px;
-}
-.fontred:hover
-{
-    text-decoration: underline;
-}
-.jobdfttop:hover
-{
-    color: #fff;
-}
-.jobdfttop
-{
-    color: #ccc;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
-.csslinkrec
-{
-    color: gray;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-}
-.csslinkrecover
-{
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-}
-.lowerbrdrdotted
-{
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
-.dftbgmenucolor
-{
-    background-color: #bcc7d8;
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-bottom-width: 1px;
-    border-bottom-color: gray;
-    border-bottom-style: dotted;
-    text-decoration: none;
-}
-.StyleRa1
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
-}
-.addcustline
-{
-    border-top-style: solid;
-    border-top-width: 1px;
-    color: gray;
-    border-collapse: collapse;
-}
-.StyleRa2
-{
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-collapse: collapse;
-}
-.Stylea1
-{
-    color: #fff;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
-}
-.Stylea101
-{
-    color: #069;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Stylea3
-{
+.styledbordertp1 {
     background-color: #fff;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
+    float: left;
+    padding-left: 40px;
+    width: 100px;
 }
-.Styleatext3
-{
+
+.styledbordertp {
+    background-color: #fff;
+    float: left;
+    width: 100px;
+}
+
+.styledborder {
+    background-color: #fff;
+    float: left;
+    width: 500px;
+}
+
+.cleardatamore {
+    float: left;
+    height: 10px;
+    width: 100%;
+}
+
+#dpabar {
+    background-color: #ccc;
+    height: 8px;
+    margin: 0 auto;
+    width: 950px;
+}
+
+#reportpg {
+    border-left: 1px dotted gray;
+    float: right;
+    height: 100px;
+    margin-top: 20px;
+    padding: 4px 40px 0;
+    width: 200px;
+}
+
+#jobdetaillt {
+    float: left;
+    width: 700px;
+}
+
+.confstyle7 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pdleft4 { padding-left: 4px; }
+
+.fontred:hover { text-decoration: underline; }
+
+.jobdfttop:hover { color: #fff; }
+
+.jobdfttop {
+    color: #ccc;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.csslinkrec {
+    color: gray;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.csslinkrecover {
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.lowerbrdrdotted {
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.dftbgmenucolor {
+    background-color: #bcc7d8;
+    border-bottom-color: gray;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.StyleRa1 {
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.addcustline {
+    border-collapse: collapse;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: gray;
+}
+
+.StyleRa2 {
+    border-collapse: collapse;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.Stylea1 {
+    border-collapse: collapse;
+    color: #fff;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.Stylea101 {
+    color: #069;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.Stylea3 {
+    background-color: #fff;
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.Styleatext3 {
     background-color: #f8f8fa;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
-    border-collapse: collapse;
 }
-.textexte3
-{
+
+.textexte3 {
     background-color: #eee;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
-    border-collapse: collapse;
 }
-.Stylea42
-{
+
+.Stylea42 {
     background-color: #069;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
     border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
     height: 20px;
     width: 17px;
 }
-.Stylea4
-{
+
+.Stylea4 {
     background-color: #069;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
     border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
     height: 20px;
     text-align: left;
 }
-.Stylea5
-{
+
+.Stylea5 {
     color: #069;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-large;
 }
-.Stylea6
-{
+
+.Stylea6 {
     color: gray;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-small;
 }
-.Stylea7
-{
+
+.Stylea7 {
+    border-collapse: collapse;
     color: gray;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
-    border-collapse: collapse;
 }
-.Stylea8
-{
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
+
+.Stylea8 {
     background-color: #fff;
+    border-collapse: collapse;
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
 }
-.Stylea801
-{
+
+.Stylea801 {
+    border-collapse: collapse;
     color: #1c5786;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
-    border-collapse: collapse;
 }
-.Styleag1
-{
+
+.Styleag1 {
     color: gray;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
-.styledc3
-{
+
+.styledc3 {
     background-color: #f8f8fa;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
     border-collapse: collapse;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
     height: 44px;
 }
-.styledc4
-{
-    width: 4px;
-    color: #fff;
+
+.styledc4 {
     background-color: #fff;
+    color: #fff;
+    width: 4px;
 }
-.styledc6
-{
-    width: 200px;
+
+.styledc6 {
     color: #f5e38a;
     text-align: center;
+    width: 200px;
 }
-.headingone, .fontred
-{
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+
+.headingone, .fontred {
+    color: #c00;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
-    color: #c00;
 }
-.Stylea2, .Stylea9
-{
-    color: #000;
-    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
-    font-size: 13px;
+
+.Stylea2, .Stylea9 {
     border-collapse: collapse;
+    color: #000;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
 }
-.recdtljustbrk, .setheight
-{
-    height: 10px;
-}
-.pwdchgtopbans, .conftopbans, .activateactopbanner
-{
+
+.recdtljustbrk, .setheight { height: 10px; }
+
+.pwdchgtopbans, .conftopbans, .activateactopbanner {
     background-color: gray;
     height: 16px;
     padding-left: 4px;
     vertical-align: middle;
 }
-.leftheader, .simplyleft
-{
-    float: left;
-}
-.leftdiv, .styledc1
-{
-    width: 100%;
-}
+
+.leftheader, .simplyleft { float: left; }
+
+.leftdiv, .styledc1 { width: 100%; }
