@@ -35,6 +35,10 @@ namespace JB
             CheckBoxList1.DataTextField = "sTerm";
             CheckBoxList1.DataValueField = "Termid";
             CheckBoxList1.DataBind();
+
+            if(Request.QueryString["q"]!=null){
+            TextBox2.Text = Request.QueryString["q"];
+            }
         }
 
         private void SetCheckBox(string __criteria)
