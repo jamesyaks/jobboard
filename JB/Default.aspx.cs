@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -36,13 +37,199 @@ namespace JB
             CheckBoxList1.DataBind();
         }
 
+        private void SetCheckBox(string __criteria)
+        {
+            string[] __splitcriteria = { "(", ",", ")" };
+            string[] __splitedarray = __criteria.Split(__splitcriteria, StringSplitOptions.None);
+
+            //set salaries
+            foreach (string s in from ListItem listite in CheckBoxList6.Items from s in __splitedarray.Where(s => s == listite.Value) select s)
+            {
+                CheckBoxList6.Items.FindByValue(s).Selected = true;
+            }
+
+            //set location
+            foreach (string s in from ListItem listite1 in CheckBoxList2.Items from s in __splitedarray.Where(s => s == listite1.Value) select s)
+            {
+                CheckBoxList2.Items.FindByValue(s).Selected = true;
+            }
+
+            //set industry
+            foreach (string s in from ListItem listit2 in CheckBoxList1.Items from s in __splitedarray.Where(s => s == listit2.Value) select s)
+            {
+                CheckBoxList1.Items.FindByValue(s).Selected = true;
+            }
+
+            //set contract
+            foreach (string s in from ListItem listit3 in CheckBoxList3.Items from s in __splitedarray.Where(s => s == listit3.Value) select s)
+            {
+                CheckBoxList3.Items.FindByValue(s).Selected = true;
+            }
+
+            //set hours
+            foreach (string s in from ListItem listit4 in CheckBoxList4.Items from s in __splitedarray.Where(s => s == listit4.Value) select s)
+            {
+                CheckBoxList4.Items.FindByValue(s).Selected = true;
+            }
+
+            //set employer type
+            foreach (string s in from ListItem listit5 in CheckBoxList5.Items from s in __splitedarray.Where(s => s == listit5.Value) select s)
+            {
+                CheckBoxList5.Items.FindByValue(s).Selected = true;
+            }
+        }
+
+        private void SetSearch()
+        {
+            if (Request.QueryString["q"] != null)
+            {
+                if (Request.QueryString["q"] == "all")
+                {
+                    var _mp = new DlMainpagepopulator();
+
+                    GridView1.DataSource = _mp.GetJobssingle();
+                    GridView1.DataBind();
+
+                    //get count of all jobs
+                    Label13.Text = _mp.Getcountjobs() + " Jobs Advertized from " + _mp.Getcountrecswadvert() + " Recruiters";
+                }
+
+                else if (Request.QueryString["filter"] != null)
+                {
+                    //textbox+criteria
+                    var _criteria = Session["criteria"].ToString().ToLowerInvariant();
+                    var _title = Request.QueryString["q"];
+
+                    var _sr = new Clsearchhelper();
+
+                    GridView1.DataSource = _sr.Applytitlefilter(_title, _criteria);
+                    GridView1.DataBind();
+
+                    //set checkboxes
+                    SetCheckBox(_criteria);
+
+                    //show filters
+                    ClearFilters.Visible = true;
+                }
+
+                else
+                {
+                    //textbox only
+                    var _sr2 = new Clsearchhelper();
+                    var __title = Request.QueryString["q"];
+
+                    GridView1.DataSource = _sr2.Applytitlefilter(__title);
+                    GridView1.DataBind();
+
+                    //show filters
+                    ClearFilters.Visible = true;
+                }
+            }
+
+            else
+            {
+                if (Request.QueryString["filter"] == null)
+                {
+                    var _mp1 = new DlMainpagepopulator();
+
+                    GridView1.DataSource = _mp1.GetJobssingle();
+                    GridView1.DataBind();
+
+                    //get count of all jobs
+                    Label13.Text = _mp1.Getcountjobs() + " Jobs Advertized from " + _mp1.Getcountrecswadvert() + " Recruiters";
+                }
+
+                else
+                {
+                    //criteria only
+                    var _criteria = Session["criteria"].ToString().ToLowerInvariant();
+                    var _sr = new Clsearchhelper();
+
+                    GridView1.DataSource = _sr.Applycriteriafilter(_criteria);
+                    GridView1.DataBind();
+
+                    //setcheckbox
+                    SetCheckBox(_criteria);
+
+                    //show filter button
+                    ClearFilters.Visible = true;
+                }
+            }
+
+            //display filter sign
+
+        }
+
+        private void GetPage(GridViewPageEventArgs e)
+        {
+            if (Request.QueryString["q"] != null)
+            {
+                if (Request.QueryString["q"] == "all")
+                {
+                    var _mp = new DlMainpagepopulator();
+
+                    GridView1.DataSource = _mp.GetJobssingle();
+                    GridView1.PageIndex = e.NewPageIndex;
+                    GridView1.DataBind();
+
+                    //get count of all jobs
+                    Label13.Text = _mp.Getcountjobs() + " Jobs Advertized from " + _mp.Getcountrecswadvert() + " Recruiters";
+                }
+
+                else if (Request.QueryString["filter"] != null)
+                {
+                    //textbox+criteria
+                    var _criteria = Session["criteria"].ToString().ToLowerInvariant();
+                    var _title = Request.QueryString["q"];
+
+                    var _sr = new Clsearchhelper();
+
+                    GridView1.DataSource = _sr.Applytitlefilter(_title, _criteria);
+                    GridView1.PageIndex = e.NewPageIndex;
+                    GridView1.DataBind();
+                }
+
+                else
+                {
+                    //textbox only
+                    var _sr2 = new Clsearchhelper();
+                    var __title = Request.QueryString["q"];
+
+                    GridView1.DataSource = _sr2.Applytitlefilter(__title);
+                    GridView1.PageIndex = e.NewPageIndex;
+                    GridView1.DataBind();
+                }
+            }
+
+            else
+            {
+                if (Request.QueryString["filter"] == null)
+                {
+                    var _mp1 = new DlMainpagepopulator();
+
+                    GridView1.DataSource = _mp1.GetJobssingle();
+                    GridView1.PageIndex = e.NewPageIndex;
+                    GridView1.DataBind();
+
+                    //get count of all jobs
+                    Label13.Text = _mp1.Getcountjobs() + " Jobs Advertized from " + _mp1.Getcountrecswadvert() + " Recruiters";
+                }
+
+                else
+                {
+                    //criteria only
+                    var _criteria = Session["criteria"].ToString().ToLowerInvariant();
+                    var _sr = new Clsearchhelper();
+
+                    GridView1.DataSource = _sr.Applycriteriafilter(_criteria);
+                    GridView1.PageIndex = e.NewPageIndex;
+                    GridView1.DataBind();
+                }
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //main job binding
-            var _mp = new DlMainpagepopulator();
-            GridView1.DataSource = _mp.GetJobssingle();
-            GridView1.DataBind();
-
             //featured Recruiters
             var _frec = new DlFeaturedrecruiters();
             GridView2.DataSource = _frec.GetFRecs();
@@ -50,101 +237,68 @@ namespace JB
 
             //set default inputs
             TextBox2.Focus();
+            Form.DefaultButton = Button1.UniqueID;
 
-            //get count of all jobs
-            Label13.Text = _mp.Getcountjobs() + " Jobs Advertized from " + _mp.Getcountrecswadvert() + " Recruiters";
+            SetSearch();
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            if (Label13.Text.Contains("your search returned"))
-            {
-                //only text box
-                var sflt2 = new DlSearchfilters();
-                GridView1.DataSource = sflt2.Applytitlefilter(TextBox2.Text, shortbuildfunc());
-                GridView1.PageIndex = e.NewPageIndex;
-                GridView1.DataBind();
-            }
-
-            else
-            {
-                var mpgp = new DlMainpagepopulator();
-                GridView1.DataSource = mpgp.GetJobssingle();
-                GridView1.PageIndex = e.NewPageIndex;
-                GridView1.DataBind();
-            }
+            GetPage(e);
         }
 
-        private string shortbuildfunc()
+        private string Shortbuildfunc()
         {
             var shortbuild = new StringBuilder();
             bool ix = false;
 
-            shortbuild.Append(" and termid IN(");
+            shortbuild.Append(" termid IN(");
 
             //insert salaries
-            foreach (ListItem listsal in CheckBoxList6.Items)
+            foreach (var listite in CheckBoxList6.Items.Cast<ListItem>().Where(listite => listite.Selected))
             {
-                if (listsal.Selected)
-                {
-                    shortbuild.Append(listsal.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listite.Value + ",");
+                ix = true;
             }
 
             //insert location
-            foreach (ListItem listite1 in CheckBoxList2.Items)
+            foreach (var listite1 in CheckBoxList2.Items.Cast<ListItem>().Where(listite1 => listite1.Selected))
             {
-                if (listite1.Selected)
-                {
-                    shortbuild.Append(listite1.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listite1.Value + ",");
+                ix = true;
             }
 
             //industry
-            foreach (ListItem listit2 in CheckBoxList1.Items)
+            foreach (var listit2 in CheckBoxList1.Items.Cast<ListItem>().Where(listit2 => listit2.Selected))
             {
-                if (listit2.Selected)
-                {
-                    shortbuild.Append(listit2.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listit2.Value + ",");
+                ix = true;
             }
 
             //insert contract
-            foreach (ListItem listit3 in CheckBoxList3.Items)
+            foreach (var listit3 in CheckBoxList3.Items.Cast<ListItem>().Where(listit3 => listit3.Selected))
             {
-                if (listit3.Selected)
-                {
-                    shortbuild.Append(listit3.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listit3.Value + ",");
+                ix = true;
             }
 
             //add hours
-            foreach (ListItem listit4 in CheckBoxList4.Items)
+            foreach (var listit4 in CheckBoxList4.Items.Cast<ListItem>().Where(listit4 => listit4.Selected))
             {
-                if (listit4.Selected)
-                {
-                    shortbuild.Append(listit4.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listit4.Value + ",");
+                ix = true;
             }
 
             //add employer type
-            foreach (ListItem listit5 in CheckBoxList5.Items)
+            foreach (var listit5 in CheckBoxList5.Items.Cast<ListItem>().Where(listit5 => listit5.Selected))
             {
-                if (listit5.Selected)
-                {
-                    shortbuild.Append(listit5.Value + ",");
-                    ix = true;
-                }
+                shortbuild.Append(listit5.Value + ",");
+                ix = true;
             }
 
-            string __searchstr = string.Empty;
+            var __searchstr = string.Empty;
 
-            if (ix)
+            if (ix == true)
             {
                 __searchstr = shortbuild.ToString().TrimEnd(',');
                 __searchstr = __searchstr + ")";
@@ -153,25 +307,47 @@ namespace JB
             return __searchstr;
         }
 
-        private void search_code()
+        private void RedirectSearch()
         {
-            if (TextBox2.Text.Trim() != "")
+            var _tempsearch = Shortbuildfunc();
+
+            //clear current session
+            Session.Remove("criteria");
+
+            if (_tempsearch != string.Empty)
             {
-                //only text box
-                var sflt = new DlSearchfilters();
-                string criterion = shortbuildfunc();
-                string titlian = TextBox2.Text;
+                Session["criteria"] = _tempsearch;
 
-                GridView1.DataSource = sflt.Applytitlefilter(titlian, criterion);
-                GridView1.DataBind();
+                if (TextBox2.Text.Trim() != "")
+                {
+                    //textbox + criteria
+                    Response.Redirect("/default.aspx?q=" + TextBox2.Text.Trim() + "&filter=true");
+                }
+                else
+                {
+                    //only checkbox in criteria
+                    Response.Redirect("/default.aspx?filter=true");
+                }
+            }
 
-                Label13.Text = "your search returned " + sflt.Getsearchcounts(titlian, criterion) + " results";
+            else
+            {
+                if (TextBox2.Text.Trim() != "")
+                {
+                    Response.Redirect("/default.aspx?q=" + TextBox2.Text.Trim());
+                }
+
+                else
+                {
+                    //perform only title search
+                    Response.Redirect("/default.aspx?q=all");
+                }
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            search_code();
+            RedirectSearch();
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -188,37 +364,28 @@ namespace JB
 
         protected void LinkButton44_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Contact.aspx");
-        }
-
-        protected void LinkButtonSal_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/SalaryCalc/Salaryquestions.aspx");
+            Response.Redirect("/contact.aspx");
         }
 
         protected void LinkButtonj_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AllRecruiters.aspx");
+            Response.Redirect("/allRecruiters.aspx");
         }
 
         protected void LinkButtona6_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Default.aspx");
-        }
-
-        protected void LinkButton5_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("default.aspx?ival=");
-        }
-
-        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("default.aspx");
+            Response.Redirect("/default.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("jbsubscribe.aspx");
+            Response.Redirect("/jbsubscribe.aspx");
+        }
+
+        protected void ClearFilters_Click(object sender, ImageClickEventArgs e)
+        {
+            Session.Remove("criteria");
+            Response.Redirect("/default.aspx");
         }
     }
 }

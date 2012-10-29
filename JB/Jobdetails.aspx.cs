@@ -42,6 +42,15 @@ namespace JB
                 //get contract type
                 Label22.Text = mpage.Getdetailspagecats(tempjobid, 1002);
 
+                //hours
+                Labelhrs.Text = mpage.Getdetailspagecats(tempjobid, 1003);
+
+                //industry
+                Labelindustry.Text = mpage.Getdetailspagecats(tempjobid, 1001);
+
+                //employer
+                Labeletype.Text = mpage.Getdetailspagecats(tempjobid, 1004);
+
                 //get rec logo
                 string recid = Plc[7];
 

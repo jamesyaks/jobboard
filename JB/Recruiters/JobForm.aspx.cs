@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Globalization;
+using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -104,10 +105,8 @@ namespace JB.Recruiters
                     var __al = new ArrayList();
                     __al = cljbs.Getmultitexts(editjobid);
 
-                    foreach (string __arritem in __al)
+                    foreach (int arritem in from string __arritem in __al select Convert.ToInt32(__arritem))
                     {
-                        int arritem = Convert.ToInt32(__arritem);
-
                         if (arritem >= 5000 && arritem < 6000)
                         {
                             //industry
@@ -120,7 +119,7 @@ namespace JB.Recruiters
                             CheckBoxList2.Items.FindByValue(arritem.ToString(CultureInfo.InvariantCulture)).Selected = true;
                         }
 
-                        if (arritem >= 3000 && arritem <= 3002)
+                        if (arritem == 3000 || arritem == 3001 || arritem == 3002)
                         {
                             //contract
                             CheckBoxList3.Items.FindByValue(arritem.ToString(CultureInfo.InvariantCulture)).Selected = true;
@@ -132,13 +131,13 @@ namespace JB.Recruiters
                             CheckBoxList6.Items.FindByValue(arritem.ToString(CultureInfo.InvariantCulture)).Selected = true;
                         }
 
-                        if (arritem >= 3003 && arritem <= 3004)
+                        if (arritem == 3003 || arritem == 3004)
                         {
                             //hours
                             CheckBoxList7.Items.FindByValue(arritem.ToString(CultureInfo.InvariantCulture)).Selected = true;
                         }
 
-                        if (arritem >= 7000 && arritem <= 7001)
+                        if (arritem == 7000 || arritem == 7001)
                         {
                             //employement type
                             CheckBoxList8.Items.FindByValue(arritem.ToString(CultureInfo.InvariantCulture)).Selected = true;
@@ -177,62 +176,44 @@ namespace JB.Recruiters
                 mpage.Deletejobs(mxjobsid);
 
                 //insert location
-                foreach (ListItem listite1 in CheckBoxList2.Items)
+                foreach (ListItem listite1 in CheckBoxList2.Items.Cast<ListItem>().Where(listite1 => listite1.Selected))
                 {
-                    if (listite1.Selected)
-                    {
-                        //insert
+                    //insert
 
-                        mpage.Insertjobmapping(mxjobsid, 1000, Convert.ToInt16(listite1.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1000, Convert.ToInt16(listite1.Value), recid);
                 }
 
                 //industry
-                foreach (ListItem listitems3 in CheckBoxList1.Items)
+                foreach (ListItem listitems3 in CheckBoxList1.Items.Cast<ListItem>().Where(listitems3 => listitems3.Selected))
                 {
-                    if (listitems3.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
                 }
 
 
                 //insert contract
-                foreach (ListItem listitems2 in CheckBoxList3.Items)
+                foreach (ListItem listitems2 in CheckBoxList3.Items.Cast<ListItem>().Where(listitems2 => listitems2.Selected))
                 {
-                    if (listitems2.Selected)
-                    {
-                        //insert cats
-                        mpage.Insertjobmapping(mxjobsid, 1002, Convert.ToInt16(listitems2.Value), recid);
-                    }
+                    //insert cats
+                    mpage.Insertjobmapping(mxjobsid, 1002, Convert.ToInt16(listitems2.Value), recid);
                 }
 
                 //insert hours
-                foreach (ListItem listitems4 in CheckBoxList7.Items)
+                foreach (ListItem listitems4 in CheckBoxList7.Items.Cast<ListItem>().Where(listitems4 => listitems4.Selected))
                 {
-                    if (listitems4.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1003, Convert.ToInt16(listitems4.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1003, Convert.ToInt16(listitems4.Value), recid);
                 }
 
                 //employer direct of agency
 
-                foreach (ListItem listitems5 in CheckBoxList8.Items)
+                foreach (ListItem listitems5 in CheckBoxList8.Items.Cast<ListItem>().Where(listitems5 => listitems5.Selected))
                 {
-                    if (listitems5.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1004, Convert.ToInt16(listitems5.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1004, Convert.ToInt16(listitems5.Value), recid);
                 }
 
                 //insert salary
-                foreach (ListItem listitems6 in CheckBoxList6.Items)
+                foreach (ListItem listitems6 in CheckBoxList6.Items.Cast<ListItem>().Where(listitems6 => listitems6.Selected))
                 {
-                    if (listitems6.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1005, Convert.ToInt16(listitems6.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1005, Convert.ToInt16(listitems6.Value), recid);
                 }
 
                 //end update
@@ -260,61 +241,43 @@ namespace JB.Recruiters
 
                 //insert location
 
-                foreach (ListItem listite1 in CheckBoxList2.Items)
+                foreach (ListItem listite1 in CheckBoxList2.Items.Cast<ListItem>().Where(listite1 => listite1.Selected))
                 {
-                    if (listite1.Selected)
-                    {
-                        //insert categories
-                        mpage.Insertjobmapping(mxjobsid, 1000, Convert.ToInt16(listite1.Value), recid);
-                    }
+                    //insert categories
+                    mpage.Insertjobmapping(mxjobsid, 1000, Convert.ToInt16(listite1.Value), recid);
                 }
 
                 //industry
-                foreach (ListItem listitems3 in CheckBoxList1.Items)
+                foreach (ListItem listitems3 in CheckBoxList1.Items.Cast<ListItem>().Where(listitems3 => listitems3.Selected))
                 {
-                    if (listitems3.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
                 }
 
 
                 //insert contract
-                foreach (ListItem listitems2 in CheckBoxList3.Items)
+                foreach (ListItem listitems2 in CheckBoxList3.Items.Cast<ListItem>().Where(listitems2 => listitems2.Selected))
                 {
-                    if (listitems2.Selected)
-                    {
-                        //insert cats
-                        mpage.Insertjobmapping(mxjobsid, 1002, Convert.ToInt16(listitems2.Value), recid);
-                    }
+                    //insert cats
+                    mpage.Insertjobmapping(mxjobsid, 1002, Convert.ToInt16(listitems2.Value), recid);
                 }
 
                 //insert hours
-                foreach (ListItem listitems4 in CheckBoxList7.Items)
+                foreach (ListItem listitems4 in CheckBoxList7.Items.Cast<ListItem>().Where(listitems4 => listitems4.Selected))
                 {
-                    if (listitems4.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1003, Convert.ToInt16(listitems4.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1003, Convert.ToInt16(listitems4.Value), recid);
                 }
 
                 //employer direct of agency
 
-                foreach (ListItem listitems5 in CheckBoxList8.Items)
+                foreach (ListItem listitems5 in CheckBoxList8.Items.Cast<ListItem>().Where(listitems5 => listitems5.Selected))
                 {
-                    if (listitems5.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1004, Convert.ToInt16(listitems5.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1004, Convert.ToInt16(listitems5.Value), recid);
                 }
 
                 //insert salary
-                foreach (ListItem listitems6 in CheckBoxList6.Items)
+                foreach (ListItem listitems6 in CheckBoxList6.Items.Cast<ListItem>().Where(listitems6 => listitems6.Selected))
                 {
-                    if (listitems6.Selected)
-                    {
-                        mpage.Insertjobmapping(mxjobsid, 1005, Convert.ToInt16(listitems6.Value), recid);
-                    }
+                    mpage.Insertjobmapping(mxjobsid, 1005, Convert.ToInt16(listitems6.Value), recid);
                 }
 
                 //end adding jobs

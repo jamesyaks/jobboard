@@ -3,7 +3,6 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/styles/autocomplete.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.1.min.js" type="text/javascript"> </script>
     <script src="/Scripts/jquery.autocomplete.js" type="text/javascript"> </script>
 </asp:Content>
@@ -25,6 +24,9 @@
                     <asp:Label ID="Label1" runat="server" CssClass="ftwhite" Text="Advanced Search"></asp:Label>
                 </div>
                 <div class="dvright">
+                    <asp:ImageButton ID="ClearFilters" runat="server" Visible="False" 
+                        CssClass="img_lt_filters" ImageUrl="/images/sprite.gif" 
+                        onclick="ClearFilters_Click" />
                 </div>
             </div>
             <div id="dvclear">

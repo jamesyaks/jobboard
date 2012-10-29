@@ -143,6 +143,7 @@
     </Compile>
     <Compile Include="CLCaptchacls.cs" />
     <Compile Include="Clemail.cs" />
+    <Compile Include="Clsearchhelper.cs" />
     <Compile Include="DlApps.cs" />
     <Compile Include="DlArticles.cs" />
     <Compile Include="Blank.aspx.cs">

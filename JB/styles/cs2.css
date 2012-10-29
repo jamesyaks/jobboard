@@ -1,11 +1,15 @@
 ﻿/*sprites*/
 
-.img_lt_calender, .img_lt_blog, .img_lt_contact, .img_lt_users, .img_lt_mail, .img_lt_rss, .img_lt_terms, .img_lt_privacy, .img_lt_copyright, .img_lt_one, .img_lt_two, .img_lt_red, .img_lt_green
+.img_lt_filters,.img_lt_calender, .img_lt_blog, .img_lt_contact, .img_lt_users, .img_lt_mail, .img_lt_rss, .img_lt_terms, .img_lt_privacy, .img_lt_copyright, .img_lt_one, .img_lt_two, .img_lt_red, .img_lt_green
 {
     background-image: url('/images/icons.png');
     background-repeat: no-repeat;
     height: 12px;
     width: 12px;
+}
+
+.img_lt_filters {
+	background-position: 0px -138px;
 }
 
 .img_lt_calender

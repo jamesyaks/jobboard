@@ -20,7 +20,7 @@
     <div class="boxcorner">
         <!-- top image-->
         <div class="lpad1">
-            <asp:Image ID="Image7" runat="server" Height="100px" />
+            <asp:Image ID="Image7" runat="server" Width="75px" />
         </div>
         <div class="cleardata">
         </div>
@@ -101,6 +101,36 @@
                 </div>
                 <div class="cleardata">
                 </div>
+                 <div class="jdetstyle7">
+                    <div class="styledbordertp">
+                        <asp:Label ID="Label1" runat="server" CssClass="ftblackbd" Text="Industry"></asp:Label>
+                    </div>
+                    <div class="styledborder">
+                        <asp:Label ID="Labelindustry" runat="server" CssClass="ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="cleardata">
+                </div>
+                 <div class="jdetstyle7">
+                    <div class="styledbordertp">
+                        <asp:Label ID="Label3" runat="server" CssClass="ftblackbd" Text="Hours"></asp:Label>
+                    </div>
+                    <div class="styledborder">
+                        <asp:Label ID="Labelhrs" runat="server" CssClass="ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="cleardata">
+                </div>
+                 <div class="jdetstyle7">
+                    <div class="styledbordertp">
+                        <asp:Label ID="Label5" runat="server" CssClass="ftblackbd" Text="Employer Type"></asp:Label>
+                    </div>
+                    <div class="styledborder">
+                        <asp:Label ID="Labeletype" runat="server" CssClass="ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="cleardata">
+                </div>
                 <div class="jdetstyle7">
                     <div class="styledbordertp">
                         <asp:Label ID="Label28" runat="server" CssClass="ftblackbd" Text="Contact Email"></asp:Label>
@@ -120,7 +150,7 @@
                     </div>
                     <br />
                 </div>
-                <div class="cleardatamore">
+                <div class="cleardata">
                 </div>
                 <div class="jdetstyle7">
                     <div class="styledbordertp">
@@ -134,7 +164,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="cleardatamore">
+                <div class="cleardata">
                 </div>
                 <div class="jdetstyle7">
                     <div class="styledbordertp">
