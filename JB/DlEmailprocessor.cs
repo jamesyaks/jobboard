@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Configuration;
 using System.Data;
-using System.Net;
-using System.Net.Mail;
 using System.Text;
 using MySql.Data.MySqlClient;
 
@@ -20,7 +17,7 @@ namespace JB
         //get recruiter details for jobemails subjects
         public StringBuilder Dbemailgenerator(int jobid)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var sbr = new StringBuilder();
 
@@ -50,7 +47,7 @@ namespace JB
         //this is for processing password change notifications.
         public StringBuilder Emailpwdnotify(string passwordlink, string uusername)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var sbr = new StringBuilder();
 
@@ -82,7 +79,7 @@ namespace JB
         //user activation email
         public StringBuilder Emailactivateusr(string activationlink, string uusername)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var sbr = new StringBuilder();
 
@@ -144,7 +141,7 @@ namespace JB
         //this is for processing application notifications.
         public StringBuilder Emaildirapps(int typeofemail, string username)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var sbr = new StringBuilder();
 

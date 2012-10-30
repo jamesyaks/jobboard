@@ -4,3 +4,9 @@ C:\stable0.2\JB\bin\MySql.Data.dll
 C:\stable0.2\JB\obj\Debug\ResolveAssemblyReference.cache
 C:\stable0.2\JB\obj\Debug\JB.dll
 C:\stable0.2\JB\obj\Debug\JB.pdb
+C:\stable0.2recent\JB\bin\JB.dll
+C:\stable0.2recent\JB\bin\JB.pdb
+C:\stable0.2recent\JB\bin\MySql.Data.dll
+C:\stable0.2recent\JB\obj\Debug\ResolveAssemblyReference.cache
+C:\stable0.2recent\JB\obj\Debug\JB.dll
+C:\stable0.2recent\JB\obj\Debug\JB.pdb

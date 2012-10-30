@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data;
+﻿using System.Data;
 
 namespace JB
 {
     public class Clsearchhelper
     {
         /// <summary>
-        /// move get jobssingle in here 
+        /// move get jobssingle in here
         /// </summary>
         /// <param name="addedcrit"></param>
 

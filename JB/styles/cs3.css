@@ -1,26 +1,36 @@
-﻿.pdleft4 { padding-left: 4px; }
+﻿.pdleft4
+{
+    padding-left: 4px;
+}
 
-.arecstyle7 {
+.arecstyle7
+{
     border-collapse: collapse;
     width: 100%;
 }
 
-.arecstyle49 { background-color: gray; }
+.arecstyle49
+{
+    background-color: gray;
+}
 
-.arecstyle50 {
+.arecstyle50
+{
     border-bottom-style: dotted;
     border-color: gray;
     border-width: 1px;
 }
 
-.arecstlyletopbg {
+.arecstlyletopbg
+{
     background-color: gray;
     height: 16px;
     padding-left: 4px;
     vertical-align: middle;
 }
 
-.box2 {
+.box2
+{
     border-color: gray;
     border-style: solid;
     border-width: 1px;

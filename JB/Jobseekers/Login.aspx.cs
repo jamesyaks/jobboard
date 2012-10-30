@@ -8,7 +8,7 @@ namespace JB.JobSeekers
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -31,7 +31,7 @@ namespace JB.JobSeekers
 
             cookie.Expires = DateTime.Now.AddHours(1);
 
-            //Add the cookie             
+            //Add the cookie
             Response.Cookies.Add(cookie);
         }
 

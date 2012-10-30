@@ -29,7 +29,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -52,7 +52,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -75,7 +75,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(

@@ -52,7 +52,7 @@ namespace JB
             //store rec details
             var arrayrec = new string[5];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {

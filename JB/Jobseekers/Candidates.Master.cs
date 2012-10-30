@@ -7,7 +7,7 @@ namespace JB.JobSeekers
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -39,7 +39,6 @@ namespace JB.JobSeekers
                 Image6.Visible = false;
                 Image7.Visible = false;
 
-
                 HyperLink5.Visible = false;
 
                 LinkButton2.Visible = false;
@@ -55,7 +54,6 @@ namespace JB.JobSeekers
                 Image5.Visible = true;
                 Image6.Visible = true;
                 Image7.Visible = true;
-
 
                 HyperLink5.Visible = true;
 

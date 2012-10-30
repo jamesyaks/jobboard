@@ -1,9 +1,11 @@
-﻿.recdetlsStyle1 {
+﻿.recdetlsStyle1
+{
     border-collapse: collapse;
     width: 300px;
 }
 
-.recdtlspixln {
+.recdtlspixln
+{
     border-bottom-color: #000;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -11,7 +13,8 @@
     width: 100%;
 }
 
-#recheightfix {
+#recheightfix
+{
     border-collapse: collapse;
     height: 400px;
     left: 100px;
@@ -19,123 +22,151 @@
     overflow: auto;
 }
 
-.simplyleftw100 {
+.simplyleftw100
+{
     float: left;
     width: 100px;
 }
 
-.divbreak { left: 0; }
+.divbreak
+{
+    left: 0;
+}
 
-.setrightdiva {
+.setrightdiva
+{
     float: left;
     height: 20px;
     width: 20px;
 }
 
-.setl {
+.setl
+{
     height: 20px;
     width: auto;
 }
 
-.setleftdiv {
+.setleftdiv
+{
     float: left;
     padding-left: 4px;
     vertical-align: middle;
     width: 100px;
 }
 
-.setleftdivw1 {
+.setleftdivw1
+{
     float: left;
     width: 50px;
 }
 
-.box2 {
+.box2
+{
     border-color: gray;
     border-style: solid;
     border-width: 1px;
     height: 450px;
 }
 
-.jdetstylelf {
+.jdetstylelf
+{
     background-color: #f0f0f0;
     float: left;
     width: 100px;
 }
 
-.jdetstylerf {
+.jdetstylerf
+{
     background-color: #f0f0f0;
     left: 100px;
     width: 100%;
 }
 
-.jdetstyle7 {
+.jdetstyle7
+{
     background-color: #fff;
     padding-left: 40px;
 }
 
-.jdetstyle7a {
+.jdetstyle7a
+{
     background-color: #fff;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.jdetstyle8 { height: 19px; }
+.jdetstyle8
+{
+    height: 19px;
+}
 
-.jobdetailbr { height: 4px; }
+.jobdetailbr
+{
+    height: 4px;
+}
 
-.jdettopnav {
+.jdettopnav
+{
     background-color: gray;
     height: 16px;
     padding-left: 4px;
     vertical-align: middle;
 }
 
-.lpad1 {
+.lpad1
+{
     padding-bottom: 20px;
     padding-left: 40px;
     padding-top: 20px;
 }
 
-.Stylear1 {
+.Stylear1
+{
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.styledbordertp1 {
+.styledbordertp1
+{
     background-color: #fff;
     float: left;
     padding-left: 40px;
     width: 100px;
 }
 
-.styledbordertp {
+.styledbordertp
+{
     background-color: #fff;
     float: left;
     width: 100px;
 }
 
-.styledborder {
+.styledborder
+{
     background-color: #fff;
     float: left;
     width: 500px;
 }
 
-.cleardatamore {
+.cleardatamore
+{
     float: left;
     height: 10px;
     width: 100%;
 }
 
-#dpabar {
+#dpabar
+{
     background-color: #ccc;
     height: 8px;
     margin: 0 auto;
     width: 950px;
 }
 
-#reportpg {
+#reportpg
+{
     border-left: 1px dotted gray;
     float: right;
     height: 100px;
@@ -144,217 +175,264 @@
     width: 200px;
 }
 
-#jobdetaillt {
+#jobdetaillt
+{
     float: left;
     width: 700px;
 }
 
-.confstyle7 {
+.confstyle7
+{
     border-collapse: collapse;
     width: 100%;
 }
 
-.pdleft4 { padding-left: 4px; }
+.pdleft4
+{
+    padding-left: 4px;
+}
 
-.fontred:hover { text-decoration: underline; }
+.fontred:hover
+{
+    text-decoration: underline;
+}
 
-.jobdfttop:hover { color: #fff; }
+.jobdfttop:hover
+{
+    color: #fff;
+}
 
-.jobdfttop {
+.jobdfttop
+{
     color: #ccc;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.csslinkrec {
+.csslinkrec
+{
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
 }
 
-.csslinkrecover {
+.csslinkrecover
+{
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
 }
 
-.lowerbrdrdotted {
+.lowerbrdrdotted
+{
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.dftbgmenucolor {
+.dftbgmenucolor
+{
     background-color: #bcc7d8;
     border-bottom-color: gray;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.StyleRa1 {
+.StyleRa1
+{
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.addcustline {
+.addcustline
+{
     border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 1px;
     color: gray;
 }
 
-.StyleRa2 {
+.StyleRa2
+{
     border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 2px;
 }
 
-.Stylea1 {
+.Stylea1
+{
     border-collapse: collapse;
     color: #fff;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Stylea101 {
+.Stylea101
+{
     color: #069;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Stylea3 {
+.Stylea3
+{
     background-color: #fff;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Styleatext3 {
+.Styleatext3
+{
     background-color: #f8f8fa;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
 }
 
-.textexte3 {
+.textexte3
+{
     background-color: #eee;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
 }
 
-.Stylea42 {
+.Stylea42
+{
     background-color: #069;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
     width: 17px;
 }
 
-.Stylea4 {
+.Stylea4
+{
     background-color: #069;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 20px;
     text-align: left;
 }
 
-.Stylea5 {
+.Stylea5
+{
     color: #069;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-large;
 }
 
-.Stylea6 {
+.Stylea6
+{
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-small;
 }
 
-.Stylea7 {
+.Stylea7
+{
     border-collapse: collapse;
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Stylea8 {
+.Stylea8
+{
     background-color: #fff;
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Stylea801 {
+.Stylea801
+{
     border-collapse: collapse;
     color: #1c5786;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.Styleag1 {
+.Styleag1
+{
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.styledc3 {
+.styledc3
+{
     background-color: #f8f8fa;
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     height: 44px;
 }
 
-.styledc4 {
+.styledc4
+{
     background-color: #fff;
     color: #fff;
     width: 4px;
 }
 
-.styledc6 {
+.styledc6
+{
     color: #f5e38a;
     text-align: center;
     width: 200px;
 }
 
-.headingone, .fontred {
+.headingone, .fontred
+{
     color: #c00;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.Stylea2, .Stylea9 {
+.Stylea2, .Stylea9
+{
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: 13px;
 }
 
-.recdtljustbrk, .setheight { height: 10px; }
+.recdtljustbrk, .setheight
+{
+    height: 10px;
+}
 
-.pwdchgtopbans, .conftopbans, .activateactopbanner {
+.pwdchgtopbans, .conftopbans, .activateactopbanner
+{
     background-color: gray;
     height: 16px;
     padding-left: 4px;
     vertical-align: middle;
 }
 
-.leftheader, .simplyleft { float: left; }
+.leftheader, .simplyleft
+{
+    float: left;
+}
 
-.leftdiv, .styledc1 { width: 100%; }
+.leftdiv, .styledc1
+{
+    width: 100%;
+}

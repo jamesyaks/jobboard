@@ -11,7 +11,7 @@ namespace JB
             //store rec details
             var arrayrec = 0;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -42,7 +42,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -65,7 +65,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("select * from getallrec;", mycon);
 
@@ -85,7 +85,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -107,7 +107,7 @@ namespace JB
             //store rec details
             var arrayrec = string.Empty;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -184,7 +184,6 @@ namespace JB
             }
         }
 
-
         //update recruiter table information
         public void Runrectableupdate(string add1, string add2, string add3, string town, string county, string postcode,
                                       string compname, string compwebsite, string companyintro, string businessdetail,
@@ -227,7 +226,7 @@ namespace JB
         {
             var arrayrec = 0;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {

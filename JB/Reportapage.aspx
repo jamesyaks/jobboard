@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Job.Master" AutoEventWireup="true"
-         CodeBehind="Reportapage.aspx.cs" Inherits="JB.reportapage" %>
+    CodeBehind="Reportapage.aspx.cs" Inherits="JB.reportapage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- 
+    <!--
         summary
         This code is liscenced by ahrcloud.com
-        under free creative common liscence, but 
+        under free creative common liscence, but
         attribution must be made to the author
         site at www.ahrcloud.com or info@ahrcloud.com
-    
+
         -->
     <div class="divback">
         <asp:Label ID="Label1" runat="server" CssClass="simplefontwhite" Text="What do you think was wrong with this page"></asp:Label>

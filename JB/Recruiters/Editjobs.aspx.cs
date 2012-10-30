@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace JB.Recruiters
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
     public partial class Editjobs : Clcookiehandler
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
             //read and validate login
@@ -34,11 +31,10 @@ namespace JB.Recruiters
             }
             ////////////////////////////////////
 
-
             //edit this page for recs
             var mpgp = new DlMainpagepopulator();
-            //get rec name
 
+            //get rec name
 
             if (HiddenField1.Value == "1")
             {
@@ -122,6 +118,7 @@ namespace JB.Recruiters
                 case DataControlRowType.DataRow:
                     e.Row.Attributes.Add("class", "gridrowdb");
                     break;
+
                 default:
                     break;
             }

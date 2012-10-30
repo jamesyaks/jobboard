@@ -24,7 +24,7 @@ namespace JB
                 message.From = new MailAddress(mailfrom);
                 message.IsBodyHtml = true;
                 message.Body = tobody;
-                var smtp = new SmtpClient(mailserver, port) {Credentials = new NetworkCredential(username, password)};
+                var smtp = new SmtpClient(mailserver, port) { Credentials = new NetworkCredential(username, password) };
                 smtp.Send(message);
             }
             catch (Exception)

@@ -5,7 +5,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -30,17 +30,21 @@ namespace JB
                 case 0:
                     textreason.Text = "Application sucessfully submitted. Please check your emails to stay up to date.";
                     break;
+
                 case 2:
                 case 1:
                     textreason.Text =
                         "Thank you for registering with us. Please check your email on how to activate your account.";
                     break;
+
                 case 3:
                     textreason.Text = "Thank you for subscribing to our newsletter";
                     break;
+
                 case 4:
                     textreason.Text = "Thank you for subscribing to jobs by email";
                     break;
+
                 default:
                     break;
             }

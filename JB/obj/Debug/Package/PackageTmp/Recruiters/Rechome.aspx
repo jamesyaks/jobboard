@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Recruiters/Recruiters.Master" AutoEventWireup="true"
-         CodeBehind="Rechome.aspx.cs" Inherits="JB.Recruiters.Rechome" %>
+    CodeBehind="Rechome.aspx.cs" Inherits="JB.Recruiters.Rechome" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

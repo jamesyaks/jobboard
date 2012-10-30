@@ -1,17 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Job.Master" AutoEventWireup="true"
-         CodeBehind="Contact.aspx.cs" Inherits="JB.Contact" %>
+    CodeBehind="Contact.aspx.cs" Inherits="JB.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- 
+    <!--
         summary
         This code is liscenced by ahrcloud.com
-        under free creative common liscence, but 
+        under free creative common liscence, but
         attribution must be made to the author
         site at www.ahrcloud.com or info@ahrcloud.com
-    
+
         -->
     <div class="divback">
         <div class="simplefontwhite">

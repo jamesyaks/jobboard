@@ -96,7 +96,7 @@ namespace JB
         {
             var maxval = 0;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -110,7 +110,6 @@ namespace JB
                     while (reader.Read())
                     {
                         maxval = reader.GetInt32(0);
-
 
                         //return maxval;
                     }
@@ -130,7 +129,7 @@ namespace JB
         {
             var maxval = 0;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -146,7 +145,6 @@ namespace JB
                         maxval = reader.GetInt32(0);
                     }
                 }
-
 
                 reader.Close();
             }
@@ -181,7 +179,7 @@ namespace JB
         {
             var Ds = new DataSet();
             var myconstring = Dlconnect.Makeconn();
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -201,7 +199,7 @@ namespace JB
             //store details
             var tempst = new string[2];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {

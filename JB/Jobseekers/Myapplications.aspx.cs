@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace JB.JobSeekers
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -38,7 +36,6 @@ namespace JB.JobSeekers
             GridView1.DataSource = cmpg.Getmyapps(Session["pusername"].ToString());
             GridView1.DataBind();
         }
-
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {

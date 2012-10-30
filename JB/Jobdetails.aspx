@@ -1,17 +1,17 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/JOB.Master" AutoEventWireup="true"
-         CodeBehind="Jobdetails.aspx.cs" Inherits="JB.Jobdetails" %>
+    CodeBehind="Jobdetails.aspx.cs" Inherits="JB.Jobdetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/csjobmaster.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- 
+    <!--
         summary
         This code is liscenced by ahrcloud.com
-        under free creative common liscence, but 
+        under free creative common liscence, but
         attribution must be made to the author
         site at www.ahrcloud.com or info@ahrcloud.com
-    
+
         -->
     <!-- top bar -->
     <div class="divback">
@@ -101,7 +101,7 @@
                 </div>
                 <div class="cleardata">
                 </div>
-                 <div class="jdetstyle7">
+                <div class="jdetstyle7">
                     <div class="styledbordertp">
                         <asp:Label ID="Label1" runat="server" CssClass="ftblackbd" Text="Industry"></asp:Label>
                     </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="cleardata">
                 </div>
-                 <div class="jdetstyle7">
+                <div class="jdetstyle7">
                     <div class="styledbordertp">
                         <asp:Label ID="Label3" runat="server" CssClass="ftblackbd" Text="Hours"></asp:Label>
                     </div>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="cleardata">
                 </div>
-                 <div class="jdetstyle7">
+                <div class="jdetstyle7">
                     <div class="styledbordertp">
                         <asp:Label ID="Label5" runat="server" CssClass="ftblackbd" Text="Employer Type"></asp:Label>
                     </div>
@@ -154,9 +154,7 @@
                 </div>
                 <div class="jdetstyle7">
                     <div class="styledbordertp">
-                    
                         <asp:Label ID="Label17" runat="server" Text="Role Details" CssClass="ftblackbd"></asp:Label>
-                       
                     </div>
                     <div class="styledborder">
                         <article>

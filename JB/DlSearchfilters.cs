@@ -10,7 +10,7 @@ namespace JB
         {
             var ds = new DataSet();
             var myconstring = Dlconnect.Makeconn();
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter(qry, mycon);
 
@@ -26,7 +26,7 @@ namespace JB
         {
             //TimeSpan tspan = DateTime.Now.TimeOfDay;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -50,9 +50,7 @@ namespace JB
                 reader.Close();
             }
 
-
             return ct;
         }
-        
     }
 }

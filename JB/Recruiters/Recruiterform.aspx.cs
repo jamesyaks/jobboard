@@ -2,21 +2,20 @@
 using System.Configuration;
 using System.Globalization;
 using System.IO;
-using System.Web;
 using System.Web.UI;
 
 namespace JB.Recruiters
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
     public partial class RecruiterForm : Clcookiehandler
     {
         private int _fg;
-       
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //set default inputs
@@ -58,7 +57,6 @@ namespace JB.Recruiters
                         }
                         ////////////////////////////////////
 
-
                         string[] arr = mpage.RecDetails(Session["pusername"].ToString());
 
                         TextBox2.Text = arr[0];
@@ -72,6 +70,7 @@ namespace JB.Recruiters
 
                         TextBox7.Text = arr[6];
                         TextBox8.Text = arr[7];
+
                         //TextBox9.Text = arr[8];
                         TextBox9.Text = arr[9];
 
@@ -95,7 +94,7 @@ namespace JB.Recruiters
                     // featured recurites
                     var frs = new DlFeaturedrecruiters();
 
-                    //get recruters image 
+                    //get recruters image
                     Image8.Visible = true;
                     Image8.ImageUrl = frs.Getrecformimage(recsid);
                 }
@@ -187,7 +186,7 @@ namespace JB.Recruiters
                         arc.AddArticle(getmaxrecarticles, holdlogo,
                                        ConfigurationManager.AppSettings["filepth"] + getmaxrecarticles + holdlogo);
 
-                        //real upload                    
+                        //real upload
                         FileUpload1.PostedFile.SaveAs(ConfigurationManager.AppSettings["filepth"] + getmaxrecarticles +
                                                       holdlogo);
 

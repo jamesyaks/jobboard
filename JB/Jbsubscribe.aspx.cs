@@ -6,7 +6,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -23,7 +23,6 @@ namespace JB
             CheckBoxList6.DataTextField = "sTerm";
             CheckBoxList6.DataValueField = "Termid";
             CheckBoxList6.DataBind();
-
 
             //get locations
             CheckBoxList2.DataSource = mp.GetLocations();
@@ -65,7 +64,6 @@ namespace JB
                     clsubs.Addsubscriptions(Emailsubs.Text, 1001, Convert.ToInt16(listitems3.Value));
                 }
             }
-
 
             //insert contract
             foreach (ListItem listitems2 in CheckBoxList3.Items)

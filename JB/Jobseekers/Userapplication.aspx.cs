@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Globalization;
-using System.Web;
 using System.Web.UI;
 
 namespace JB.JobSeekers
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -45,7 +44,6 @@ namespace JB.JobSeekers
                         Response.Redirect("login.aspx");
                     }
                     ////////////////////////////////////
-
 
                     //load job seeker settings
                     //update job seeker user details
@@ -85,7 +83,7 @@ namespace JB.JobSeekers
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            //set culture to british 
+            //set culture to british
             //modify here in future if this needs to be set to us formats
 
             var cinf = new CultureInfo("en-GB");
@@ -137,7 +135,6 @@ namespace JB.JobSeekers
 
                     //logg it as the entry for email
                     emproc.Sendappemaildbupdate(TextBox11.Text, 2);
-
 
                     Session["reasons"] =
                         "Thank your for signing up, you are awsome! <br /> Please check your email to activate your account. <br /> ";

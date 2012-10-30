@@ -7,7 +7,7 @@ namespace JB.JobSeekers
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -24,9 +24,9 @@ namespace JB.JobSeekers
 
         private void Adddata(string __filename)
         {
-            //set culture to british 
+            //set culture to british
             //modify here in future if this needs to be set to us formats
-            //edited by adam 
+            //edited by adam
 
             var cinf = new CultureInfo("en-GB");
             DateTime dobsdate = Convert.ToDateTime(TextBox5.Text, cinf);
@@ -92,7 +92,7 @@ namespace JB.JobSeekers
                         string subjects =
                             emp.Dbemailgenerator(Convert.ToInt16(Request.QueryString["JobID"])).ToString();
 
-                        Adddata( fname);
+                        Adddata(fname);
 
                         //you can remove try catch blocks they were in place in case you
                         //dont have email server running smoothly
@@ -105,7 +105,7 @@ namespace JB.JobSeekers
 
                         catch (Exception)
                         {
-                            //error in email 
+                            //error in email
                         }
 
                         //send user confirmation, this should ideally be in try block

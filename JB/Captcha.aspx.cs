@@ -7,7 +7,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -29,8 +29,9 @@ namespace JB
             Graphics graphics = Graphics.FromImage(bitmap);
 
             Color color = Color.Gray;
-            
+
             var font = new Font(FontName, FontSize);
+
             //define where the text will be displayed in the specified area of the image
             var point = new PointF(5.0F, 5.0F);
 
@@ -42,9 +43,10 @@ namespace JB
             graphics.FillRectangle(BrushBackColor, displayRectangle);
             graphics.DrawRectangle(BorderPen, displayRectangle);
 
-            //Define string format 
+            //Define string format
             var format1 = new StringFormat(StringFormatFlags.NoClip);
             var format2 = new StringFormat(format1);
+
             //Draw text string using the text format
             graphics.DrawString(Text, font, Brushes.GhostWhite, displayRectangle, format2);
 

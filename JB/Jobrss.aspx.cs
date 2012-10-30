@@ -9,7 +9,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -42,7 +42,7 @@ namespace JB
             var clrs = new Clrss();
             var rssarray = clrs.Getrss();
             var jobidclean = string.Empty;
-     
+
             for (var i = 0; i < rssarray.GetLength(1); i++)
             {
                 if (rssarray[0, i] != null)

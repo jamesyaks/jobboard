@@ -2,43 +2,43 @@
 
 <!DOCTYPE HTML>
 <html>
-    <head runat="server">
-        <!--add favicon-->
-        <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
-        <title>Login</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width" />
-        <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
-        <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
-        <asp:ContentPlaceHolder ID="head" runat="server">
-        </asp:ContentPlaceHolder>
-        <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <!-- 
+<head runat="server">
+    <!--add favicon-->
+    <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
+    <title>Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
+    <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--
             summary
             This code is liscenced by ahrcloud.com
-            under free creative common liscence, but 
+            under free creative common liscence, but
             attribution must be made to the author
             site at www.ahrcloud.com or info@ahrcloud.com
-    
+
             -->
-        <header>
-            <div class="cleardata">
-            </div>
-            <div class="banner">
-                <asp:Image ID="Image1" runat="server" ImageUrl="/Brandimages/brand_defaulthometag.png" />
-            </div>
-            <div class="cleardata">
-            </div>
-            <div class="tpbar">
-            </div>
-        </header>
-        <form id="form1" runat="server">
-            <div class="lcenter">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-        </form>
-    </body>
+    <header>
+        <div class="cleardata">
+        </div>
+        <div class="banner">
+            <asp:Image ID="Image1" runat="server" ImageUrl="/Brandimages/brand_defaulthometag.png" />
+        </div>
+        <div class="cleardata">
+        </div>
+        <div class="tpbar">
+        </div>
+    </header>
+    <form id="form1" runat="server">
+    <div class="lcenter">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
 </html>

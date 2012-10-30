@@ -8,7 +8,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -36,8 +36,9 @@ namespace JB
             CheckBoxList1.DataValueField = "Termid";
             CheckBoxList1.DataBind();
 
-            if(Request.QueryString["q"]!=null){
-            TextBox2.Text = Request.QueryString["q"];
+            if (Request.QueryString["q"] != null)
+            {
+                TextBox2.Text = Request.QueryString["q"];
             }
         }
 
@@ -161,7 +162,6 @@ namespace JB
             }
 
             //display filter sign
-
         }
 
         private void GetPage(GridViewPageEventArgs e)
@@ -361,6 +361,7 @@ namespace JB
                 case DataControlRowType.DataRow:
                     e.Row.Attributes.Add("class", "gridrowdb");
                     break;
+
                 default:
                     break;
             }

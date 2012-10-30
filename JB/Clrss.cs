@@ -8,9 +8,9 @@ namespace JB
     {
         public string[,] Getrss()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
-            var ct = new string[4,10];
+            var ct = new string[4, 10];
             ct.AsParallel();
 
             using (connreader)

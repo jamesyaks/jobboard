@@ -35,7 +35,7 @@ namespace JB
         //get user orginal name for welcome //only for candidates
         public string Userwelcomename(string pusername, int uusertype)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -68,14 +68,13 @@ namespace JB
                 reader.Close();
             }
 
-
             return tmphld;
         }
 
         //get employee id ony for employees
         public string Userwelcomename(string pusername, int uusertype, int empid)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -108,14 +107,13 @@ namespace JB
                 reader.Close();
             }
 
-
             return tmphld;
         }
 
         //check the password key against the database
         public string Getkeyuser(string keyids, int utype)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -147,7 +145,6 @@ namespace JB
                 }
                 reader.Close();
             }
-
 
             return tmphld;
         }
@@ -206,7 +203,7 @@ namespace JB
         //1 is admin
         public string Getuser(string userns, string pwds)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -239,16 +236,14 @@ namespace JB
                 reader.Close();
             }
 
-
             return tmphld;
         }
-
 
         //jobseeker user
         //2 is jobseeker
         public string Getjobuser(string usns, string pwds)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -279,7 +274,6 @@ namespace JB
                 }
                 reader.Close();
             }
-
 
             return pdhash;
         }
@@ -403,18 +397,16 @@ namespace JB
             }
         }
 
-
         //check if the recruiter exists in the database
         public string Checkrecusern(string userns)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
             var passhash = new ClPwdhash();
 
             var plhash = string.Empty;
-
 
             using (connreader)
             {
@@ -439,15 +431,13 @@ namespace JB
                 reader.Close();
             }
 
-
             return plhash;
         }
-
 
         //check if the candidate exists in the database
         public string Checkcanusern(string userns)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             //get hashcode
             //
@@ -484,7 +474,7 @@ namespace JB
         //check the usertype for the main windows like is it recruiter of single user
         public int Checkusertype(string uusername, int uusertypes)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var passhash = new ClPwdhash();
 

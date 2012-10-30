@@ -1,70 +1,70 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Candidates.master.cs"
-           Inherits="JB.JobSeekers.Candidates" %>
+    Inherits="JB.JobSeekers.Candidates" %>
 
 <!DOCTYPE HTML>
 <html>
-    <head runat="server">
-        <!--add favicon-->
-        <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
-        <title>Jobseekers</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width" />
-        <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
-        <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
-        <asp:ContentPlaceHolder ID="head" runat="server">
+<head runat="server">
+    <!--add favicon-->
+    <link rel="SHORTCUT ICON" href="/images/favicon.ico" />
+    <title>Jobseekers</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="jobboard, jobboard software, jobboard code, jobsite, jobsite, ahrcloud, jobboard branding, jobboard source code, jobboard community edition" />
+    <meta name="description" content="Job board software by ahrcloud. Free light version community edition" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/csjobseeker.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" class="upperwrap" runat="server">
+    <!-- left panel -->
+    <div id="cleftpanel">
+        <ul class="flist">
+            <li>
+                <asp:Image ID="Image6" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_home" />
+                <asp:LinkButton ID="LinkButton44" runat="server" CssClass="canmasterwhite" OnClick="LinkButton44_Click"
+                    CausesValidation="False">Site Home</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image7" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_dashboard" />
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="canmasterwhite" OnClick="LinkButton4_Click"
+                    CausesValidation="False">DashBoard</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_app" />
+                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="canmasterwhite" OnClick="LinkButton3_Click"
+                    CausesValidation="False">My Applications</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_basic" />
+                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="canmasterwhite" OnClick="LinkButton1_Click"
+                    CausesValidation="False">Basic Information</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image5" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_password" />
+                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="canmasterwhite" OnClick="LinkButton2_Click"
+                    CausesValidation="False">Change password</asp:LinkButton>
+            </li>
+            <li>
+                <asp:Image ID="Image4" runat="server" ImageUrl="/images/sprite.gif" CssClass="cn_logout" />
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="canmasterwhite" NavigateUrl="~/Logoff.aspx">Logout</asp:HyperLink>
+            </li>
+        </ul>
+    </div>
+    <!-- this is the middle one -->
+    <div id="crightpanel">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-        <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
-        <link href="/styles/csjobseeker.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <form id="form1" class="upperwrap" runat="server">
-            <!-- left panel -->
-            <div id="cleftpanel">
-                <ul class="flist">
-                    <li>
-                        <asp:Image ID="Image6" runat="server" ImageUrl="~/images/sprite.gif"  CssClass="cn_home"/>
-                        <asp:LinkButton ID="LinkButton44" runat="server" CssClass="canmasterwhite" OnClick="LinkButton44_Click"
-                                        CausesValidation="False">Site Home</asp:LinkButton>
-                    </li>
-                    <li>
-                        <asp:Image ID="Image7" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_dashboard"/>
-                        <asp:LinkButton ID="LinkButton5" runat="server" CssClass="canmasterwhite" OnClick="LinkButton4_Click"
-                                        CausesValidation="False">DashBoard</asp:LinkButton>
-                    </li>
-                    <li>
-                        <asp:Image ID="Image3" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_app"/>
-                        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="canmasterwhite" OnClick="LinkButton3_Click"
-                                        CausesValidation="False">My Applications</asp:LinkButton>
-                    </li>
-                    <li>
-                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_basic" />
-                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="canmasterwhite" OnClick="LinkButton1_Click"
-                                        CausesValidation="False">Basic Information</asp:LinkButton>
-                    </li>
-                    <li>
-                        <asp:Image ID="Image5" runat="server" ImageUrl="~/images/sprite.gif" CssClass="cn_password"  />
-                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="canmasterwhite" OnClick="LinkButton2_Click"
-                                        CausesValidation="False">Change password</asp:LinkButton>
-                    </li>
-                    <li>
-                        <asp:Image ID="Image4" runat="server" ImageUrl="/images/sprite.gif" CssClass="cn_logout" />
-                        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="canmasterwhite" NavigateUrl="~/Logoff.aspx">Logout</asp:HyperLink>
-                    </li>
-                </ul>
+        <footer>
+            <!-- bottom maintain compatibility without html5-->
+            <div class="cfooter">
+                <asp:Label ID="Label1" runat="server" CssClass="ftblack"></asp:Label>
             </div>
-            <!-- this is the middle one -->
-            <div id="crightpanel">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-                <footer>
-                    <!-- bottom maintain compatibility without html5-->
-                    <div class="cfooter">
-                        <asp:Label ID="Label1" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
-                </footer>
-            </div>
-            <div class="cleardata">
-            </div>
-        </form>
-    </body>
+        </footer>
+    </div>
+    <div class="cleardata">
+    </div>
+    </form>
+</body>
 </html>

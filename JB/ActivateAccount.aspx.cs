@@ -5,7 +5,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -13,7 +13,7 @@ namespace JB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //activate the account 
+            //activate the account
             if (Request.QueryString["usertype"] != null)
             {
                 int usertype = Convert.ToInt16(Request.QueryString["usertype"]);

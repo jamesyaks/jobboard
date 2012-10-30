@@ -11,7 +11,7 @@ namespace JB
             //store rec details
             var arrayrec = string.Empty;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -45,10 +45,9 @@ namespace JB
         {
             var ds = new DataSet();
 
-
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(

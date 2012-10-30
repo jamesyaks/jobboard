@@ -10,7 +10,7 @@ namespace JB.Adapters
     {
         private void Pager(HtmlTextWriter writer, PagerPosition pos)
         {
-            //paging is not optimzed for jobs more than 1000, please extend 
+            //paging is not optimzed for jobs more than 1000, please extend
             //this code to handle more paging your self.
             var gridView = Control as GridView;
 
@@ -24,6 +24,7 @@ namespace JB.Adapters
                     case PagerPosition.Top:
                         innerTable = gridView.TopPagerRow.Cells[0].Controls[0] as Table;
                         break;
+
                     default:
                         innerTable = gridView.BottomPagerRow.Cells[0].Controls[0] as Table;
                         break;
@@ -33,9 +34,8 @@ namespace JB.Adapters
                 if (innerTable != null)
                 {
                     var className = string.Empty;
-                    
+
                     className += gridView.PagerStyle.CssClass;
-                    
 
                     writer.WriteLine();
                     writer.WriteBeginTag("div");

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JOB.Master" AutoEventWireup="true"
-         CodeBehind="Default.aspx.cs" Inherits="JB.Default" %>
+    CodeBehind="Default.aspx.cs" Inherits="JB.Default" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -7,12 +7,12 @@
     <script src="/Scripts/jquery.autocomplete.js" type="text/javascript"> </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- 
+    <!--
         summary
         This code is liscenced by ahrcloud.com
-        under free creative common liscence, but 
+        under free creative common liscence, but
         attribution must be made to the author
-        site at www.ahrcloud.com or info@ahrcloud.com    
+        site at www.ahrcloud.com or info@ahrcloud.com
         -->
     <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release">
     </asp:ScriptManager>
@@ -24,9 +24,8 @@
                     <asp:Label ID="Label1" runat="server" CssClass="ftwhite" Text="Advanced Search"></asp:Label>
                 </div>
                 <div class="dvright">
-                    <asp:ImageButton ID="ClearFilters" runat="server" Visible="False" 
-                        CssClass="img_lt_filters" ImageUrl="/images/sprite.gif" 
-                        onclick="ClearFilters_Click" />
+                    <asp:ImageButton ID="ClearFilters" runat="server" Visible="False" CssClass="img_lt_filters"
+                        ImageUrl="/images/sprite.gif" OnClick="ClearFilters_Click" />
                 </div>
             </div>
             <div id="dvclear">
@@ -36,10 +35,9 @@
             <div class="lftp2">
                 <asp:TextBox ID="TextBox2" runat="server" CssClass="searchtextboxline" Width="100%"></asp:TextBox>
                 <asp:TextBoxWatermarkExtender ID="TextBox2_TextBoxWatermarkExtender" runat="server"
-                                              Enabled="True" TargetControlID="TextBox2" WatermarkText="type here..." WatermarkCssClass="fontgray">
+                    Enabled="True" TargetControlID="TextBox2" WatermarkText="type here..." WatermarkCssClass="fontgray">
                 </asp:TextBoxWatermarkExtender>
             </div>
-            
             <div class="divheightsrch">
             </div>
             <asp:Label ID="Label14" runat="server" CssClass="headingone" Text="Industry"></asp:Label>
@@ -111,9 +109,8 @@
             </div>
             <div class="lftp2">
                 <asp:Button ID="Button1" runat="server" CausesValidation="False" CssClass="button"
-                            OnClick="Button1_Click" Text="Filter Search" />
+                    OnClick="Button1_Click" Text="Filter Search" />
             </div>
-            
             <div class="divheightsrch">
             </div>
         </div>
@@ -127,23 +124,23 @@
         <div class="tpboundbrdr">
             <img class="img_lt_contact" src="/images/sprite.gif" alt="contact" />
             <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CssClass="lowerbrdrdotted"
-                            OnClick="LinkButton44_Click">Contact us</asp:LinkButton>
+                OnClick="LinkButton44_Click">Contact us</asp:LinkButton>
         </div>
         <div class="tpboundbrdr">
             <img class="img_lt_users" src="/images/sprite.gif" alt="recruiters" />
             <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CssClass="lowerbrdrdotted"
-                            OnClick="LinkButtonj_Click">All Recruiters</asp:LinkButton>
+                OnClick="LinkButtonj_Click">All Recruiters</asp:LinkButton>
         </div>
         <div class="tpboundbrdr">
             <img class="img_lt_mail" src="/images/sprite.gif" alt="set up email alert" />
             <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CssClass="lowerbrdrdotted"
-                            OnClick="LinkButton2_Click">Setup a Job Alert</asp:LinkButton>
+                OnClick="LinkButton2_Click">Setup a Job Alert</asp:LinkButton>
         </div>
         <div class="tpboundbrdr">
             <img class="img_lt_rss" src="/images/sprite.gif" alt="rss" />
             <a href="/jobrss.aspx" class="lowerbrdrdotted">Subscribe to RSS</a>
         </div>
-        <div>            
+        <div>
         </div>
     </div>
     <div class="centerpanel">
@@ -160,7 +157,7 @@
                 <!-- grid view for the adverts -->
                 <div class="align_frec">
                     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BorderWidth="0px"
-                                  GridLines="None">
+                        GridLines="None">
                         <Columns>
                             <asp:TemplateField>
                                 <ItemTemplate>
@@ -169,7 +166,7 @@
                                     </div>
                                     <div class="right_align_frec">
                                         <asp:HyperLink ID="HyperLink1" runat="server" CssClass="fthlinkblackbd" NavigateUrl='<%#                                        "JobDetails.aspx?JobID=" + Eval("idJobs") %>'
-                                                       Text='<%#Bind("sTitle") %>'></asp:HyperLink>
+                                            Text='<%#Bind("sTitle") %>'></asp:HyperLink>
                                         <br />
                                         <asp:Label ID="Label7" runat="server" CssClass="simplefontblack" Text='<%#Bind("descr") %>'></asp:Label>
                                     </div>
@@ -185,18 +182,18 @@
                 </div>
                 <!-- grid view for the center box -->
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-                              GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging"
-                              OnRowDataBound="GridView1_RowDataBound" ShowHeader="False" Width="100%">
+                    GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging" OnRowDataBound="GridView1_RowDataBound"
+                    ShowHeader="False" Width="100%">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
                                 <div class="gridmain">
                                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl='<%#                "JobDetails.aspx?JobID=" + Eval("idJobs") %>'
-                                                   CssClass="fontredh1" Text='<%#Bind("sTitle") %>'></asp:HyperLink>
+                                        CssClass="fontredh1" Text='<%#Bind("sTitle") %>'></asp:HyperLink>
                                     <br />
                                     <asp:Label ID="Label11" runat="server" Text="posted on" CssClass="ftblack"></asp:Label>
                                     <asp:Label ID="Label21" runat="server" Text='<%#                Bind("dtEnteredDate", "{0:dd/M/yyyy}") %>'
-                                               CssClass="ftblack"></asp:Label>
+                                        CssClass="ftblack"></asp:Label>
                                     <asp:Label ID="Label12" runat="server" Text="■ salary " CssClass="ftblack"></asp:Label>
                                     <asp:Label ID="Label4" runat="server" Text='<%#Bind("sSalaryText") %>' CssClass="ftblack"></asp:Label>
                                     <asp:Label ID="Label17" runat="server" Text="■ applications " CssClass="ftblack"></asp:Label>
@@ -216,17 +213,13 @@
         <br />
     </div>
     <div class="rightpanel">
-        
-            <div class="divback">
-                <asp:Label ID="Label20" runat="server" CssClass="ftwhite" Text="Google Ads"></asp:Label>
-            </div>
-            <div class="googads">
-                Ads by google...
-            </div>
-        
+        <div class="divback">
+            <asp:Label ID="Label20" runat="server" CssClass="ftwhite" Text="Google Ads"></asp:Label>
+        </div>
+        <div class="googads">
+            Ads by google...
+        </div>
         <div class="divheightsrch">
         </div>
     </div>
-
-    
 </asp:Content>

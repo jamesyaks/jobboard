@@ -5,13 +5,13 @@ namespace JB
 {
     public class DlJobs
     {
-        //this is to populate the selections after the editjobs 
+        //this is to populate the selections after the editjobs
         //form has loaded...
         public ArrayList Getmultitexts(int jobid)
         {
             //store rec details
             var __arrayrec = new ArrayList();
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {

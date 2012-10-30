@@ -4,7 +4,7 @@ using System.Web.UI;
 
 namespace JB
 {
-    public class Clcookiehandler: Page
+    public class Clcookiehandler : Page
     {
         //read cookie
         public string Readjobcookie()

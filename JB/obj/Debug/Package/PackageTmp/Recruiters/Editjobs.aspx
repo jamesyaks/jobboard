@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Recruiters/Recruiters.Master" AutoEventWireup="true"
-         CodeBehind="Editjobs.aspx.cs" Inherits="JB.Recruiters.Editjobs" %>
+    CodeBehind="Editjobs.aspx.cs" Inherits="JB.Recruiters.Editjobs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/csrecruiter.css" rel="stylesheet" type="text/css" />
@@ -19,15 +19,16 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="400px"
-                              ShowHeader="False" BorderWidth="0px" AllowPaging="True" GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging"
-                              OnRowDataBound="GridView1_RowDataBound">
+                    ShowHeader="False" BorderWidth="0px" AllowPaging="True" GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging"
+                    OnRowDataBound="GridView1_RowDataBound">
                     <Columns>
-                        <asp:TemplateField>                           
+                        <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:Label ID="Label1" runat="server" Text='<%#                                        Bind("sTitle") %>' CssClass="StyleBlackbold"></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text='<%#                                        Bind("sTitle") %>'
+                                    CssClass="StyleBlackbold"></asp:Label>
                                 <br />
                                 <asp:Label ID="Label3" runat="server" Text='<%#                                        Bind("dtEnteredDate", "{0:dd/M/yyyy}") %>'
-                                           CssClass="StyleBlack"></asp:Label>
+                                    CssClass="StyleBlack"></asp:Label>
                                 <span class="StyleBlack">/</span>
                                 <asp:Label ID="Label4" runat="server" Text='<%#Bind("sSalaryText") %>' CssClass="StyleBlack"></asp:Label>
                                 <br />

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JOB.Master" AutoEventWireup="true"
-         CodeBehind="Allrecruiters.aspx.cs" Inherits="JB.Allrecruiters" %>
+    CodeBehind="Allrecruiters.aspx.cs" Inherits="JB.Allrecruiters" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/cs3.css" rel="stylesheet" type="text/css" />
@@ -8,7 +8,7 @@
     <script src="/Scripts/facebox/facebox.js" type="text/javascript"> </script>
     <script type="text/javascript">
         function pageLoad(sender, args) {
-            $(document).ready(function($) {
+            $(document).ready(function ($) {
                 $('a[rel*=facebox]').facebox({
                     loadingImage: '/images/loading.gif',
                     closeImage: '/images/closelabel.png'
@@ -18,13 +18,13 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- 
+    <!--
         summary
         This code is liscenced by ahrcloud.com
-        under free creative common liscence, but 
+        under free creative common liscence, but
         attribution must be made to the author
         site at www.ahrcloud.com or info@ahrcloud.com
-    
+
         -->
     <script type="text/javascript">
         function detailup(obd) {
@@ -44,8 +44,8 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-                              OnPageIndexChanging="GridView1_PageIndexChanging" GridLines="None" DataKeyNames="Empid"
-                              Width="400px" ShowHeader="False">
+                    OnPageIndexChanging="GridView1_PageIndexChanging" GridLines="None" DataKeyNames="Empid"
+                    Width="400px" ShowHeader="False">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -56,7 +56,7 @@
                                     <asp:Label ID="Label2" runat="server" CssClass="Stylea2" Text='<%#Bind("totaljobs") %>'></asp:Label>
                                     <asp:Label ID="Label13" runat="server" CssClass="Stylea2" Text="jobs"></asp:Label>
                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%#                                        Eval("Empid", "Recdetails.aspx?Empid={0}") %>'
-                                                   rel="facebox" Text="more..." CssClass="fontred"></asp:HyperLink>
+                                        rel="facebox" Text="more..." CssClass="fontred"></asp:HyperLink>
                                     <br />
                                     <br />
                                 </div>

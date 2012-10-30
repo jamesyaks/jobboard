@@ -12,7 +12,7 @@ namespace JB
         //get job count
         public int Getcountjobs()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -40,7 +40,7 @@ namespace JB
         //get total recs
         public int Getcountrecs()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -68,7 +68,7 @@ namespace JB
         //get advertizing rec count
         public int Getcountrecswadvert()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -93,11 +93,10 @@ namespace JB
             return ct;
         }
 
-
         //gets max jobs
         public int Getmaxjobid()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -121,7 +120,6 @@ namespace JB
             }
             return ct;
         }
-
 
         //delete current categories
         public void Deletejobs(int jobid)
@@ -182,8 +180,7 @@ namespace JB
             }
         }
 
-
-        //add job rec assignments        
+        //add job rec assignments
         public void Insertjobmapping(int idjobs, int catid, int litermid, int empid)
         {
             //
@@ -210,14 +207,13 @@ namespace JB
             }
         }
 
-
         //get jobdetails page
         public string Getcurrrec(string empid)
         {
             //store rec details
             var arrayrec = string.Empty;
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -252,7 +248,7 @@ namespace JB
             //store rec details
             var arrayrec = new string[10];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -288,13 +284,13 @@ namespace JB
             return arrayrec;
         }
 
-        //get details page 
+        //get details page
         public string Getdetailspagecats(int jobid, int cats)
         {
             //store rec details
             var sbr = new StringBuilder();
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -322,14 +318,13 @@ namespace JB
         }
 
         //get details for salaries
-        //get details page 
+        //get details page
         public string Getdetailspagecats(int jobid, int cats, int jobsal)
         {
             //store rec details
             var sbr = new StringBuilder();
 
-
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -354,12 +349,10 @@ namespace JB
                             k = reader.GetString(0);
                         }
 
-
                         j = reader.GetString(1);
                         i++;
                     }
                 }
-
 
                 //check which value is greater
 
@@ -367,13 +360,11 @@ namespace JB
                 sbr.Append(" • ");
                 sbr.Append(j);
 
-
                 reader.Close();
             }
 
             return sbr.ToString();
         }
-
 
         //fill in jobs form
         public string[] Filljobform(int jobid)
@@ -381,7 +372,7 @@ namespace JB
             //store rec details
             var arrayrec = new string[10];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -415,7 +406,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -437,7 +428,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda =
                 new MySqlDataAdapter(
@@ -459,7 +450,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT termid, sTerm from terms where termid >= 5000 and termid<6000;",
                                             mycon);
@@ -480,7 +471,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT termid, sTerm from terms where termid >= 6000 and termid < 7000 ;",
                                             mycon);
@@ -501,7 +492,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT * from getjobs;", mycon);
 
@@ -521,7 +512,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT * from Aggregatedmpage limit 1000;", mycon);
 
@@ -537,7 +528,7 @@ namespace JB
         //get recruiterid by name
         public int RecName(string usrname)
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -570,7 +561,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT * from getjobssingle where EmployeeID = '" + sEmpID + "';", mycon);
 
@@ -590,7 +581,7 @@ namespace JB
 
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT * from getjobssinglearch where EmployeeID = '" + sEmpID + "';",
                                             mycon);
@@ -607,7 +598,7 @@ namespace JB
         //gets max recruiters
         public int RecHasRows()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -635,7 +626,7 @@ namespace JB
         //max user id
         public int Maxuserid()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -661,7 +652,7 @@ namespace JB
         //max candidate id
         public int Maxcandidateid()
         {
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             var ct = 0;
 
@@ -848,7 +839,7 @@ namespace JB
             //store rec details
             var arrayrec = new string[16];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {
@@ -933,10 +924,9 @@ namespace JB
         {
             var ds = new DataSet();
 
-
             var myconstring = Dlconnect.Makeconn();
 
-            var mycon = new MySqlConnection {ConnectionString = myconstring};
+            var mycon = new MySqlConnection { ConnectionString = myconstring };
 
             var myda = new MySqlDataAdapter("SELECT * from getmyapps where uusername='" + uusername + "' ;", mycon);
 
@@ -955,7 +945,7 @@ namespace JB
             //store rec details
             var arrayrec = new string[12];
 
-            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
+            var connreader = new MySqlConnection { ConnectionString = Dlconnect.Makeconn() };
 
             using (connreader)
             {

@@ -1,152 +1,207 @@
 ﻿/*sprites*/
 
-.cn_home, .cn_dashboard, .cn_app, .cn_basic, .cn_password, .cn_logout {
+.cn_home, .cn_dashboard, .cn_app, .cn_basic, .cn_password, .cn_logout
+{
     background-image: url('/images/jobseekericon.png');
     background-repeat: no-repeat;
     height: 14px;
     width: 14px;
 }
 
-.cn_home { background-position: 0px 0px; }
+.cn_home
+{
+    background-position: 0px 0px;
+}
 
-.cn_dashboard { background-position: 0px -22px; }
+.cn_dashboard
+{
+    background-position: 0px -22px;
+}
 
-.cn_app { background-position: 0px -44px; }
+.cn_app
+{
+    background-position: 0px -44px;
+}
 
-.cn_basic { background-position: 0px -64px; }
+.cn_basic
+{
+    background-position: 0px -64px;
+}
 
-.cn_password { background-position: 0px -88px; }
+.cn_password
+{
+    background-position: 0px -88px;
+}
 
-.cn_logout { background-position: -1px -106px; }
+.cn_logout
+{
+    background-position: -1px -106px;
+}
 
-body { background-color: #000; }
+body
+{
+    background-color: #000;
+}
 
-.style1 {
+.style1
+{
     border-collapse: collapse;
     width: 100%;
 }
 
-.style4 { width: 100px; }
+.style4
+{
+    width: 100px;
+}
 
-.cannoteslft {
+.cannoteslft
+{
     padding-left: 50px;
     width: 300px;
 }
 
-.cannotesrt {
+.cannotesrt
+{
     margin-left: 400px;
     padding-left: 50px;
 }
 
-#applicationsbreak { height: 300px; }
+#applicationsbreak
+{
+    height: 300px;
+}
 
-.jseekermidback {
+.jseekermidback
+{
     background-color: #fff;
     height: 400px;
     padding: 30px 30px 0;
 }
 
-.topnavmajor {
+.topnavmajor
+{
     background-color: gray;
     height: 16px;
     padding-left: 4px;
 }
 
-.canhomepagelinks:hover { color: #000; }
+.canhomepagelinks:hover
+{
+    color: #000;
+}
 
-.canhomepagelinks {
+.canhomepagelinks
+{
     border-bottom-color: gray;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     text-decoration: none;
     vertical-align: middle;
 }
 
-.canmasterwhite {
+.canmasterwhite
+{
     color: #ccc;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     text-decoration: none;
 }
 
-.canmasterwhite:hover { color: #fff; }
+.canmasterwhite:hover
+{
+    color: #fff;
+}
 
-.setcpaneldotted {
+.setcpaneldotted
+{
     border-top-style: dotted;
     border-top-width: 1px;
 }
 
-.TextBoxStyleover {
+.TextBoxStyleover
+{
     background-color: silver;
     border-collapse: collapse;
     border-color: #000;
     border-style: solid;
     border-width: 1px;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     padding: 6px;
 }
 
-.Stylepwd {
+.Stylepwd
+{
     background-color: transparent;
     border-collapse: collapse;
     color: gray;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     margin-right: 5px;
 }
 
-.backgrdstyle {
+.backgrdstyle
+{
     background-color: #CC0000;
     height: 30px;
     padding: 2px 0px 0px 6px;
 }
 
-.ftblack {
+.ftblack
+{
     border-collapse: collapse;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
 }
 
-.addcustline {
+.addcustline
+{
     border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 1px;
     color: gray;
 }
 
-.StyleR2 {
+.StyleR2
+{
     border-collapse: collapse;
     border-top-style: solid;
     border-top-width: 2px;
 }
 
-.TextBoxStyle {
+.TextBoxStyle
+{
     border-collapse: collapse;
     border-color: GrayText;
     border-style: solid;
     border-width: 1px;
-    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     padding: 6px;
 }
 
-.PagerStyle table {
+.PagerStyle table
+{
     margin: auto;
     text-align: center;
 }
 
-.PagerStyle table td {
+.PagerStyle table td
+{
     border: 0;
     padding: 5px;
 }
 
-.PagerStyle td { border-top: #fff 3px solid; }
+.PagerStyle td
+{
+    border-top: #fff 3px solid;
+}
 
-.PagerStyle a:hover {
+.PagerStyle a:hover
+{
     background-color: silver;
     background-position: center;
     background-repeat: repeat-x;
@@ -161,7 +216,8 @@ body { background-color: #000; }
     text-decoration: none;
 }
 
-.PagerStyle a {
+.PagerStyle a
+{
     background-color: #fff;
     background-position: center;
     background-repeat: repeat-x;
@@ -176,7 +232,8 @@ body { background-color: #000; }
     text-decoration: none;
 }
 
-.PagerStyle span {
+.PagerStyle span
+{
     background-color: #dee1e7;
     background-position: center;
     background-repeat: repeat-x;

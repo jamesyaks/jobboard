@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Drawing;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.DataVisualization.Charting;
 
 namespace JB.Recruiters
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -59,7 +57,6 @@ namespace JB.Recruiters
 
             Chart1.DataBind();
 
-
             //get applications made
             jobapps.DataSource = cljview.Getappviewdata(rectempid);
             jobapps.Series["Series1"].YValueMembers = "jobviews";
@@ -69,7 +66,6 @@ namespace JB.Recruiters
             jobapps.Series["Series1"].MarkerSize = 3;
             jobapps.Series["Series1"].MarkerColor = Color.Black;
             jobapps.Series["Series1"].ChartType = SeriesChartType.Line;
-
 
             jobapps.DataBind();
 
@@ -83,7 +79,6 @@ namespace JB.Recruiters
             jobpostedview.Series["Series1"].MarkerSize = 3;
             jobpostedview.Series["Series1"].MarkerColor = Color.Black;
             jobpostedview.Series["Series1"].ChartType = SeriesChartType.Line;
-
 
             jobpostedview.DataBind();
         }

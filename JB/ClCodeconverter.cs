@@ -15,7 +15,6 @@ namespace JB
 
                 FileInfo[] rgFiles = di.GetFiles("*.*");
 
-
                 return rgFiles.Count();
             }
             catch

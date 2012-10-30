@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Globalization;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -10,7 +9,7 @@ namespace JB.Recruiters
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -26,13 +25,11 @@ namespace JB.Recruiters
             CheckBoxList2.DataValueField = "Termid";
             CheckBoxList2.DataBind();
 
-
             //get industry
             CheckBoxList1.DataSource = mp.GetIndustries();
             CheckBoxList1.DataTextField = "sTerm";
             CheckBoxList1.DataValueField = "Termid";
             CheckBoxList1.DataBind();
-
 
             //get salary
             CheckBoxList6.DataSource = mp.Getsalaries();
@@ -144,14 +141,14 @@ namespace JB.Recruiters
                         }
                     }
 
-                    #endregion
+                    #endregion populatemultitexts
                 }
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //set culture to british 
+            //set culture to british
             //modify here in future if this needs to be set to us formats
 
             var cinf = new CultureInfo("en-GB");
@@ -189,7 +186,6 @@ namespace JB.Recruiters
                     mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
                 }
 
-
                 //insert contract
                 foreach (ListItem listitems2 in CheckBoxList3.Items.Cast<ListItem>().Where(listitems2 => listitems2.Selected))
                 {
@@ -218,9 +214,8 @@ namespace JB.Recruiters
 
                 //end update
 
-                #endregion
+                #endregion updatejobs
             }
-
 
             else
             {
@@ -253,7 +248,6 @@ namespace JB.Recruiters
                     mpage.Insertjobmapping(mxjobsid, 1001, Convert.ToInt16(listitems3.Value), recid);
                 }
 
-
                 //insert contract
                 foreach (ListItem listitems2 in CheckBoxList3.Items.Cast<ListItem>().Where(listitems2 => listitems2.Selected))
                 {
@@ -282,7 +276,7 @@ namespace JB.Recruiters
 
                 //end adding jobs
 
-                #endregion
+                #endregion addjobs
             }
         }
     }

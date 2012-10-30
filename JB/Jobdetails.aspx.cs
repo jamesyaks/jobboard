@@ -6,7 +6,7 @@ namespace JB
 {
     /// <summary>
     /// This code is liscenced by ahrcloud.com
-    /// under free creative common liscence, but 
+    /// under free creative common liscence, but
     /// attribution must be made to the author
     /// site at www.ahrcloud.com or info@ahrcloud.com
     /// </summary>
@@ -60,7 +60,6 @@ namespace JB
                 var contactpname = string.Empty;
 
                 var rcl2 = new DlRecruiter();
-
 
                 if (Request.QueryString["JobID"] != null)
                 {

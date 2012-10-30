@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JobSeekers/Candidates.Master" AutoEventWireup="true"
-         CodeBehind="Myapplications.aspx.cs" Inherits="JB.JobSeekers.Myapplications" %>
+    CodeBehind="Myapplications.aspx.cs" Inherits="JB.JobSeekers.Myapplications" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/styles/csjobseeker.css" rel="stylesheet" type="text/css" />
@@ -15,8 +15,8 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="ftblack"
-                              AllowPaging="True" BorderStyle="None" GridLines="Horizontal" OnPageIndexChanging="GridView1_PageIndexChanging"
-                              Width="400px" OnRowDataBound="GridView1_RowDataBound">
+                    AllowPaging="True" BorderStyle="None" GridLines="Horizontal" OnPageIndexChanging="GridView1_PageIndexChanging"
+                    Width="400px" OnRowDataBound="GridView1_RowDataBound">
                     <Columns>
                         <asp:BoundField DataField="sTitle" HeaderText="Job Title">
                             <HeaderStyle HorizontalAlign="Left" />
