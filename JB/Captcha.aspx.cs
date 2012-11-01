@@ -19,10 +19,10 @@ namespace JB
             Session["capts"] = Text;
 
             Color BackColor = Color.FromName("#000000");
-            var FontName = "Courier";
-            var FontSize = 10;
-            var Height = 16;
-            var Width = 110;
+            const string fontName = "Courier";
+            const int FontSize = 10;
+            const int Height = 16;
+            const int Width = 110;
 
             var bitmap = new Bitmap(Width, Height);
 
@@ -30,7 +30,7 @@ namespace JB
 
             Color color = Color.Gray;
 
-            var font = new Font(FontName, FontSize);
+            var font = new Font(fontName, FontSize);
 
             //define where the text will be displayed in the specified area of the image
             var point = new PointF(5.0F, 5.0F);

@@ -116,7 +116,7 @@ namespace JB.Recruiters
             switch (e.Row.RowType)
             {
                 case DataControlRowType.DataRow:
-                    e.Row.Attributes.Add("class", "gridrowdb");
+                    e.Row.Attributes.Add("class", "ux_gridrowdb");
                     break;
 
                 default:

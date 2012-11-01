@@ -24,12 +24,9 @@ namespace JB.Recruiters
         public void setjobcookie(string cookiehash)
         {
             //Create a new cookie, passing the name into the constructor
-            var cookie = new HttpCookie("ahrcloud.com");
+            var cookie = new HttpCookie("ahrcloud.com") {Value = cookiehash, Expires = DateTime.Now.AddHours(1)};
 
             //Set the cookies value
-            cookie.Value = cookiehash;
-
-            cookie.Expires = DateTime.Now.AddHours(1);
 
             //Add the cookie
             Response.Cookies.Add(cookie);

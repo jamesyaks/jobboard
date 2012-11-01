@@ -19,10 +19,10 @@
     <!-- main div-->
     <div id="recheightfix">
         <div>
-            <asp:Label ID="Label2" runat="server" CssClass="Stylea2" Text="Recruiter Profile"></asp:Label>
-            <div class="recdtlspixln">
+            <asp:Label ID="Label2" runat="server" CssClass="ux_Stylea2" Text="Recruiter Profile"></asp:Label>
+            <div class="ux_recdtlspixln">
             </div>
-            <asp:GridView ID="GridView1" runat="server" CssClass="StyleRa1" AutoGenerateColumns="False"
+            <asp:GridView ID="GridView1" runat="server" CssClass="ux_StyleRa1" AutoGenerateColumns="False"
                 GridLines="None">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -33,21 +33,21 @@
                             <div>
                                 <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl='<%#                                        Bind("article_data") %>' />
                             </div>
-                            <div class="recdtljustbrk">
+                            <div class="ux_recdtljustbrk">
                             </div>
                             <div>
                                 <asp:Label ID="sdesc" runat="server" Text='<%#Bind("sCompleteDesc") %>'></asp:Label>
                             </div>
-                            <div class="recdtljustbrk">
+                            <div class="ux_recdtljustbrk">
                             </div>
-                            <div class="recdtljustbrk">
+                            <div class="ux_recdtljustbrk">
                             </div>
                             <div>
                                 <asp:Label ID="sweb" runat="server" Text='<%#Bind("sWebsite") %>'></asp:Label>
                             </div>
-                            <div class="recdtljustbrk">
+                            <div class="ux_recdtljustbrk">
                             </div>
-                            <div class="recdtljustbrk">
+                            <div class="ux_recdtljustbrk">
                             </div>
                             <div>
                                 <asp:Label ID="Emailaddr" runat="server" Text='<%#Bind("sEmailAddress") %>'></asp:Label>

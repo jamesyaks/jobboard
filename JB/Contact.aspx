@@ -13,32 +13,32 @@
         site at www.ahrcloud.com or info@ahrcloud.com
 
         -->
-    <div class="divback">
-        <div class="simplefontwhite">
+    <div class="ux_divback">
+        <div class="ux_simplefontwhite">
             Contact Information
         </div>
     </div>
-    <div class="boxcorner">
+    <div class="ux_boxcorner">
         <div id="divftsleft100">
-            <asp:Label ID="Label16" runat="server" CssClass="Stylea8" Text="So that we can answer your queries in a timely fashion please choose one of the following departments to contact:"></asp:Label>
+            <asp:Label ID="Label16" runat="server" CssClass="ux_Stylea8" Text="So that we can answer your queries in a timely fashion please choose one of the following departments to contact:"></asp:Label>
             <br />
             <br />
-            <div class="cleardata">
+            <div class="ux_cleardata">
             </div>
-            <div class="contactstylist">
-                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="fontredh1" NavigateUrl="mailto:abuse@ahrcloud.com">abuse@ahrcloud.com</asp:HyperLink>
+            <div class="ux_contactstylist">
+                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="ux_fontredh1" NavigateUrl="mailto:abuse@ahrcloud.com">abuse@ahrcloud.com</asp:HyperLink>
             </div>
-            <div class="contactstylist">
-                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="fontredh1" NavigateUrl="mailto:jobboard@ahrcloud.com">Jobboard@ahrcloud.com</asp:HyperLink>
+            <div class="ux_contactstylist">
+                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="ux_fontredh1" NavigateUrl="mailto:jobboard@ahrcloud.com">Jobboard@ahrcloud.com</asp:HyperLink>
             </div>
-            <div class="contactstylist">
-                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="fontredh1" NavigateUrl="mailto:suggestions@ahrcloud.com">Suggestions@ahrcloud.com</asp:HyperLink>
+            <div class="ux_contactstylist">
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="ux_fontredh1" NavigateUrl="mailto:suggestions@ahrcloud.com">Suggestions@ahrcloud.com</asp:HyperLink>
             </div>
-            <div class="contactstylist">
-                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="fontredh1" NavigateUrl="mailto:partners@ahrcloud.com">Partners@ahrcloud.com</asp:HyperLink>
+            <div class="ux_contactstylist">
+                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="ux_fontredh1" NavigateUrl="mailto:partners@ahrcloud.com">Partners@ahrcloud.com</asp:HyperLink>
             </div>
-            <div class="contactstylist">
-                <asp:HyperLink ID="HyperLink7" runat="server" CssClass="fontredh1" NavigateUrl="mailto:investorrelations@ahrcloud.com">Investorrelations@ahrcloud.com</asp:HyperLink>
+            <div class="ux_contactstylist">
+                <asp:HyperLink ID="HyperLink7" runat="server" CssClass="ux_fontredh1" NavigateUrl="mailto:investorrelations@ahrcloud.com">Investorrelations@ahrcloud.com</asp:HyperLink>
             </div>
         </div>
     </div>

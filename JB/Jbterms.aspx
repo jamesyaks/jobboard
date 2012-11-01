@@ -12,12 +12,12 @@
         site at www.ahrcloud.com or info@ahrcloud.com
 
         -->
-    <div class="divback">
-        <div class="simplefontwhite">
+    <div class="ux_divback">
+        <div class="ux_simplefontwhite">
             Terms of Use</div>
     </div>
-    <div class="boxcorner">
-        <div class="simplefontblack">
+    <div class="ux_boxcorner">
+        <div class="ux_simplefontblack">
             Please note that when using this site you are agreeing to our terms and conditions.
             Any data which is NOT PUBLIC is not authorized by law to be used by anyone under
             any condition. Any misuse of the site will be strictly reported to the local authorities.

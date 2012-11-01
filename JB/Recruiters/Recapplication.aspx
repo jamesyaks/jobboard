@@ -19,10 +19,10 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="recbgstytle">
-        <asp:Label ID="Label1" runat="server" CssClass="ftwhitebd" Text="Applications Made"></asp:Label>
+    <div class="ux_recbgstytle">
+        <asp:Label ID="Label1" runat="server" CssClass="ux_ftwhitebd" Text="Applications Made"></asp:Label>
     </div>
-    <div class="setrightbg">
+    <div class="ux_setrightbg">
         <!-- hook up ajax-->
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
@@ -34,22 +34,22 @@
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:Label ID="Label6" runat="server" Text="Complete Name: " CssClass="ftblackbd"></asp:Label>
-                                <asp:Label ID="Label2" runat="server" CssClass="ftblack" Text='<%#                                        Bind("afirstname") %>'></asp:Label>
-                                <asp:Label ID="Label3" runat="server" CssClass="ftblack" Text='<%#Bind("alastname") %>'></asp:Label>
+                                <asp:Label ID="Label6" runat="server" Text="Complete Name: " CssClass="ux_ftblackbd"></asp:Label>
+                                <asp:Label ID="Label2" runat="server" CssClass="ux_ftblack" Text='<%#                                        Bind("afirstname") %>'></asp:Label>
+                                <asp:Label ID="Label3" runat="server" CssClass="ux_ftblack" Text='<%#Bind("alastname") %>'></asp:Label>
                                 <br />
-                                <asp:Label ID="Label8" runat="server" Text="Job Title: " CssClass="ftblackbd"></asp:Label>
-                                <asp:Label ID="Label4" runat="server" CssClass="ftblack" Text='<%#Bind("stitle") %>'></asp:Label>
+                                <asp:Label ID="Label8" runat="server" Text="Job Title: " CssClass="ux_ftblackbd"></asp:Label>
+                                <asp:Label ID="Label4" runat="server" CssClass="ux_ftblack" Text='<%#Bind("stitle") %>'></asp:Label>
                                 <br />
-                                <asp:Label ID="Label9" runat="server" Text="Date Applied: " CssClass="ftblackbd"></asp:Label>
-                                <asp:Label ID="Label5" runat="server" CssClass="ftblack" Text='<%#                Bind("dtentered", "{0:dd/M/yyyy}") %>'></asp:Label>
+                                <asp:Label ID="Label9" runat="server" Text="Date Applied: " CssClass="ux_ftblackbd"></asp:Label>
+                                <asp:Label ID="Label5" runat="server" CssClass="ux_ftblack" Text='<%#                Bind("dtentered", "{0:dd/M/yyyy}") %>'></asp:Label>
                                 <br />
-                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="fthlinkblack" NavigateUrl='<%#                                        Eval("idapplications", "Recapplicationdetail.aspx?applyid={0}") %>'
+                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="ux_fthlinkblack" NavigateUrl='<%#                                        Eval("idapplications", "Recapplicationdetail.aspx?applyid={0}") %>'
                                     Text="view profile..." rel="facebox"></asp:HyperLink>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
-                    <PagerStyle CssClass="PagerStyle" />
+                    <PagerStyle CssClass="ux_PagerStyle" />
                 </asp:GridView>
             </ContentTemplate>
         </asp:UpdatePanel>

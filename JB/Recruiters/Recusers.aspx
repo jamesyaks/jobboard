@@ -4,12 +4,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="recbgstytle">
-        <asp:Label ID="Label1" runat="server" CssClass="ftwhitebd" Text="Users linked to this recruiter"></asp:Label>
+    <div class="ux_recbgstytle">
+        <asp:Label ID="Label1" runat="server" CssClass="ux_ftwhitebd" Text="Users linked to this recruiter"></asp:Label>
     </div>
-    <div class="divsimpleboxlight">
+    <div class="ux_divsimpleboxlight">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True"
-            CssClass="ftblack" DataKeyNames="idUsers" OnRowEditing="GridView1_RowEditing">
+            CssClass="ux_ftblack" DataKeyNames="idUsers" OnRowEditing="GridView1_RowEditing">
             <Columns>
                 <asp:BoundField DataField="uUserName" HeaderText="UserName" />
                 <asp:BoundField DataField="uFirstName" HeaderText="FirstName" />

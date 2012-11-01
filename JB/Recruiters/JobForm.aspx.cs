@@ -67,10 +67,9 @@ namespace JB.Recruiters
             if (!IsPostBack)
             {
                 //
-                int editjobid = 0;
                 if (Request.QueryString["jobid"] != null)
                 {
-                    editjobid = Convert.ToInt16(Request.QueryString["JobID"]);
+                    int editjobid = Convert.ToInt16(Request.QueryString["JobID"]);
 
                     //get recid
                     int recid = mp.RecName(Session["pusername"].ToString());

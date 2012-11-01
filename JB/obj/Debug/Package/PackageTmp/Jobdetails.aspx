@@ -14,184 +14,184 @@
 
         -->
     <!-- top bar -->
-    <div class="divback">
-        <asp:Label ID="Label11" runat="server" CssClass="Stylea1"></asp:Label>
+    <div class="ux_divback">
+        <asp:Label ID="Label11" runat="server" CssClass="ux_Stylea1"></asp:Label>
     </div>
-    <div class="boxcorner">
+    <div class="ux_boxcorner">
         <!-- top image-->
-        <div class="lpad1">
+        <div class="ux_lpad1">
             <asp:Image ID="Image7" runat="server" Width="75px" />
         </div>
-        <div class="cleardata">
+        <div class="ux_cleardata">
         </div>
         <div id="dpabar">
         </div>
-        <div class="cleardata">
+        <div class="ux_cleardata">
         </div>
         <div>
             <div id="jobdetaillt">
                 <!-- categories -->
-                <div class="jdetstyle7">
+                <div class="ux_jdetstyle7">
                     <br />
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label33" runat="server" CssClass="ftblackbd" Text="Job Title"></asp:Label>
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label33" runat="server" CssClass="ux_ftblackbd" Text="Job Title"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label32" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
-                </div>
-                <div class="cleardata">
-                </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label25" runat="server" CssClass="ftblackbd" Text="Ref #"></asp:Label>
-                    </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label26" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label32" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label13" runat="server" CssClass="ftblackbd" Text="Salary"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label25" runat="server" CssClass="ux_ftblackbd" Text="Ref #"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label20" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
-                </div>
-                <div class="cleardata">
-                </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label14" runat="server" CssClass="ftblackbd" Text="Company"></asp:Label>
-                    </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label21" runat="server" CssClass="ftblack"></asp:Label></div>
-                </div>
-                <div class="cleardata">
-                </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label15" runat="server" CssClass="ftblackbd" Text="Contract Type"></asp:Label>
-                    </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label22" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label26" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label16" runat="server" CssClass="ftblackbd" Text="Date Posted"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label13" runat="server" CssClass="ux_ftblackbd" Text="Salary"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label23" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
-                </div>
-                <div class="cleardata">
-                </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label12" runat="server" CssClass="ftblackbd" Text="Location"></asp:Label>
-                    </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label19" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label20" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label1" runat="server" CssClass="ftblackbd" Text="Industry"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label14" runat="server" CssClass="ux_ftblackbd" Text="Company"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Labelindustry" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label21" runat="server" CssClass="ux_ftblack"></asp:Label></div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label3" runat="server" CssClass="ftblackbd" Text="Hours"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label15" runat="server" CssClass="ux_ftblackbd" Text="Contract Type"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Labelhrs" runat="server" CssClass="ftblack"></asp:Label>
-                    </div>
-                </div>
-                <div class="cleardata">
-                </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label5" runat="server" CssClass="ftblackbd" Text="Employer Type"></asp:Label>
-                    </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Labeletype" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label22" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label28" runat="server" CssClass="ftblackbd" Text="Contact Email"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label16" runat="server" CssClass="ux_ftblackbd" Text="Date Posted"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label30" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label23" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label29" runat="server" CssClass="ftblackbd" Text="Website"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label12" runat="server" CssClass="ux_ftblackbd" Text="Location"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label31" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label19" runat="server" CssClass="ux_ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="ux_cleardata">
+                </div>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label1" runat="server" CssClass="ux_ftblackbd" Text="Industry"></asp:Label>
+                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Labelindustry" runat="server" CssClass="ux_ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="ux_cleardata">
+                </div>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label3" runat="server" CssClass="ux_ftblackbd" Text="Hours"></asp:Label>
+                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Labelhrs" runat="server" CssClass="ux_ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="ux_cleardata">
+                </div>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label5" runat="server" CssClass="ux_ftblackbd" Text="Employer Type"></asp:Label>
+                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Labeletype" runat="server" CssClass="ux_ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="ux_cleardata">
+                </div>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label28" runat="server" CssClass="ux_ftblackbd" Text="Contact Email"></asp:Label>
+                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label30" runat="server" CssClass="ux_ftblack"></asp:Label>
+                    </div>
+                </div>
+                <div class="ux_cleardata">
+                </div>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label29" runat="server" CssClass="ux_ftblackbd" Text="Website"></asp:Label>
+                    </div>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label31" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                     <br />
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label17" runat="server" Text="Role Details" CssClass="ftblackbd"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label17" runat="server" Text="Role Details" CssClass="ux_ftblackbd"></asp:Label>
                     </div>
-                    <div class="styledborder">
+                    <div class="ux_styledborder">
                         <article>
-                            <asp:Label ID="Label18" runat="server" CssClass="Stylea2"></asp:Label>
+                            <asp:Label ID="Label18" runat="server" CssClass="ux_Stylea2"></asp:Label>
                         </article>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
-                <div class="jdetstyle7">
-                    <div class="styledbordertp">
-                        <asp:Label ID="Label24" runat="server" CssClass="ftblackbd" Text="Contact Person"></asp:Label>
+                <div class="ux_jdetstyle7">
+                    <div class="ux_styledbordertp">
+                        <asp:Label ID="Label24" runat="server" CssClass="ux_ftblackbd" Text="Contact Person"></asp:Label>
                     </div>
-                    <div class="styledborder">
-                        <asp:Label ID="Label27" runat="server" CssClass="ftblack"></asp:Label>
+                    <div class="ux_styledborder">
+                        <asp:Label ID="Label27" runat="server" CssClass="ux_ftblack"></asp:Label>
                     </div>
                 </div>
-                <div class="cleardata">
+                <div class="ux_cleardata">
                 </div>
             </div>
             <div id="reportpg">
-                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="Button1_Click" CssClass="fontred">Report this page</asp:LinkButton>
-                <div class="jobdetailbr">
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="Button1_Click" CssClass="ux_fontred">Report this page</asp:LinkButton>
+                <div class="ux_jobdetailbr">
                 </div>
             </div>
-            <div class="cleardata">
+            <div class="ux_cleardata">
             </div>
             <br />
-            <div class="styledbordertp1">
-                <asp:Button ID="Button2" runat="server" CssClass="button" Text="  Apply  " OnClick="Button2_Click" />
+            <div class="ux_styledbordertp1">
+                <asp:Button ID="Button2" runat="server" CssClass="ux_button" Text="  Apply  " OnClick="Button2_Click" />
             </div>
             <br />
-            <div class="cleardata">
+            <div class="ux_cleardata">
             </div>
             <br />
         </div>
-        <div class="cleardata">
+        <div class="ux_cleardata">
         </div>
     </div>
     <!-- end the categories-->

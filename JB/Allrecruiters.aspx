@@ -33,11 +33,11 @@
         }
     </script>
     <!-- top bar -->
-    <div class="divback">
-        <div class="simplefontwhite">
+    <div class="ux_divback">
+        <div class="ux_simplefontwhite">
             All Recruiters Advertizing Jobs</div>
     </div>
-    <div class="boxcorner">
+    <div class="ux_boxcorner">
         <!--hook up ajax-->
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
@@ -51,19 +51,19 @@
                             <ItemTemplate>
                                 <div>
                                     <br />
-                                    <asp:Label ID="Label1" runat="server" CssClass="Stylea2" Text='<%#                                        Bind("srecruitername") %>'></asp:Label>
-                                    <asp:Label ID="Label12" runat="server" CssClass="Stylea2" Text="is now advertizing "></asp:Label>
-                                    <asp:Label ID="Label2" runat="server" CssClass="Stylea2" Text='<%#Bind("totaljobs") %>'></asp:Label>
-                                    <asp:Label ID="Label13" runat="server" CssClass="Stylea2" Text="jobs"></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" CssClass="ux_Stylea2" Text='<%#                                        Bind("srecruitername") %>'></asp:Label>
+                                    <asp:Label ID="Label12" runat="server" CssClass="ux_Stylea2" Text="is now advertizing "></asp:Label>
+                                    <asp:Label ID="Label2" runat="server" CssClass="ux_Stylea2" Text='<%#Bind("totaljobs") %>'></asp:Label>
+                                    <asp:Label ID="Label13" runat="server" CssClass="ux_Stylea2" Text="jobs"></asp:Label>
                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%#                                        Eval("Empid", "Recdetails.aspx?Empid={0}") %>'
-                                        rel="facebox" Text="more..." CssClass="fontred"></asp:HyperLink>
+                                        rel="facebox" Text="more..." CssClass="ux_fontred"></asp:HyperLink>
                                     <br />
                                     <br />
                                 </div>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
-                    <PagerStyle CssClass="PagerStyle" />
+                    <PagerStyle CssClass="ux_PagerStyle" />
                 </asp:GridView>
             </ContentTemplate>
         </asp:UpdatePanel>

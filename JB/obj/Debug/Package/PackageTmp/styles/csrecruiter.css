@@ -1,6 +1,6 @@
 ﻿/*sprites*/
 
-.rc_home, .rc_dashboard, .rc_app, .rc_basic, .rc_password, .rc_logout, .rc_edit, .rc_post
+.ux_rc_home, .ux_rc_dashboard, .ux_rc_app, .ux_rc_basic, .ux_rc_password, .ux_rc_logout, .ux_rc_edit, .ux_rc_post
 {
     background-image: url('/images/recruitericons.png');
     background-repeat: no-repeat;
@@ -8,42 +8,42 @@
     width: 16px;
 }
 
-.rc_home
+.ux_rc_home
 {
     background-position: 0px 2px;
 }
 
-.rc_edit
+.ux_rc_edit
 {
     background-position: 0px -62px;
 }
 
-.rc_post
+.ux_rc_post
 {
     background-position: 0px -128px;
 }
 
-.rc_dashboard
+.ux_rc_dashboard
 {
     background-position: 0px -20px;
 }
 
-.rc_app
+.ux_rc_app
 {
     background-position: 0px -84px;
 }
 
-.rc_basic
+.ux_rc_basic
 {
     background-position: 0px -44px;
 }
 
-.rc_password
+.ux_rc_password
 {
     background-position: 0px -108px;
 }
 
-.rc_logout
+.ux_rc_logout
 {
     background-position: -1px -144px;
 }
@@ -53,24 +53,13 @@ body
     background-color: #000;
 }
 
-.style2302
-{
-    width: 100%;
-}
-
-.Stylea101:hover
+.ux_Stylea101:hover
 {
     text-decoration: underline;
 }
 
-.style2
-{
-    background-color: #fff;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.divchartone
+/* recruiter charting area */
+.ux_divchartone
 {
     float: left;
     padding-left: 10px;
@@ -84,7 +73,7 @@ body
     text-align: right;
 }
 
-.Stylea101
+.ux_Stylea101, .ux_Stylea2, .ux_Stylea8, .ux_StyleBlack, .ux_StyleBlackbold, .ux_StyleGray, .ux_Stylepwd, .ux_ftblack, .ux_ftblackbold, .ux_ftblackWhite, .ux_recmasterwhite
 {
     color: #c00;
     font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
@@ -111,56 +100,51 @@ body
     width: 400px;
 }
 
-.Stylea2
+.ux_Stylea2
 {
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
 }
 
-.dottedlines
+.ux_dottedlines
 {
     border-bottom-color: gray;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
 }
 
-.Stylea8
+.ux_Stylea8
 {
     border-collapse: collapse;
     color: #1c5786;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
 }
 
-.StyleBlack
+.ux_StyleBlack
 {
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
 }
 
-.StyleBlackbold
+.ux_StyleBlackbold
 {
     border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     font-weight: 700;
 }
 
-.StyleGray
+.ux_StyleGray
 {
     border-collapse: collapse;
     color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     margin-right: 5px;
 }
 
-.addcustline
+.ux_line_gray
 {
     border-collapse: collapse;
     border-top-style: solid;
@@ -168,82 +152,61 @@ body
     color: gray;
 }
 
-.setcpaneldotted
+.ux_setcpaneldotted
 {
     border-top-style: dotted;
     border-top-width: 1px;
 }
 
-.Stylepwd
+.ux_Stylepwd
 {
     background-color: transparent;
     border-collapse: collapse;
     color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     margin-right: 5px;
 }
 
-.ftblack
+.ux_ftblack
 {
     border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     margin-right: 5px;
 }
 
-.ftblackbold
+.ux_ftblackbold
 {
     border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     font-weight: 700;
     margin-right: 5px;
 }
 
-.ftblackWhite
+.ux_ftblackWhite
 {
     border-collapse: collapse;
     color: #fff;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     margin-right: 5px;
 }
 
-.recmasterwhite
+.ux_recmasterwhite
 {
     color: #ccc;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: .75em;
     height: 14px;
     text-decoration: none;
 }
 
-.recmasterwhite:hover
+.ux_recmasterwhite:hover
 {
     color: #fff;
 }
 
-.StyleR2
-{
-    border-collapse: collapse;
-    border-top-style: solid;
-    border-top-width: 2px;
-}
-
-.BoxBorder
+.ux_BoxBorder
 {
     border-color: #000;
     border-style: dotted;
     border-width: 1px;
 }
 
-.stylemintabl, .style4
-{
-    width: 100px;
-}
-
-.style3
-{
-    height: 19px;
-}

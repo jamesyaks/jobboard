@@ -48,6 +48,15 @@ namespace JB.JobSeekers
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
+            switch (e.Row.RowType)
+            {
+                case DataControlRowType.DataRow:
+                    e.Row.Attributes.Add("class", "ux_gridrowdb");
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

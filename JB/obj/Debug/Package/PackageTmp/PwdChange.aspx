@@ -15,43 +15,43 @@
 
         -->
     <!--linkup divs here-->
-    <div class="divback">
-        <asp:Label ID="Label13" runat="server" Text="Password change in progress..." CssClass="Stylea1"></asp:Label>
+    <div class="ux_divback">
+        <asp:Label ID="Label13" runat="server" Text="Password change in progress..." CssClass="ux_Stylea1"></asp:Label>
     </div>
     <br />
-    <div class="pwleft">
-        <asp:Label ID="Label1" runat="server" Text="New password" CssClass="StyleRa1"></asp:Label>
+    <div class="ux_pwleft">
+        <asp:Label ID="Label1" runat="server" Text="New password" CssClass="ux_StyleRa1"></asp:Label>
     </div>
-    <div class="pwleft">
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="TextBoxStyle" TextMode="Password"
+    <div class="ux_pwleft">
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="ux_TextBoxStyle" TextMode="Password"
             Width="200px" autofocus="autofocus"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
-            CssClass="Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
+            CssClass="ux_Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
         <asp:PasswordStrength ID="TextBox12_PasswordStrength" runat="server" Enabled="True"
             TargetControlID="TextBox1" DisplayPosition="RightSide" StrengthIndicatorType="Text"
-            PreferredPasswordLength="10" PrefixText="Strength:" TextCssClass="StyleRa1" MinimumNumericCharacters="0"
+            PreferredPasswordLength="10" PrefixText="Strength:" TextCssClass="ux_StyleRa1" MinimumNumericCharacters="0"
             MinimumSymbolCharacters="0" RequiresUpperAndLowerCaseCharacters="false" CalculationWeightings="15;20;15;50">
         </asp:PasswordStrength>
     </div>
-    <div class="cleardata">
+    <div class="ux_cleardata">
     </div>
-    <div class="setheight">
+    <div class="ux_setheight">
     </div>
-    <div class="pwleft">
-        <asp:Label ID="Label2" runat="server" Text="Confirm password" CssClass="StyleRa1"></asp:Label>
+    <div class="ux_pwleft">
+        <asp:Label ID="Label2" runat="server" Text="Confirm password" CssClass="ux_StyleRa1"></asp:Label>
     </div>
-    <div class="pwleft">
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle" TextMode="Password"
+    <div class="ux_pwleft">
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="ux_TextBoxStyle" TextMode="Password"
             Width="200px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2"
-            CssClass="Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
+            CssClass="ux_Stylea101" ErrorMessage="X"></asp:RequiredFieldValidator>
     </div>
-    <div class="cleardata">
+    <div class="ux_cleardata">
     </div>
-    <div class="setheight">
+    <div class="ux_setheight">
     </div>
-    <asp:Button ID="Button1" runat="server" Text="Reset" CssClass="button" OnClick="Button1_Click" />
-    <asp:Button ID="Button2" runat="server" Text="Cancel" CssClass="button" CausesValidation="False"
+    <asp:Button ID="Button1" runat="server" Text="Reset" CssClass="ux_button" OnClick="Button1_Click" />
+    <asp:Button ID="Button2" runat="server" Text="Cancel" CssClass="ux_button" CausesValidation="False"
         OnClick="Button2_Click" />
     <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
     </asp:ToolkitScriptManager>

@@ -26,8 +26,7 @@ namespace JB.Recruiters
             {
                 if (Session["pusername"] != null)
                 {
-                    int fg;
-                    fg = Convert.ToInt16(Request.QueryString["Fg"]);
+                    int fg = Convert.ToInt16(Request.QueryString["Fg"]);
 
                     var mpage = new DlMainpagepopulator();
 

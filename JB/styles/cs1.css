@@ -1,11 +1,10 @@
-﻿.divheightsrch
+﻿.ux_divheightsrch
 {
     height: 4px;
 }
-
-.dvtabstop
+.ux_dvtabstop
 {
-    background-color: #000;
+    background: #000;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -13,27 +12,24 @@
     padding-left: 4px;
     width: 100px;
 }
-
-.divchkbxpop
+.ux_divchkbxpop
 {
+    font: .75em 'lucida grande' ,tahoma,verdana,arial,sans-serif;
     border: 1px solid #ccc;
     border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
     height: 100px;
     left: 100px;
     overflow: auto;
+}
+.ux_divchkbxpop, #dvleftpanels3, #dvleftpanels2, #dvleftpanels1
+{
     width: 200px;
 }
-
-#dvleftpanels4
+#dvleftpanels4, #dvleftpanels3, #dvleftpanels2, #dvleftpanels1
 {
     margin-left: 20px;
 }
-
-#dvleftpanels1, #dvleftpanels2, #dvleftpanels3
+#dvleftpanels3, #dvleftpanels2, #dvleftpanels1
 {
     float: left;
-    margin-left: 20px;
-    width: 200px;
 }

@@ -13,13 +13,13 @@
         site at www.ahrcloud.com or info@ahrcloud.com
 
         -->
-    <div class="divback">
-        <asp:Label ID="Label13" runat="server" CssClass="Stylea1" Text="Our Blog"></asp:Label>
+    <div class="ux_divback">
+        <asp:Label ID="Label13" runat="server" CssClass="ux_Stylea1" Text="Our Blog"></asp:Label>
     </div>
     <!-- main bar-->
-    <div class="boxcorner">
+    <div class="ux_boxcorner">
         <div>
-            <iframe id="I1" security="restricted" name="I1" class="blogframe" src="http://blog.ahrcloud.com">
+            <iframe id="I1" security="restricted" name="I1" class="ux_blogframe" src="http://blog.ahrcloud.com">
             </iframe>
         </div>
     </div>

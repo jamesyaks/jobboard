@@ -1,170 +1,135 @@
-﻿.recdetlsStyle1
+﻿.ux_recdetlsStyle1, #recheightfix, .ux_Stylear1, .ux_confstyle7, .ux_StyleRa1, .ux_line_gray, .ux_StyleRa2, .ux_Stylea1, .ux_Stylea3, .ux_Styleatext3, .ux_textexte3, .ux_Stylea42, .ux_Stylea4, .ux_Stylea7, .ux_Stylea8, .ux_Stylea801, .ux_styledc3, .ux_Stylea9, .ux_Stylea2
 {
     border-collapse: collapse;
+}
+.ux_recdetlsStyle1
+{
     width: 300px;
 }
-
-.recdtlspixln
+.ux_recdtlspixln
 {
     border-bottom-color: #000;
     border-bottom-style: solid;
+}
+.ux_recdtlspixln, .ux_dftbgmenucolor
+{
     border-bottom-width: 1px;
+}
+.ux_recdtlspixln, .ux_jobdetailbr
+{
     height: 4px;
+}
+.ux_recdtlspixln, .ux_jdetstylerf, .ux_cleardatamore, .ux_confstyle7, .ux_styledc1, .ux_leftdiv
+{
     width: 100%;
 }
-
 #recheightfix
 {
-    border-collapse: collapse;
     height: 400px;
-    left: 100px;
     margin-top: 10px;
     overflow: auto;
 }
-
-.simplyleftw100
+#recheightfix, .ux_jdetstylerf
+{
+    left: 100px;
+}
+.ux_simplyleftw100, .ux_setrightdiva, .ux_setleftdiv, .ux_setleftdivw1, .ux_jdetstylelf, .ux_styledbordertp1, .ux_styledbordertp, .ux_styledborder, .ux_cleardatamore, #jobdetaillt, .ux_simplyleft, .ux_leftheader
 {
     float: left;
+}
+.ux_simplyleftw100, .ux_setleftdiv, .ux_jdetstylelf, .ux_styledbordertp1, .ux_styledbordertp
+{
     width: 100px;
 }
-
-.divbreak
+.ux_divbreak
 {
     left: 0;
 }
-
-.setrightdiva
+.ux_setrightdiva, .ux_setl, .ux_Styleatext3, .ux_textexte3, .ux_Stylea42, .ux_Stylea4
 {
-    float: left;
     height: 20px;
+}
+.ux_setrightdiva
+{
     width: 20px;
 }
-
-.setl
+.ux_setl
 {
-    height: 20px;
     width: auto;
 }
-
-.setleftdiv
+.ux_setleftdiv, .ux_jdettopnav, .ux_pdleft4, .ux_activateactopbanner, .ux_conftopbans, .ux_pwdchgtopbans
 {
-    float: left;
     padding-left: 4px;
-    vertical-align: middle;
-    width: 100px;
 }
-
-.setleftdivw1
+.ux_setleftdiv, .ux_jdettopnav, .ux_activateactopbanner, .ux_conftopbans, .ux_pwdchgtopbans
 {
-    float: left;
+    vertical-align: middle;
+}
+.ux_setleftdivw1
+{
     width: 50px;
 }
-
-.box2
+.ux_box2
 {
     border-color: gray;
     border-style: solid;
     border-width: 1px;
     height: 450px;
 }
-
-.jdetstylelf
+.ux_jdetstylelf, .ux_jdetstylerf
 {
-    background-color: #f0f0f0;
-    float: left;
-    width: 100px;
+    background: #f0f0f0;
 }
-
-.jdetstylerf
+.ux_jdetstyle7, .ux_jdetstyle7a, .ux_styledbordertp1, .ux_styledbordertp, .ux_styledborder, .ux_Stylea3, .ux_Stylea8, .ux_styledc4
 {
-    background-color: #f0f0f0;
-    left: 100px;
-    width: 100%;
+    background: #fff;
 }
-
-.jdetstyle7
+.ux_jdetstyle7, .ux_lpad1, .ux_styledbordertp1
 {
-    background-color: #fff;
     padding-left: 40px;
 }
-
-.jdetstyle7a
+.ux_jdetstyle7a
 {
-    background-color: #fff;
     padding-left: 20px;
     padding-right: 20px;
 }
-
-.jdetstyle8
+.ux_jdetstyle8
 {
     height: 19px;
 }
-
-.jobdetailbr
+.ux_jdettopnav, .ux_activateactopbanner, .ux_conftopbans, .ux_pwdchgtopbans
 {
-    height: 4px;
-}
-
-.jdettopnav
-{
-    background-color: gray;
+    background: gray;
     height: 16px;
-    padding-left: 4px;
-    vertical-align: middle;
 }
-
-.lpad1
+.ux_lpad1
 {
     padding-bottom: 20px;
-    padding-left: 40px;
     padding-top: 20px;
 }
-
-.Stylear1
+.ux_Stylear1, .ux_csslinkrecover, .ux_lowerbrdrdotted, .ux_dftbgmenucolor, .ux_Stylea8, .ux_Stylea9, .ux_Stylea2
 {
-    border-collapse: collapse;
     color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
+}
+.ux_Stylear1, .ux_jobdfttop, .ux_csslinkrec, .ux_csslinkrecover, .ux_lowerbrdrdotted, .ux_dftbgmenucolor, .ux_StyleRa1, .ux_Stylea1, .ux_Stylea101, .ux_Stylea3, .ux_Styleatext3, .ux_textexte3, .ux_Stylea42, .ux_Stylea4, .ux_Stylea7, .ux_Stylea8, .ux_Stylea801, .ux_Styleag1, .ux_styledc3, .ux_fontred, .ux_headingone, .ux_Stylea9, .ux_Stylea2
+{
     font-size: 13px;
 }
-
-.styledbordertp1
+.ux_styledborder
 {
-    background-color: #fff;
-    float: left;
-    padding-left: 40px;
-    width: 100px;
-}
-
-.styledbordertp
-{
-    background-color: #fff;
-    float: left;
-    width: 100px;
-}
-
-.styledborder
-{
-    background-color: #fff;
-    float: left;
     width: 500px;
 }
-
-.cleardatamore
+.ux_cleardatamore, .ux_setheight, .ux_recdtljustbrk
 {
-    float: left;
     height: 10px;
-    width: 100%;
 }
-
 #dpabar
 {
-    background-color: #ccc;
+    background: #ccc;
     height: 8px;
     margin: 0 auto;
     width: 950px;
 }
-
 #reportpg
 {
     border-left: 1px dotted gray;
@@ -172,267 +137,111 @@
     height: 100px;
     margin-top: 20px;
     padding: 4px 40px 0;
+}
+#reportpg, .ux_styledc6
+{
     width: 200px;
 }
-
 #jobdetaillt
 {
-    float: left;
     width: 700px;
 }
-
-.confstyle7
-{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.pdleft4
-{
-    padding-left: 4px;
-}
-
-.fontred:hover
+.ux_fontred:hover
 {
     text-decoration: underline;
 }
-
-.jobdfttop:hover
+.ux_jobdfttop:hover, .ux_Stylea1, .ux_styledc4
 {
     color: #fff;
 }
-
-.jobdfttop
+.ux_Stylea9, .ux_Stylea2, .ux_fontred, .ux_headingone, .ux_styledc3, .ux_Styleag1, .ux_Stylea801, .ux_Stylea8, .ux_Stylea7, .ux_Stylea6, .ux_Stylea5, .ux_Stylea4, .ux_Stylea42, .ux_textexte3, .ux_Styleatext3, .ux_Stylea3, .ux_Stylea101, .ux_Stylea1, .ux_StyleRa1, .ux_dftbgmenucolor, .ux_lowerbrdrdotted, .ux_csslinkrecover, .ux_csslinkrec, .ux_jobdfttop, .ux_Stylear1
+{
+    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+}
+.ux_jobdfttop
 {
     color: #ccc;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
+}
+.ux_jobdfttop, .ux_lowerbrdrdotted, .ux_dftbgmenucolor, .ux_fontred, .ux_headingone
+{
     text-decoration: none;
 }
-
-.csslinkrec
+.ux_csslinkrec, .ux_line_gray, .ux_Stylea6, .ux_Stylea7, .ux_Styleag1
 {
     color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
+}
+.ux_csslinkrec, .ux_csslinkrecover
+{
     font-weight: 700;
 }
-
-.csslinkrecover
+.ux_dftbgmenucolor
 {
-    color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.lowerbrdrdotted
-{
-    color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.dftbgmenucolor
-{
-    background-color: #bcc7d8;
+    background: #bcc7d8;
     border-bottom-color: gray;
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
-    color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
 }
-
-.StyleRa1
+.ux_line_gray, .ux_StyleRa2
 {
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.addcustline
-{
-    border-collapse: collapse;
     border-top-style: solid;
+}
+.ux_line_gray
+{
     border-top-width: 1px;
-    color: gray;
 }
-
-.StyleRa2
+.ux_StyleRa2
 {
-    border-collapse: collapse;
-    border-top-style: solid;
     border-top-width: 2px;
 }
-
-.Stylea1
-{
-    border-collapse: collapse;
-    color: #fff;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.Stylea101
+.ux_Stylea101, .ux_Stylea5
 {
     color: #069;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
 }
-
-.Stylea3
+.ux_Styleatext3, .ux_styledc3
 {
-    background-color: #fff;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
+    background: #f8f8fa;
 }
-
-.Styleatext3
+.ux_textexte3
 {
-    background-color: #f8f8fa;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    height: 20px;
+    background: #eee;
 }
-
-.textexte3
+.ux_Stylea42, .ux_Stylea4
 {
-    background-color: #eee;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    height: 20px;
+    background: #069;
 }
-
-.Stylea42
+.ux_Stylea42
 {
-    background-color: #069;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    height: 20px;
     width: 17px;
 }
-
-.Stylea4
+.ux_Stylea4
 {
-    background-color: #069;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    height: 20px;
     text-align: left;
 }
-
-.Stylea5
+.ux_Stylea5
 {
-    color: #069;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-large;
 }
-
-.Stylea6
+.ux_Stylea6
 {
-    color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
     font-size: xx-small;
 }
-
-.Stylea7
+.ux_Stylea801
 {
-    border-collapse: collapse;
-    color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.Stylea8
-{
-    background-color: #fff;
-    border-collapse: collapse;
-    color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.Stylea801
-{
-    border-collapse: collapse;
     color: #1c5786;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
 }
-
-.Styleag1
+.ux_styledc3
 {
-    color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.styledc3
-{
-    background-color: #f8f8fa;
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
     height: 44px;
 }
-
-.styledc4
+.ux_styledc4
 {
-    background-color: #fff;
-    color: #fff;
     width: 4px;
 }
-
-.styledc6
+.ux_styledc6
 {
     color: #f5e38a;
     text-align: center;
-    width: 200px;
 }
-
-.headingone, .fontred
+.ux_fontred, .ux_headingone
 {
     color: #c00;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.Stylea2, .Stylea9
-{
-    border-collapse: collapse;
-    color: #000;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
-.recdtljustbrk, .setheight
-{
-    height: 10px;
-}
-
-.pwdchgtopbans, .conftopbans, .activateactopbanner
-{
-    background-color: gray;
-    height: 16px;
-    padding-left: 4px;
-    vertical-align: middle;
-}
-
-.leftheader, .simplyleft
-{
-    float: left;
-}
-
-.leftdiv, .styledc1
-{
-    width: 100%;
 }

@@ -1,249 +1,135 @@
-﻿/*sprites*/
-
-.cn_home, .cn_dashboard, .cn_app, .cn_basic, .cn_password, .cn_logout
+﻿.ux_cn_logout, .ux_cn_password, .ux_cn_basic, .ux_cn_app, .ux_cn_dashboard, .ux_cn_home
 {
-    background-image: url('/images/jobseekericon.png');
-    background-repeat: no-repeat;
+    background: url('/images/jobseekericon.png') no-repeat;
     height: 14px;
     width: 14px;
 }
-
-.cn_home
+.ux_cn_home
 {
-    background-position: 0px 0px;
+    background: 0 0;
 }
-
-.cn_dashboard
+.ux_cn_dashboard
 {
-    background-position: 0px -22px;
+    background: 0 -22px;
 }
-
-.cn_app
+.ux_cn_app
 {
-    background-position: 0px -44px;
+    background: 0 -44px;
 }
-
-.cn_basic
+.ux_cn_basic
 {
-    background-position: 0px -64px;
+    background: 0 -64px;
 }
-
-.cn_password
+.ux_cn_password
 {
-    background-position: 0px -88px;
+    background: 0 -88px;
 }
-
-.cn_logout
+.ux_cn_logout
 {
-    background-position: -1px -106px;
+    background: -1px -106px;
 }
-
 body
 {
-    background-color: #000;
+    background: #000;
 }
-
-.style1
+.ux_style1, .ux_Stylepwd, .ux_ftblack, .ux_line_gray, .ux_TextBoxStyle
 {
     border-collapse: collapse;
+}
+.ux_style1
+{
     width: 100%;
 }
-
-.style4
-{
-    width: 100px;
-}
-
-.cannoteslft
+.ux_cannoteslft, .ux_cannotesrt
 {
     padding-left: 50px;
+}
+.ux_cannoteslft
+{
     width: 300px;
 }
-
-.cannotesrt
+.ux_cannotesrt
 {
     margin-left: 400px;
-    padding-left: 50px;
 }
-
 #applicationsbreak
 {
     height: 300px;
 }
-
-.jseekermidback
+.ux_jseekermidback
 {
-    background-color: #fff;
+    background: #fff;
     height: 400px;
     padding: 30px 30px 0;
 }
-
-.topnavmajor
+.ux_topnavmajor
 {
-    background-color: gray;
+    background: gray;
     height: 16px;
     padding-left: 4px;
 }
-
-.canhomepagelinks:hover
+.ux_canhomepagelinks:hover
 {
     color: #000;
 }
-
-.canhomepagelinks
+.ux_TextBoxStyle, .ux_ftblack, .ux_Stylepwd, .ux_canmasterwhite, .ux_canhomepagelinks
+{
+    font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif;
+}
+.ux_canhomepagelinks
 {
     border-bottom-color: gray;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
-    color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
-    text-decoration: none;
     vertical-align: middle;
 }
-
-.canmasterwhite
+.ux_canhomepagelinks, .ux_Stylepwd, .ux_line_gray
 {
-    color: #ccc;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
+    color: gray;
+}
+.ux_canhomepagelinks, .ux_canmasterwhite, .ux_Stylepwd, .ux_ftblack, .ux_TextBoxStyle
+{
     font-size: .75em;
+}
+.ux_canhomepagelinks, .ux_canmasterwhite
+{
     text-decoration: none;
 }
-
-.canmasterwhite:hover
+.ux_canmasterwhite
+{
+    color: #ccc;
+}
+.ux_canmasterwhite:hover
 {
     color: #fff;
 }
-
-.setcpaneldotted
+.ux_setcpaneldotted
 {
     border-top-style: dotted;
+}
+.ux_setcpaneldotted, .ux_line_gray
+{
     border-top-width: 1px;
 }
-
-.TextBoxStyleover
+.ux_Stylepwd
 {
-    background-color: silver;
-    border-collapse: collapse;
-    border-color: #000;
-    border-style: solid;
-    border-width: 1px;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
-    padding: 6px;
-}
-
-.Stylepwd
-{
-    background-color: transparent;
-    border-collapse: collapse;
-    color: gray;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
+    background: transparent;
     margin-right: 5px;
 }
-
-.backgrdstyle
+.ux_cn_header
 {
-    background-color: #CC0000;
+    background: #c00;
     height: 30px;
-    padding: 2px 0px 0px 6px;
+    padding: 2px 0 0 6px;
 }
-
-.ftblack
+.ux_line_gray
 {
-    border-collapse: collapse;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
-}
-
-.addcustline
-{
-    border-collapse: collapse;
     border-top-style: solid;
-    border-top-width: 1px;
-    color: gray;
 }
-
-.StyleR2
+.ux_TextBoxStyle
 {
-    border-collapse: collapse;
-    border-top-style: solid;
-    border-top-width: 2px;
-}
-
-.TextBoxStyle
-{
-    border-collapse: collapse;
     border-color: GrayText;
     border-style: solid;
     border-width: 1px;
-    font-family: 'Lucida Grande' , Tahoma, Verdana, Arial, sans-serif;
-    font-size: .75em;
     padding: 6px;
-}
-
-.PagerStyle table
-{
-    margin: auto;
-    text-align: center;
-}
-
-.PagerStyle table td
-{
-    border: 0;
-    padding: 5px;
-}
-
-.PagerStyle td
-{
-    border-top: #fff 3px solid;
-}
-
-.PagerStyle a:hover
-{
-    background-color: silver;
-    background-position: center;
-    background-repeat: repeat-x;
-    border-bottom: solid 1px #000;
-    border-left: solid 1px #000;
-    border-right: solid 1px #000;
-    border-top: solid 1px #000;
-    color: #000;
-    font-family: Arial;
-    font-size: small;
-    padding: 2px 10px;
-    text-decoration: none;
-}
-
-.PagerStyle a
-{
-    background-color: #fff;
-    background-position: center;
-    background-repeat: repeat-x;
-    border-bottom: solid 1px gray;
-    border-left: solid 1px gray;
-    border-right: solid 1px gray;
-    border-top: solid 1px gray;
-    color: #000;
-    font-family: Arial;
-    font-size: small;
-    padding: 2px 10px;
-    text-decoration: none;
-}
-
-.PagerStyle span
-{
-    background-color: #dee1e7;
-    background-position: center;
-    background-repeat: repeat-x;
-    border-bottom: solid 1px #4d60a2;
-    border-left: solid 1px #4d60a2;
-    border-right: solid 1px #4d60a2;
-    border-top: solid 1px #4d60a2;
-    color: #000;
-    font-family: Arial;
-    font-size: small;
-    padding: 2px 10px;
-    text-decoration: none;
 }

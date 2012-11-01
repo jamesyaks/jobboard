@@ -12,10 +12,9 @@ namespace JB
         public string RandomcapString(int size)
         {
             var builder = new StringBuilder();
-            char ch;
             for (var i = 0; i < size; i++)
             {
-                ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * _random.NextDouble() + 65)));
+                var ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * _random.NextDouble() + 65)));
                 builder.Append(ch);
             }
 

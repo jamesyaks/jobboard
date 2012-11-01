@@ -5,16 +5,16 @@
     <link href="/styles/csjobseeker.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="backgrdstyle">
-        <asp:Label ID="Label1" runat="server" CssClass="ftwhitebd" Text="Applications made"></asp:Label>
+    <div class="ux_cn_header">
+        <asp:Label ID="Label1" runat="server" CssClass="ux_ftwhitebd" Text="Applications made"></asp:Label>
     </div>
-    <div class="setrightbg">
+    <div class="ux_setrightbg">
         <!-- hook up ajax-->
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="ftblack"
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="ux_ftblack"
                     AllowPaging="True" BorderStyle="None" GridLines="Horizontal" OnPageIndexChanging="GridView1_PageIndexChanging"
                     Width="400px" OnRowDataBound="GridView1_RowDataBound">
                     <Columns>

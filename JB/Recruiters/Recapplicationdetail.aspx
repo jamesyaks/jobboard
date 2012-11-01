@@ -10,13 +10,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Label ID="Label1" runat="server" Text="User profile" CssClass="ftblack"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="User profile" CssClass="ux_ftblack"></asp:Label>
         <br />
         <hr />
-        <asp:Label ID="Label2" runat="server" CssClass="ftblack" Text="Label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" CssClass="ux_ftblack" Text="Label"></asp:Label>
         <br />
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="ftblack">Open Cv/Resume</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="ux_ftblack">Open Cv/Resume</asp:HyperLink>
     </div>
     </form>
 </body>

@@ -83,6 +83,7 @@
     <Content Include="Captcha.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\checked.png" />
+    <Content Include="images\closelabel.png" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\icons.png" />
     <Content Include="images\jobseekericon.png" />
@@ -451,7 +452,6 @@
     <Content Include="Jobseekers\Candidates.Master" />
     <Content Include="Recruiters\Editjobs.aspx" />
     <Content Include="Recruiters\JobForm.aspx" />
-    <Content Include="Scripts\jquery.autocomplete.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Jobdetails.aspx" />

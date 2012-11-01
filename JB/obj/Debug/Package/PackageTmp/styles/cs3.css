@@ -1,38 +1,32 @@
-﻿.pdleft4
+﻿.ux_pdleft4, .ux_arecstlyletopbg
 {
     padding-left: 4px;
 }
-
-.arecstyle7
+.ux_arecstyle7
 {
     border-collapse: collapse;
     width: 100%;
 }
-
-.arecstyle49
+.ux_arecstyle49, .ux_arecstlyletopbg
 {
-    background-color: gray;
+    background: gray;
 }
-
-.arecstyle50
+.ux_arecstyle50
 {
     border-bottom-style: dotted;
+}
+.ux_arecstyle50, .ux_box2
+{
     border-color: gray;
     border-width: 1px;
 }
-
-.arecstlyletopbg
+.ux_arecstlyletopbg
 {
-    background-color: gray;
     height: 16px;
-    padding-left: 4px;
     vertical-align: middle;
 }
-
-.box2
+.ux_box2
 {
-    border-color: gray;
     border-style: solid;
-    border-width: 1px;
     height: 450px;
 }

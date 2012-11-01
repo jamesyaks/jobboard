@@ -7,29 +7,29 @@
     <div id="loginleft">
         <img alt="login logo" src="/Brandimages/brand_login.png" />
         <br />
-        <asp:Label ID="Label10" runat="server" CssClass="ftblack" Text="Username"></asp:Label>
+        <asp:Label ID="Label10" runat="server" CssClass="ux_ftblack" Text="Username"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBoxStyle">adam@ahrcloud.com</asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="ux_TextBoxStyle">adam@ahrcloud.com</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"
-            CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
+            CssClass="ux_ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
         <br />
-        <asp:Label ID="Label11" runat="server" CssClass="ftblack" Text="Password"></asp:Label>
+        <asp:Label ID="Label11" runat="server" CssClass="ux_ftblack" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" CssClass="TextBoxStyle">test</asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" CssClass="ux_TextBoxStyle">test</asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3"
-            CssClass="ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
+            CssClass="ux_ftblack" ErrorMessage="X"></asp:RequiredFieldValidator>
         <br />
-        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="Stylea101" OnClick="LinkButton1_Click"
+        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="ux_Stylea101" OnClick="LinkButton1_Click"
             CausesValidation="False">Forgot Password</asp:LinkButton>
-        <asp:Label ID="Label12" runat="server" Text="or" CssClass="ftblack"></asp:Label>
-        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="Stylea101" OnClick="LinkButton2_Click"
+        <asp:Label ID="Label12" runat="server" Text="or" CssClass="ux_ftblack"></asp:Label>
+        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="ux_Stylea101" OnClick="LinkButton2_Click"
             CausesValidation="False">Register Now!</asp:LinkButton>
         <br />
         <br />
-        <div class="alignright">
-            <asp:Button ID="Button2" runat="server" Text="Login" OnClick="Button2_Click" CssClass="button" />
-            <asp:Button ID="Button3" runat="server" Text="Cancel" OnClick="Button3_Click" CssClass="button"
+        <div class="ux_alignright">
+            <asp:Button ID="Button2" runat="server" Text="Login" OnClick="Button2_Click" CssClass="ux_button" />
+            <asp:Button ID="Button3" runat="server" Text="Cancel" OnClick="Button3_Click" CssClass="ux_button"
                 CausesValidation="False" />
         </div>
     </div>
@@ -44,7 +44,7 @@
             <br />
             with paid version you get:
         </p>
-        <ul class="ulist">
+        <ul class="ux_ulist">
             <li>Full customizations</li>
             <li>Advanced search controls</li>
             <li>WAP Site </li>
@@ -65,7 +65,7 @@
             <a href="http://ahrcloud.com">www.ahrcloud.com</a>
         </p>
     </div>
-    <div class="cleardata">
+    <div class="ux_cleardata">
     </div>
     <br />
     <br />

@@ -16,47 +16,47 @@
     <link href="/styles/cs2.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" class="upperwrap" runat="server">
+    <form id="form1" class="ux_upperwrap" runat="server">
     <div id="cleftpanel">
-        <ul class="flist">
+        <ul class="ux_flist">
             <li>
-                <asp:Image ID="Image11" CssClass="rc_home" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                <asp:Image ID="Image11" CssClass="ux_rc_home" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CssClass="ux_recmasterwhite"
                     OnClick="LinkButton44_Click" Width="100px">Site Home</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image13" CssClass="rc_dashboard" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                <asp:Image ID="Image13" CssClass="ux_rc_dashboard" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" CssClass="ux_recmasterwhite"
                     OnClick="LinkButton4_Click" Width="100px">Dashboard</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image1" CssClass="rc_basic" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="recmasterwhite" OnClick="LinkButton5_Click"
+                <asp:Image ID="Image1" CssClass="ux_rc_basic" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="ux_recmasterwhite" OnClick="LinkButton5_Click"
                     CausesValidation="False" Width="100px">Basic Information</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image12" CssClass="rc_app" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton8" runat="server" CssClass="recmasterwhite" OnClick="LinkButton8_Click"
+                <asp:Image ID="Image12" CssClass="ux_rc_app" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton8" runat="server" CssClass="ux_recmasterwhite" OnClick="LinkButton8_Click"
                     Width="100px" CausesValidation="False">My Applications</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image5" CssClass="rc_edit" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                <asp:Image ID="Image5" CssClass="ux_rc_edit" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="False" CssClass="ux_recmasterwhite"
                     OnClick="LinkButton6_Click" Width="100px">Edit Jobs</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image10" CssClass="rc_password" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="recmasterwhite" OnClick="LinkButton3_Click"
+                <asp:Image ID="Image10" CssClass="ux_rc_password" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="ux_recmasterwhite" OnClick="LinkButton3_Click"
                     CausesValidation="False" Width="100px">Change password</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image6" CssClass="rc_post" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" CssClass="recmasterwhite"
+                <asp:Image ID="Image6" CssClass="ux_rc_post" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" CssClass="ux_recmasterwhite"
                     OnClick="LinkButton7_Click" Width="100px">Post a job</asp:LinkButton>
             </li>
             <li>
-                <asp:Image ID="Image4" CssClass="rc_logout" runat="server" ImageUrl="/images/sprite.gif" />
-                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="recmasterwhite" NavigateUrl="~/Logoff.aspx"
+                <asp:Image ID="Image4" CssClass="ux_rc_logout" runat="server" ImageUrl="/images/sprite.gif" />
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="ux_recmasterwhite" NavigateUrl="~/Logoff.aspx"
                     Width="100px">Logout</asp:HyperLink>
             </li>
         </ul>
@@ -66,12 +66,12 @@
         </asp:ContentPlaceHolder>
         <footer>
             <!-- bottom maintain compatibility without html5-->
-            <div class="cfooter">
-                <asp:Label ID="Label1" runat="server" CssClass="ftblack"></asp:Label>
+            <div class="ux_cfooter">
+                <asp:Label ID="Label1" runat="server" CssClass="ux_ftblack"></asp:Label>
             </div>
         </footer>
     </div>
-    <div class="cleardata">
+    <div class="ux_cleardata">
     </div>
     </form>
 </body>

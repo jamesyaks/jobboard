@@ -24,18 +24,18 @@
 
             -->
     <header>
-        <div class="cleardata">
+        <div class="ux_cleardata">
         </div>
-        <div class="banner">
+        <div class="ux_banner">
             <asp:Image ID="Image1" runat="server" ImageUrl="/Brandimages/brand_defaulthometag.png" />
         </div>
-        <div class="cleardata">
+        <div class="ux_cleardata">
         </div>
-        <div class="tpbar">
+        <div class="ux_tpbar">
         </div>
     </header>
     <form id="form1" runat="server">
-    <div class="lcenter">
+    <div class="ux_lcenter">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>

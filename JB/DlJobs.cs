@@ -36,8 +36,7 @@ namespace JB
 
         public int Checkrecruiter(int __jobid)
         {
-            var connreader = new MySqlConnection();
-            connreader.ConnectionString = Dlconnect.Makeconn();
+            var connreader = new MySqlConnection {ConnectionString = Dlconnect.Makeconn()};
             var passhash = new ClPwdhash();
 
             //string to hold data

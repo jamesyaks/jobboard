@@ -12,12 +12,12 @@
         site at www.ahrcloud.com or info@ahrcloud.com
 
         -->
-    <div class="divback">
-        <div class="simplefontwhite">
+    <div class="ux_divback">
+        <div class="ux_simplefontwhite">
             Privacy</div>
     </div>
-    <div class="boxcorner">
-        <div class="simplefontblack">
+    <div class="ux_boxcorner">
+        <div class="ux_simplefontblack">
             We respect the privacy of our users and recruiters, like many other job boards,
             we donot give out our outsource any data which we have from you. This may include
             your personal details and other material which you might have collected and used

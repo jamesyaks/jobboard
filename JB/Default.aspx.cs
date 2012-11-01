@@ -36,7 +36,7 @@ namespace JB
             CheckBoxList1.DataValueField = "Termid";
             CheckBoxList1.DataBind();
 
-            if (Request.QueryString["q"] != null)
+            if (Request.QueryString["q"] != null & Request.QueryString["q"] != "all")
             {
                 TextBox2.Text = Request.QueryString["q"];
             }
@@ -359,7 +359,7 @@ namespace JB
             switch (e.Row.RowType)
             {
                 case DataControlRowType.DataRow:
-                    e.Row.Attributes.Add("class", "gridrowdb");
+                    e.Row.Attributes.Add("class", "ux_gridrowdb");
                     break;
 
                 default:

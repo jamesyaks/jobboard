@@ -12,11 +12,11 @@
         site at www.ahrcloud.com or info@ahrcloud.com
 
         -->
-    <div class="divback">
-        <asp:Label ID="reasonforwarded" runat="server" CssClass="simplefontwhite"></asp:Label>
+    <div class="ux_divback">
+        <asp:Label ID="reasonforwarded" runat="server" CssClass="ux_simplefontwhite"></asp:Label>
     </div>
-    <div class="simpleboxdetail">
-        <asp:Label ID="textreason" runat="server" CssClass="simplefontblack" Text=""></asp:Label>
+    <div class="ux_simpleboxdetail">
+        <asp:Label ID="textreason" runat="server" CssClass="ux_simplefontblack" Text=""></asp:Label>
         <br />
         <br />
         <br />

@@ -15,12 +15,9 @@ namespace JB
         {
             reasonforwarded.Text = "Confirmation";
 
-            try
+            if (Session["reasons"] != null)
             {
                 textreason.Text = Session["reasons"].ToString();
-            }
-            catch (Exception)
-            {
             }
 
             int statuses = Convert.ToInt16(Request.QueryString["status"]);
